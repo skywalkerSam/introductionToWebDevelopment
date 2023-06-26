@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Hello name={"Skywalker"}/>
+    <Hello name={"Starboy"} greeting={"Let's just fuck React ;)"}/>
   </React.StrictMode>
 );
 
