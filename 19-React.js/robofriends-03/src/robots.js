@@ -6,48 +6,48 @@ export const robots = [
     },
     {
         id : 1,
-        name : 'Robot-1',
-        email : 'robot-1@skywalkersam.dev'
+        name : 'Robot-01',
+        email : 'robot-01@skywalkersam.dev'
     },
     {
         id : 2,
-        name : 'Robot-2',
-        email : 'robot-2@skywalkersam.dev'
+        name : 'Robot-02',
+        email : 'robot-02@skywalkersam.dev'
     },
     {
         id : 3,
-        name : 'Robot-3',
-        email : 'robot-3@skywalkersam.dev'
+        name : 'Robot-03',
+        email : 'robot-03@skywalkersam.dev'
     },
     {
         id : 4,
-        name : 'Robot-4',
-        email : 'robot-4@skywalkersam.dev'
+        name : 'Robot-04',
+        email : 'robot-04@skywalkersam.dev'
     },
     {
         id : 5,
-        name : 'Robot-5',
-        email : 'robot-5@skywalkersam.dev'
+        name : 'Robot-05',
+        email : 'robot-05@skywalkersam.dev'
     },
     {
         id : 6,
-        name : 'Robot-6',
-        email : 'robot-6@skywalkersam.dev'
+        name : 'Robot-06',
+        email : 'robot-06@skywalkersam.dev'
     },
     {
         id : 7,
-        name : 'Robot-7',
-        email : 'robot-7@skywalkersam.dev'
+        name : 'Robot-07',
+        email : 'robot-07@skywalkersam.dev'
     },
     {
         id : 8,
-        name : 'Robot-8',
-        email : 'robot-8@skywalkersam.dev'
+        name : 'Robot-08',
+        email : 'robot-08@skywalkersam.dev'
     },
-    // {
-    //     id : 9,
-    //     name : 'Robot-9',
-    //     email : 'robot-9@skywalkersam.dev'
-    // },
+    {
+        id : 9,
+        name : 'Robot-09',
+        email : 'robot-09@skywalkersam.dev'
+    },
 
 ]; 

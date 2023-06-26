@@ -17,7 +17,7 @@ class App extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Let's Just FUCK React
+            Let's Just FUCK React!
           </a>
         </header>
       </div>

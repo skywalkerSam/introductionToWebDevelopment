@@ -1,18 +1,18 @@
 export const robots = [
     {
         id : 0, 
-        name : 'Robot-1', 
-        email : 'robot-1@skywalkersam.dev'
+        name : 'Robot-0', 
+        email : 'robot-0@skywalkersam.dev'
     },
     {
         id : 1,
-        name : 'Robot-2',
-        email : 'robot-2@skywalkersam.dev'
+        name : 'Robot-01',
+        email : 'robot-01@skywalkersam.dev'
     },
     {
         id : 2,
-        name : 'Robot-3',
-        email : 'robot-3@skywalkersam.dev'
+        name : 'Robot-02',
+        email : 'robot-02@skywalkersam.dev'
     }
 
 ]; 
