@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  color: #56a586;
+  font-size: 100px;
+  
+}

@@ -1,10 +1,5 @@
 export const robots = [
     {
-        id : 0, 
-        name : 'Robot-0', 
-        email : 'robot-0@skywalkersam.dev'
-    },
-    {
         id : 1,
         name : 'Robot-01',
         email : 'robot-01@skywalkersam.dev'
@@ -49,5 +44,66 @@ export const robots = [
         name : 'Robot-09',
         email : 'robot-09@skywalkersam.dev'
     },
+    {
+        id : 10,
+        name : 'Robot-10',
+        email : 'robot-10@skywalkersam.dev'
+    },
+    {
+        id :11,
+        name : 'Robot-11',
+        email : 'robot-11@skywalkersam.dev'
+    },
+    {
+        id :12,
+        name : 'Robot-12',
+        email : 'robot-12@skywalkersam.dev'
+    },
+    {
+        id :13,
+        name : 'Robot-13',
+        email : 'robot-13@skywalkersam.dev'
+    },
+    {
+        id :14,
+        name : 'Robot-14',
+        email : 'robot-14@skywalkersam.dev'
+    },
+    {
+        id :15,
+        name : 'Robot-15',
+        email : 'robot-15@skywalkersam.dev'
+    },
+    {
+        id :16,
+        name : 'Robot-16',
+        email : 'robot-16@skywalkersam.dev'
+    },
+    {
+        id :17,
+        name : 'Robot-17',
+        email : 'robot-17@skywalkersam.dev'
+    },
+    {
+        id :18,
+        name : 'Robot-18',
+        email : 'robot-18@skywalkersam.dev'
+    },
+    {
+        id :19,
+        name : 'Robot-19',
+        email : 'robot-19@skywalkersam.dev'
+    },
+    {
+        id :20,
+        name : 'Robot-20',
+        email : 'robot-20@skywalkersam.dev'
+    },
+    {
+        id :21,
+        name : 'Robot-21',
+        email : 'robot-21@skywalkersam.dev'
+    },
+
 
 ]; 
