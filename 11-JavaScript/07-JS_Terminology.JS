@@ -7,7 +7,7 @@ function FunctionOne() {
 
 
 // Function Expression...
-FunctionTwo = function() {
+FunctionTwo = function () {
     console.log("It's created by Function Expression...");
 };
 
@@ -51,12 +51,10 @@ console.log(thisIsAFunction());
 
 //      method, It's also a function() but, inside a Javascript Object :)
 let objectOne = {
-    thisISAMethod: function() {
+    thisISAMethod: function () {
         console.log("\t Yes, a function() inside an object is so called \'a method\' ...");
         console.log("\t You can access a method by 'MethodName.FunctionName()' ...");
     }
 };
 
 console.log(objectOne.thisISAMethod());
-
-
