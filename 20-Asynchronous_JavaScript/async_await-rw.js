@@ -13,7 +13,7 @@ async function fetchUsers() {
 
 // Don't forget to call the function!
 
-// Not Working!!! - Review needed!
+
 urls = [
     'https://jsonplaceholder.typicode.com/users',
     'https://jsonplaceholder.typicode.com/posts',
@@ -22,11 +22,18 @@ urls = [
 
 
 const getData = async function() {
-    const [users, posts, albums] = await Promise.all
-        (urls.map(url => fetch(url)
-        .then(response => response.json())
-    ))
-    console.log('users', users)
-    console.log('posts', posts)
-    console.log('albums', albums)
+    try {
+        const [users, posts, albums] = await Promise.all
+            (urls.map(url => fetch(url)
+            .then(response => response.json())
+        ))
+        console.log('users', users)
+        console.log('posts', posts)
+        console.log('albums', albums)
+    } catch (err) {
+        console.log("Something went wrong!", err)
+    }
 }
+
+
+// Deja Vu :)
