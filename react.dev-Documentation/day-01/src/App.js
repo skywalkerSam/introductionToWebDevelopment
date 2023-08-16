@@ -1,13 +1,12 @@
-import { MyButton } from './MyButton.js';
-import { AboutPage } from './About.js';
-import { Profile } from './Profile.js';
+import { FruitList } from './FruitList.js'
+import { ShoppingList } from './ShoppingList.js';
 
-export default function MyApp() {
-  return (
-    <div>
-      <AboutPage></AboutPage>
-      <Profile></Profile>
-      <MyButton></MyButton>
+
+export default function App() {
+  return(
+    <div style={{margin:'5%'}}>
+      <FruitList></FruitList>
+      <ShoppingList></ShoppingList>
     </div>
   );
 }
