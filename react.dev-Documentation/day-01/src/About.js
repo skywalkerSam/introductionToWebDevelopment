@@ -1,3 +1,7 @@
+// Writing markup with JSX
+// Adding styles
+// Displaying data
+
 export function AboutPage(){
     return(
         <>

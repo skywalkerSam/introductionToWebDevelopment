@@ -1,3 +1,5 @@
+// Rendering lists!
+
 const products = [
     { title: 'Cabbage', id: 1 },
     { title: 'Garlic', id: 2 },
@@ -12,7 +14,6 @@ export function FruitList() {
     )
     return (
         <div>
-            <h1>Fruit List</h1>
             <ul>{listItems}</ul>
         </div>
     );
