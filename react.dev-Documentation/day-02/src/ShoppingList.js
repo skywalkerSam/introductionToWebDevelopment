@@ -1,3 +1,5 @@
+// Conditional rendering!
+
 const products = [
     { title: 'Cabbage', isFruit: false, id: 1 },
     { title: 'Garlic', isFruit: false, id: 2 },
@@ -9,14 +11,12 @@ export function ShoppingList() {
         <li key={product.id} 
         style={{
             color: product.isFruit ? 'green': 'red'
-            }}
-        >
+            }}>
             {product.title}
         </li>
         )
     return(
         <div>
-            <h1>Shopping List</h1>
             <ul>{listItems}</ul>
         </div>
     );
