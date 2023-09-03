@@ -1,5 +1,5 @@
 {
-  "name": "day-01",
+  "name": "day05-tictactoe",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
