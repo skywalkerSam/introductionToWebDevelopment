@@ -5,7 +5,7 @@ export function Logo(){
   return(
     <>
         <Tilt>
-            <div>
+            <div className='flex'>
               <img src={starboy_logo} alt="Starboy Logo" style={{height: '200px'}}></img>
             </div>
         </Tilt>
