@@ -1,6 +1,6 @@
 // Function Declaration
 function firstFun() {
-    console.log("This is my first function ever written in Javascript superlanguage...");
+    console.log("This is my first function ever written in Javascript...");
     console.log("I'm skywalkerSam...");
 }
 

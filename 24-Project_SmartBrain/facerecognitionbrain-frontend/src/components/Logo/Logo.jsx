@@ -1,14 +1,11 @@
-import Tilt from 'react-parallax-tilt';
 import starboy_logo from './starboy_logo.png';
 
 export function Logo(){
   return(
-    <>
-        <Tilt>
-            <div className='flex'>
-              <img src={starboy_logo} alt="Starboy Logo" style={{height: '200px'}}></img>
-            </div>
-        </Tilt>
-    </>
+    <div>
+      <div className='flex flex-start'>
+        <img src={starboy_logo} alt="Starboy Logo" style={{height:200, marginTop:0}}></img>
+      </div>
+    </div>
   )
 }
