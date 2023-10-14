@@ -1,36 +1,31 @@
 // create a simple facebook.com backend using JS
 
 const database = [
-    {username:"helloworld", password:"helloworld"},
-    {username:"hello", password:"hello"},
-    {username:"hello", password:"world"}
+    {username:"starboy", password:"stargirl", timeline:"Hello, Starboy & Stargirl!"},
+    {username:"sam", password:"sammy", timeline:"Hello, Mr. Sam & Mrs. Sammy!"},
+    {username:"skywalker", password:"tris", timeline:"Hello, Mr. Skywalker!"}
 ];
 
-const newsfeed = [
-    {username:"helloworld", timeline:"Hello, Mr. Hello World!"},
-    {username:"hello", timeline:"Hello, Mr. Hello!"},
-    {username:"hello", timeline:"Hello, Mr. Hello The Second!"}
-];
-
-
-function isUserValid(username, password) {
-    for (let i=0; i<database.length; i++) {
-        if (database[i].username === username && 
-            database[i].password === password) {
-            return true;}
-    }
-    return false;
-}
 
 function signIn(username, password) {
-    if (isUserValid(username, password)) {
-        console.log(newsfeed)
-    } else {
-        alert("Sorry, wrong username and password!");
+    const prompt = require("prompt-sync")({ signIn: true });
+    var username = prompt("Enter your username: ");
+    var password = prompt("Enter your password: ");
+    let i = 0;
+    while (i <= database.length){
+        if (username != database[i].username){
+            i++
+        } else if (password != database[i].password ){
+            console.log("\n\t Incorrect Credentials, Try Again!\n");
+            break
+        }
+         else if (username === database[i].username && password === database[i].password) {
+            console.log('\n\t'+database[i].timeline+'\n')
+            break
+        }
     }
 }
         
-var usernamePrompt = prompt("Enter your username: ");
-var passwordPrompt = prompt("Enter your password: ");
 
-signIn(usernamePrompt, passwordPrompt);
+
+signIn();

@@ -6,20 +6,20 @@ Date: 12022.01.20.22:47
 
 let userDatabase = [
     {
+        username:"starboy",
+        password:"stargirl",
+    },
+    {
         username:"sam",
-        password:"FionaIsAwesome",
+        password:"sammy",
     },
     {
         username:"skywalkerSam",
-        password:"AlitaTheBattleAngel",
+        password:"aanya",
     },
     {
-        username:"starboy",
-        password:"StargirlForStarboy",
-    },
-    {
-        username:"master-skywalker",
-        password:"TrisDauntless",
+        username:"skywalker",
+        password:"rey",
     }
 ];
 
@@ -46,15 +46,15 @@ passwordPrompt = prompt("Enter Your Password... \n");
 
 // For Node.js console...
 // Custom node module 'prompt-sync' to get input truough node.js console...
-const prompt = require("prompt-sync")({ sigint: true });
-const usernamePrompt = prompt("Enter Your Username... \n");
-const passwordPrompt = prompt("Enter Your Password... \n");
+const prompt = require("prompt-sync")({ signIn: true });
+const usernamePrompt = prompt("Enter Your Username: ");
+const passwordPrompt = prompt("Enter Your Password: ");
 // console.log(`You are ${age} years old.`);
 
 
 function signIn(user, pass) {
     if (user === userDatabase[0].username && pass === userDatabase[0].password) {
-        console.log(userNewsfeed);
+        console.log('\nYour Newsfeed: '+userNewsfeed[0].newsfeed+'\n');
     } else {
         console.log("\t Wrong Username or, Password. Please Try Again! \n")
     }
@@ -69,7 +69,7 @@ signIn(usernamePrompt, passwordPrompt)
 /*
 01- Node.js Module Installation...
 
-    >_ npm install "ModuleName"     ( 1st, Go to the working directory )
+    >_ npm install "ModuleName"     ( Make sure you're in the right working directory! )
 
 
 02- Some Node Console Commands...
