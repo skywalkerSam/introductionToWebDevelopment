@@ -45,7 +45,7 @@ export default class App extends Component{
     }
 
     displayFaceBox = (box) => {
-        console.log(box)
+        // console.log(box)
         this.setState({box: box})
     }
 
@@ -58,8 +58,8 @@ export default class App extends Component{
         console.log('Fetching the Image... ')
         this.setState({imageUrl: this.state.input})
 
-        const PAT = '';
-        const USER_ID = '';       
+        const PAT = '';         // Enter your PAT
+        const USER_ID = '';     // Enter your username  
         const APP_ID = 'facerecognitionbrain-frontend';
         const MODEL_ID = 'face-detection';
         const MODEL_VERSION_ID = '6dc7e46bc9124c5c8824be4822abe105';    
