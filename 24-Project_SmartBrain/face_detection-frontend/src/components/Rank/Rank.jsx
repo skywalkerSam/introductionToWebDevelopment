@@ -1,5 +1,5 @@
 export const Rank = () => {
-    return(
+    return (
         <div>
             <div className="white f3 ">
                 {'Sam, your current rank is...'}

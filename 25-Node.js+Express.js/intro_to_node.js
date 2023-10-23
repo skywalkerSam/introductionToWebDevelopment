@@ -1,12 +1,15 @@
 console.log('Hello World...');
-console.log(__dirname);
+console.log(process.platform)
+console.log(__dirname);     
 console.log(__filename);
+
+// Johnny-Five: The Javascript Robotics & IoT Platform.
 
 const a=3;
 const b=6;
 
 setTimeout(() => {
-    console.log('Inside of callback, '+(a+b));
-}, 3000);
+    console.log((a+b));
+}, 6000);   // 6sec. wait time!
 
-// Process.exit();   is used to exit the process. It is used to exit the process when the process is not required to run further.
+// Process.exit() / .exit:   Exit the process/console. 
