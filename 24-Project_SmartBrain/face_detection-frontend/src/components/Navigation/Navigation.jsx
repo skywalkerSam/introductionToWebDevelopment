@@ -1,16 +1,16 @@
-export function Navigation({ onRouteChange, isSignedIn }){
+export function Navigation({ onRouteChange, isSignedIn }) {
 
-    return(
+    return (
         (isSignedIn) ?
             <div>
-                <nav style={{display:"flex", justifyContent:"flex-end"}}>
+                <nav style={{ display: "flex", justifyContent: "flex-end" }}>
                     <a className="f5 link dim underline pa3 white pointer"
                         onClick={() => onRouteChange('sign_out')}>Sign Out
                     </a>
                 </nav>
             </div>
-        :   <div>
-                <nav style={{display:"flex", justifyContent:"flex-end"}}>
+            : <div>
+                <nav style={{ display: "flex", justifyContent: "flex-end" }}>
                     <a className="f5 link dim underline pa3 white pointer"
                         onClick={() => onRouteChange('sign_in')}>Log in/Register
                     </a>

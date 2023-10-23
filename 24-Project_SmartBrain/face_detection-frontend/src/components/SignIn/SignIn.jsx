@@ -1,7 +1,7 @@
 import './SignIn.css';
 
 export const SignIn = ({ onRouteChange }) => {
-    return(
+    return (
         <div>
             <article className="br3 ba b--green mv4 w-100 w-50-m w-25-l mw5 center ">
                 <main className="pa4 green ">
@@ -10,25 +10,25 @@ export const SignIn = ({ onRouteChange }) => {
                             <legend className="f2 fw6 ph0 mh0">Sign In</legend>
                             <div className="mt3">
                                 {/* <label className="db fw6 lh-copy f6" for="email-address">Email</label> */}
-                                <input className="pa2 br3 input-reset ba b--green bg-transparent hover-green w-100" 
-                                    type="email" 
-                                    name="email-address"  
-                                    id="email-address" 
-                                    placeholder='Email'/>
+                                <input className="pa2 br3 input-reset ba b--green bg-transparent hover-green w-100"
+                                    type="email"
+                                    name="email-address"
+                                    id="email-address"
+                                    placeholder='Email' />
                             </div>
                             <div className="mv3">
                                 {/* <label className="db fw6 lh-copy f6" for="password">Password</label> */}
-                                <input className="b br3 pa2 input-reset ba b--green bg-transparent hover-green w-100" 
-                                    type="password" 
-                                    name="password"  
-                                    id="password" 
-                                    placeholder='Password'/>
+                                <input className="b br3 pa2 input-reset ba b--green bg-transparent hover-green w-100"
+                                    type="password"
+                                    name="password"
+                                    id="password"
+                                    placeholder='Password' />
                             </div>
                             {/* <label className="pa0 ma0 lh-copy f6 pointer"><input type="checkbox"/> Remember me</label> */}
                         </fieldset>
                         <div>
-                            <input className="b ph3 pv2 br3 input-reset ba b--green bg-transparent grow pointer f6 dib green" 
-                                type="submit" 
+                            <input className="b ph3 pv2 br3 input-reset ba b--green bg-transparent grow pointer f6 dib green"
+                                type="submit"
                                 value="Log in"
                                 onClick={() => onRouteChange('home')}
                             />

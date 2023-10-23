@@ -9,25 +9,25 @@ import { FaceRecognition } from "./components/FaceRecognition/FaceRecognition";
 import { SignIn } from "./components/SignIn/SignIn";
 import { Register } from "./components/Register/Register";
 
-export default class App extends Component{
-    constructor(){
+export default class App extends Component {
+    constructor() {
         super();
         this.state = {
             input: '',
-            imageUrl:'',
+            imageUrl: '',
             box: {},
             route: 'sign_in',
             isSignedIn: false,
         }
     }
 
-    onRouteChange =(route) => {
-        (route === 'sign_out') ? this.setState({isSignedIn: false})
-        :   //(route === 'home') ? this.setState({isSignedIn: true})
+    onRouteChange = (route) => {
+        (route === 'sign_out') ? this.setState({ isSignedIn: false })
+            :   //(route === 'home') ? this.setState({isSignedIn: true})
             // :   
-        
-        this.setState({route: route})
-        
+
+            this.setState({ route: route })
+
     }
 
     calculateFaceLocation = (data) => {
@@ -46,23 +46,23 @@ export default class App extends Component{
 
     displayFaceBox = (box) => {
         // console.log(box)
-        this.setState({box: box})
+        this.setState({ box: box })
     }
 
     onInputChange = (event) => {
-        this.setState({input: event.target.value})
+        this.setState({ input: event.target.value })
         console.log('Image URL:', event.target.value);
     }
 
     onButtonSubmit = () => {
         console.log('Fetching the Image... ')
-        this.setState({imageUrl: this.state.input})
+        this.setState({ imageUrl: this.state.input })
 
         const PAT = '';         // Enter your PAT
         const USER_ID = '';     // Enter your username  
         const APP_ID = 'facerecognitionbrain-frontend';
         const MODEL_ID = 'face-detection';
-        const MODEL_VERSION_ID = '6dc7e46bc9124c5c8824be4822abe105';    
+        const MODEL_VERSION_ID = '6dc7e46bc9124c5c8824be4822abe105';
         const IMAGE_URL = this.state.input;
 
         const raw = JSON.stringify({
@@ -96,30 +96,30 @@ export default class App extends Component{
             // .then(result => console.log(result.outputs[0].data.regions[0].region_info.bounding_box))
             .then(result => this.displayFaceBox(this.calculateFaceLocation(result)))
             .catch(error => console.log('error', error));
-            
-        }
 
-    render(){
+    }
+
+    render() {
         const { imageUrl, box, route, isSignedIn } = this.state;
-        return(
+        return (
             <div className="App">
                 <ParticlesBg type="coweb" bg={true} />
                 <Navigation onRouteChange={this.onRouteChange} isSignedIn={isSignedIn}></Navigation>
-                <Logo></Logo>       
-                {   (route === 'home') ? 
-                        <div>
-                            <Rank></Rank>
-                            <ImageLinkForm 
-                                onInputChange={this.onInputChange}
-                                onButtonSubmit={this.onButtonSubmit}>
-                            </ImageLinkForm>
-                            <FaceRecognition imageUrl={imageUrl} box={box}></FaceRecognition>
-                        </div>
-                    :   (route === 'sign_in') ? 
-                            <SignIn onRouteChange={this.onRouteChange}></SignIn>
-                        :   (route === 'sign_up') ?
-                                <Register></Register>
-                            :   console.log('Routing Error!!!')
+                <Logo></Logo>
+                {(route === 'home') ?
+                    <div>
+                        <Rank></Rank>
+                        <ImageLinkForm
+                            onInputChange={this.onInputChange}
+                            onButtonSubmit={this.onButtonSubmit}>
+                        </ImageLinkForm>
+                        <FaceRecognition imageUrl={imageUrl} box={box}></FaceRecognition>
+                    </div>
+                    : (route === 'sign_in') ?
+                        <SignIn onRouteChange={this.onRouteChange}></SignIn>
+                        : (route === 'sign_up') ?
+                            <Register></Register>
+                            : console.log('Routing Error!!!')
                 }
             </div>
         )

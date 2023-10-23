@@ -10,8 +10,8 @@ export function CounterButton() {
     return(
         <div>
             <button onClick={handleClick}
-            style={{margin:'3%', padding:"2%", color:"green" , fontSize:"3rem", fontFamily:"Ubuntu Mono", background: "black"}}>
-                Clicked {count} times!
+                style={{margin:'3%', padding:"2%", color:"green" , fontSize:"3rem", fontFamily:"Ubuntu Mono", background: "black"}}>
+                    Clicked {count} times!
             </button>
 
         </div>
