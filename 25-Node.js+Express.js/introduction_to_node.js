@@ -13,3 +13,6 @@ setTimeout(() => {
 }, 6000);   // 6sec. wait time!
 
 // Process.exit() / .exit:   Exit the process/console. 
+
+
+// globalThis: exists in node as the browser's window object, as well as in the browser for a unified codebase integration (ES2020)
