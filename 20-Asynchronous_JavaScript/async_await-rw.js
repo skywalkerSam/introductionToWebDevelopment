@@ -3,14 +3,12 @@ fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => response.json())
     .then(console.log)
 
-
 // Async Await example
 async function fetchUsers() {
     const users = await fetch('https://jsonplaceholder.typicode.com/users')
     const data = await users.json()
     console.log(data)
 }
-
 // Don't forget to call the function!
 
 
@@ -21,12 +19,12 @@ urls = [
 ]
 
 
-const getData = async function() {
+const getData = async function () {
     try {
         const [users, posts, albums] = await Promise.all
             (urls.map(url => fetch(url)
-            .then(response => response.json())
-        ))
+                .then(response => response.json())
+            ))
         console.log('users', users)
         console.log('posts', posts)
         console.log('albums', albums)
