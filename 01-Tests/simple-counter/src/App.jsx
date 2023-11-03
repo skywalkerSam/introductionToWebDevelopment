@@ -2,6 +2,7 @@ import { Component } from "react";
 import './App.css';
 import { Counter } from "./components/Counter";
 import 'tachyons';
+import { CounterNuclear } from "./components/CounterNuclear";
 
 
 export default class App extends Component{
@@ -15,6 +16,7 @@ export default class App extends Component{
           </header>
         </div>
           <Counter></Counter>
+          {/* <CounterNuclear></CounterNuclear> */}
 
       </div>
     )
