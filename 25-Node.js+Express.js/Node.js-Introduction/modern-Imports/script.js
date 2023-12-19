@@ -1,4 +1,4 @@
-import { secondNumber } from "./module.js";
+import { secondNumber } from "./module.js";     // .js is important to add here!
 
 const a = 64;
 const b = secondNumber;

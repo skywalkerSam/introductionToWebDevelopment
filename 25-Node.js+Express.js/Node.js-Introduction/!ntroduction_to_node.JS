@@ -1,3 +1,5 @@
+// fs, http, nodemon
+
 console.log('Hello World...');
 console.log(process.platform)
 console.log(__dirname);     

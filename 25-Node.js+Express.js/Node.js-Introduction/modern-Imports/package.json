@@ -1,5 +1,5 @@
 {
-  "name": "modernimportmethod",
+  "name": "modern-imports",
   "version": "1.0.0",
   "description": "Modern Imports in NodeJS (v12 or later)",
   "main": "module.js",
