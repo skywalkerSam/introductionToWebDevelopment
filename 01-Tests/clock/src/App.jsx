@@ -1,4 +1,8 @@
-import { useState, useEffect} from "react";
+// Dev: @skywalkerSam
+// Purpose: A simple digital clock
+// Date: 12023.12.21.1712
+
+import { useState, useEffect } from "react";
 import styled from 'styled-components';
 import 'tachyons';
 
@@ -9,6 +13,7 @@ const AppContainer = styled.div`
   height: 100vh;
   width: 100vw;
   background-color: black;
+  font-family: 'Roboto', sans-serif;
   `;
 
 const App = () => {
@@ -28,7 +33,7 @@ const App = () => {
   const [cDate, setDate] = useState(currentDate);
 
   const updateTime = () => {
-    let newTime = new Date().toLocaleString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false});
+    let newTime = new Date().toLocaleString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
     setTime(newTime);
   };
 
@@ -70,10 +75,10 @@ const App = () => {
   return (
     <AppContainer>
       <div className="red">
-        <h1>{cTime}</h1>
-        <h4>{cDay}</h4>
-        <h5>{cDate}</h5>
-        <h6>{cTimezone}</h6>
+        <h1 className="tc">{cTime}</h1>
+        <h4 className="tc">{cDay}</h4>
+        <h5 className="tc">{cDate}</h5>
+        <h6 className="tc">{cTimezone}</h6>
       </div>
     </AppContainer>
   );
