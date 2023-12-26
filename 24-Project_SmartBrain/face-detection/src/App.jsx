@@ -55,8 +55,8 @@ export default class App extends Component{
         console.log('Fetching the Image... ')
         this.setState({imageUrl: this.state.input})
 
-        const PAT = '46286541c4f34ed9b4f218f285777e05';
-        const USER_ID = 'skywalkersam';     
+        const PAT = '';
+        const USER_ID = '';     
         const APP_ID = 'facerecognitionbrain-frontend';
         const MODEL_ID = 'face-detection';
         const MODEL_VERSION_ID = '6dc7e46bc9124c5c8824be4822abe105';    
