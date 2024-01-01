@@ -1,0 +1,14 @@
+{
+  "name": "santa-helper",
+  "version": "1.0.0",
+  "description": "Santa helper exercise with node using the 'fs' module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "skywalkersam",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
