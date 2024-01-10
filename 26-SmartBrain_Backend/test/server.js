@@ -1,4 +1,4 @@
-// face-detection backend
+// face-detection: backend
 
 const express = require('express');
 const bcrypt = require('bcrypt');
@@ -19,7 +19,7 @@ const db = {
             id: '0',
             name: 'sam',
             email: 'sam@skywalkersam.dev',
-            // password: 'sam',
+            password: 'sam',
             joined: new Date(),
             entries: 0,
         },
@@ -52,33 +52,45 @@ app.get('/', (req, res) => {
 });
 
 app.post('/signin', (req, res) => {
-    // if (req.body.email === db.users[0].email && req.body.password === db.users[0].password) {
-    //     res.json("Signing In...");
-    // } else {
-    //     res.status(400).json("Error signing in...");
-    // }
-    const { email, password } = req.body;
-    if (email in db.users) {
-        bcrypt.compare(password, hash, function(err, result) {
-            console.log(result); 
-        });
+
+    if (req.body.email === db.users[0].email && req.body.password === db.users[0].password) {
+        // res.json("Signing In...");
+        res.json(db.users[0]);
+    } else {
+        res.status(400).json("Error signing in...");
     }
+
+    // const { email, password } = req.body;
+    // if (email in db.users) {
+    //     bcrypt.compare(password, hash, function(err, result) {
+    //         console.log(result); 
+    //     });
+    // }
+
 });
 
 
 app.post('/signup', (req, res) => {
+
     const { name, email, password } = req.body;
+    if (!name || !email || !password) {
+        return res.status(400).json("Error signing up...");
+    }
+
     bcrypt.hash(password, saltRounds, function(err, hash) {
         db.users.push({
             id: '2',
             name: name,
             email: email,
-            password: hash,
+            // password: hash,
             joined: new Date(),
             entries: 0,
         });
-    res.json(db.users[db.users.length - 1].name + "! Signed Up Successfully...");
+
+    res.json(db.users[db.users.length - 1]);
+    // res.json("Signed Up Successfully...");
     });
+
 });
 
 app.get('/profile/:userId', (req, res) => {
@@ -96,7 +108,7 @@ app.get('/profile/:userId', (req, res) => {
 });
 
 // PUT
-app.post('/image/:userId', (req, res) => {      
+app.put('/image', (req, res) => {      
     const { userId } = req.params;
     let status = false;
     db.users.forEach(user => {
@@ -106,9 +118,11 @@ app.post('/image/:userId', (req, res) => {
             return res.json(user.entries);
         }
     });
+
     if (!status) {
         return res.status(400).json("Error updating entries...");
     }
+
 });
 
 app.listen(port, () => {
