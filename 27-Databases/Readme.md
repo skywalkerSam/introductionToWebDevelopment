@@ -3,8 +3,7 @@
 - Database Management System (DBMS)
 
 ## Relational Databases / SQL   : Schema
-
-    Structured Data
+`Structured Data`
 
 - PostgreSQL
 - MySQL
@@ -18,8 +17,7 @@
 - TERADATA
 
 ## Non-Relational Databases / NoSQL     : No-Schema
-
-    Non-Structured Data
+`Non-Structured Data`
 
 - Redis
 - Apache CouchDB, "Time to relax"
@@ -32,7 +30,7 @@
 ## Getting Started with `PostgreSQL`
 
 - Windows installation is a shitshow, using `WSL`!
-- Use [DBeaver](https://dbeaver.io/download/)
+- Use [DBeaver](https://dbeaver.io/download/) for database management!
 
 Install DBeaver using `winget`
 
