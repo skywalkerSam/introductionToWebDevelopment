@@ -1,8 +1,14 @@
 # Introduction to Databases
+- Structured Query Language (`SQL`)
+- Database Management System (`DBMS`)
+- Initially, Structured English Query Language (`SEQUEL`) 
+- Developed in the `1970s`
 
-- Database Management System (DBMS)
+## Relational Databases (`RDBMS`)
+`SQL`
 
-## Relational Databases / SQL   : Schema
+`Schema`
+
 `Structured Data`
 
 - PostgreSQL
@@ -16,7 +22,9 @@
 - HyperSQL
 - TERADATA
 
-## Non-Relational Databases / NoSQL     : No-Schema
+## Non-Relational Databases 
+`NoSQL`
+
 `Non-Structured Data`
 
 - Redis
@@ -27,12 +35,12 @@
 - riak
 - MongoDB, Document Oriented - (MongoDB Query Language)
 
-## Getting Started with `PostgreSQL`
+## `Getting Started` with PostgreSQL
 
 - Windows installation is a shitshow, using `WSL`!
 - Use [DBeaver](https://dbeaver.io/download/) for database management!
 
-Install DBeaver using `winget`
+## `Install DBeaver` using winget
 
 ```shell
 winget search dbeaver
@@ -41,13 +49,13 @@ winget search dbeaver
 winget install dbeaver.dbeaver
 ```
 
-Install `postgresql` using `apt`
+## `Install postgresql` using APT
 
 ```shell
 sudo apt install postgresql
 ```
 
-Start the postgresql service
+## Start the `postgresql service`
 
 ```shell
 sudo systemctl start postgresql
@@ -56,7 +64,7 @@ sudo systemctl start postgresql
 - status
 - restart
 
-Log in as root user - postgres
+## `Log in` as root user - postgres
 
 ```shell
 sudo su - postgres
@@ -66,42 +74,42 @@ sudo su - postgres
 psql -U postgres
 ```
 
-Change database user `password`
+## Change database user `password`
 
 ```shell
 ALTER USER username WITH PASSWORD 'new_password';
 ```
 
-Jumping directy to a specfic database
+## `Log In` to a specific database
 
 ```shell
 psql -h localhost -U postgres -d test
 ```
 
-Create a new database
+## `Create` a new database
 
 ```shell
 createdb test
 ```
 
-List databases
+## `List databases`
 ```shell
 \list
 ```
 ```shell
 \l
 ```
-List users
+## `List users`
 ```shell
 \du
 ```
 
-### [SQL Data Types](https://www.digitalocean.com/community/tutorials/sql-data-types)
+## [SQL Data Types](https://www.digitalocean.com/community/tutorials/sql-data-types)
 
 - Depending on different databases, some data type might not work in one while working flawlessly in another );
 - Data types often could be database specific!
 
-Numeric
+### Numeric
 - bit
 - tinyint
 - smallint
@@ -112,45 +120,44 @@ Numeric
 - float
 - real
 
-Date and Time
+### Date and Time
 - date
 - time
 - datetime
 - timestamp
 - year
 
-Character and String
+### Character and String
 - char
 - varchar
 - text
 
-Binary (Not supported in MySQL)
+### Binary (Not supported in MySQL)
 - binary
 - image
 
-Miscellaneous
+### Miscellaneous
 - json
 - xml
 
-`Create` a table
+## `Create` a table
 ```shell
 CREATE TABLE table_name (column_1 datatype, column_2 datatype, column_3 datatype);
 ```
 
-- The uppercase syntax is just a formality, small case works too ;)
-- The semicolon ( ; ) at the end of the syntax is important!
+- The uppercase syntax is just a formality, small case works too... lol ;)
+- The semicolon ( `;` ) at the end of the syntax is `Important`!
 
 ```shell
 create table users (name text, age smallint, birthday date);
 ```
 
-`List` tables
+## `List` tables
 ```shell
 \d
 ```
 
-`Insert` into a table
-
+## `Insert` into a table
 ```shell
 INSERT INTO table_name(column_1, column_2, column_3) VALUES (value_1, value_2, value_3);
 ```
@@ -158,18 +165,161 @@ INSERT INTO table_name(column_1, column_2, column_3) VALUES (value_1, value_2, v
 insert into users(name, age, birthday) values ('Sam', 32, '2002-12-31');
 ```
 
-`Select` from a table
+## `Select` from a table
 ```shell
 SELECT name, age, birthday FROM users;
 ```
-Wildcard ( `*` )
+## The `most used command` in SQL
+- Wildcard ( `*` )
+```shell
+select * from table_name;
+```
 ```shell
 select * from users;
 ```
 
+## Alter table to `add a new column`
+```shell
+ALTER TABLE table_name ADD column_name datatype;
+```
+```shell
+alter table users add score smallint;
+```
+
+## `Update value` based on certain condition
+```shell
+UPDATE table_name SET column_name = value WHERE column_identifier = column_value;
+```
+```shell
+update users set score=0 where name='Sam';
+```
+### `AND` & `OR` Operators, just like Javascript );
+```shell
+update users set score=0 where name='Sam' or name='Starboy';
+```
+
+## Find all column names that `starts with the letter 'A'`
+- It's case-sensitive so, it's A `not 'a'`
+- `%` here means basically, whatever!
+```shell
+SELECT * FROM table_name WHERE column_name LIKE 'A%';
+```
+```shell
+select * from users where name like 'A%';
+```
+### And, vice-versa ( ends with `a`)
+```shell
+select * from users where name like '%a';
+```
+
+## Sort the table in `Descending Order`
+```shell
+SELECT * FROM table_name ORDER BY column_name DESC;
+```
+```shell
+select * from users order by score desc;
+```
+### And, vice-versa ( `Ascending Order` )
+```shell
+select * from users order by score asc;
+```
+
+## SQL Functions: Average,`AVG()`
+```shell
+SELECT AVG(column_name) FROM table_name;
+```
+```shell
+select avg(score) from users;
+```
+
+## `SUM()`
+```shell
+SELECT SUM(column_name) FROM table_name;
+```
+```shell
+select sum(score) from users;
+```
+
+## `COUNT()`
+```shell
+SELECT COUNT(column_name) FROM table_name;
+```
+```shell
+select count(name) from users;
+```
+
+## Joining Tables:  Create Table `login`
+- ID auto-incrementing not null, a `Primary Key`
+```shell
+CREATE TABLE login(
+  ID serial NOT NULL PRIMARY KEY,
+  secret VARCHAR (100) NOT NULL,
+  name text UNIQUE NOT NULL
+);
+```
+
+## `Insert` Into login
+```shell
+INSERT INTO login (secret,name) VALUES ('xyz', 'Sam');
+```
+```shell
+insert into login(secret,name) values('idk', 'Starboy');
+```
+### Read the table 
+```shell
+ select * from login;
+```
+
+## Let's JOIN `users` and `login`
+The real power of Relational Databases! (`Schemas`), Separation of concerns!
+
+- Sam is a foreign key in login, and in users Sam is a primary key. (`name`)
+```shell
+SELECT * FROM table_1 JOIN table_2 ON table_1.identifier = table_2.identifier;
+```
+```shell
+select * from users join login on users.name = login.name;
+```
+
+## `Delete` from a table
+```shell
+DELETE FROM table_name WHERE column='Something';
+```
+```shell
+delete from login where name='Unknown';
+```
+
+## `Drop Table` ;)
+- Be Careful with this!
+
+```shell
+DROP TABLE table_name;
+```
+```shell
+drop table users;
+```
+
+### just got access to prod...
+![](drop_database_prod.jpg " *Intern after deleting the production database* ")
+## ;)
+
+## `Drop Database`!
+- Be `Extra Careful` with this!
+- You can't drop the database while you're currently logged in to the same database.
+```shell
+DROP DATABASE database_name;
+```
+```shell
+drop database test;
+```
+
+### List available databases...
+```shell
+\list
+```
 
 
-`PostgreSQL` Info...
+## `PostgreSQL` Info...
 ```shell
 psql --version
 ```
@@ -177,7 +327,14 @@ psql --version
 psql -V
 ```
 
-Stuck, Need `Help?`
+### Stuck, Need `Help?`
 ```shell
 psql --help
 ```
+
+## Here's something fun to think about...
+![](the_program_paradox.jpg "How did they program a programming language to program a program to program programs?")
+
+## Until next time...
+## Take Care.
+## ;)
