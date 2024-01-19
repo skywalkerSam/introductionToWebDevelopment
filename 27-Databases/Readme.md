@@ -248,6 +248,75 @@ SELECT COUNT(column_name) FROM table_name;
 select count(name) from users;
 ```
 
+## Joining Tables:  Create Table `login`
+- ID auto-incrementing not null, a `Primary Key`
+```shell
+CREATE TABLE login(
+  ID serial NOT NULL PRIMARY KEY,
+  secret VARCHAR (100) NOT NULL,
+  name text UNIQUE NOT NULL
+);
+```
+
+## `Insert` Into login
+```shell
+INSERT INTO login (secret,name) VALUES ('xyz', 'Sam');
+```
+```shell
+insert into login(secret,name) values('idk', 'Starboy');
+```
+### Read the table 
+```shell
+ select * from login;
+```
+
+## Let's JOIN `users` and `login`
+The real power of Relational Databases! (`Schemas`), Separation of concerns!
+
+- Sam is a foreign key in login, and in users Sam is a primary key. (`name`)
+```shell
+SELECT * FROM table_1 JOIN table_2 ON table_1.identifier = table_2.identifier;
+```
+```shell
+select * from users join login on users.name = login.name;
+```
+
+## `Delete` from a table
+```shell
+DELETE FROM table_name WHERE column='Something';
+```
+```shell
+delete from login where name='Unknown';
+```
+
+## `Drop Table` ;)
+- Be Careful with this!
+
+```shell
+DROP TABLE table_name;
+```
+```shell
+drop table users;
+```
+
+### just got access to prod...
+![](drop_database_prod.jpg " *Intern after deleting the production database* ")
+## ;)
+
+## `Drop Database`!
+- Be `Extra Careful` with this!
+- You can't drop the database while you're currently logged in to the same database.
+```shell
+DROP DATABASE database_name;
+```
+```shell
+drop database test;
+```
+
+### List available databases...
+```shell
+\list
+```
 
 
 ## `PostgreSQL` Info...
@@ -262,3 +331,10 @@ psql -V
 ```shell
 psql --help
 ```
+
+## Here's something fun to think about...
+![](the_program_paradox.jpg "How did they program a programming language to program a program to program programs?")
+
+## Until next time...
+## Take Care.
+## ;)
