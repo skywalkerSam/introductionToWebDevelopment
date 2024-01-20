@@ -1,4 +1,4 @@
-# Introduction to Databases
+# [Introduction to Databases](https://www.digitalocean.com/community/conceptual-articles/an-introduction-to-databases)
 - Structured Query Language (`SQL`)
 - Database Management System (`DBMS`)
 - Initially, Structured English Query Language (`SEQUEL`) 
