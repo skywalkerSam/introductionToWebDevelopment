@@ -312,7 +312,7 @@ drop table users;
 ```
 
 ### just got access to prod...
-![](drop_database_prod.jpg " *Intern after deleting the production database* ")
+![*Intern after deleting the production database*](drop_database_prod.jpg)
 ## ;)
 
 ## `Drop Database`!
@@ -391,7 +391,7 @@ psql --help
 ```
 
 ## Here's something fun to think about...
-![](the_program_paradox.jpg "How did they program a programming language to program a program to program programs?")
+![How did they program a programming language to program a program to program programs?](./the_program_paradox.jpg)
 
 ## Until next time...
 ## Take Care.
@@ -411,4 +411,3 @@ psql --help
 - Using [DBeaver](https://dbeaver.io/) for database management
 - Using [knex](https://knexjs.org/), but [pg-promise](https://vitaly-t.github.io/pg-promise/) is good too.
 - Using [Pycharm](https://www.jetbrains.com/pycharm/) to write is [Markdown](https://www.markdownguide.org/) file for some reason... Use [ghostwriter](https://ghostwriter.kde.org/download/#windows) ;)
-- 
