@@ -87,7 +87,9 @@ psql -h localhost -U postgres -d test
 ```
 
 ## `Create` a new database
-
+```shell
+CREATE DATABASE test;
+```
 ```shell
 createdb test
 ```
@@ -99,9 +101,15 @@ createdb test
 ```shell
 \l
 ```
+
 ## `List users`
 ```shell
 \du
+```
+
+## `Clear` Screen
+```shell
+\! clear
 ```
 
 ## [SQL Data Types](https://www.digitalocean.com/community/tutorials/sql-data-types)
@@ -147,6 +155,7 @@ CREATE TABLE table_name (column_1 datatype, column_2 datatype, column_3 datatype
 
 - The uppercase syntax is just a formality, small case works too... lol ;)
 - The semicolon ( `;` ) at the end of the syntax is `Important`!
+- If you don't put `;` at the end, the console will throw an `error`, press `CTRL + C` and continue...
 
 ```shell
 create table users (name text, age smallint, birthday date);
@@ -169,6 +178,9 @@ insert into users(name, age, birthday) values ('Sam', 32, '2002-12-31');
 ```shell
 SELECT name, age, birthday FROM users;
 ```
+
+### `Tip:` Use Up & Down Arrow Keys to move through used commands in console.
+
 ## The `most used command` in SQL
 - Wildcard ( `*` )
 ```shell
@@ -318,6 +330,52 @@ drop database test;
 \list
 ```
 
+# `Setting up a database` from scratch! 
+- Part of the `face-detection backend` project 
+
+## Create a database
+```shell
+CREATE DATABASE prod;
+```
+
+## Give database a structure: `users`
+```shell
+CREATE TABLE users (
+  id serial PRIMARY KEY,
+  name VARCHAR(100),
+  email text UNIQUE NOT NULL,
+  entries BIGINT DEFAULT 0,
+  joined TIMESTAMP NOT NULL
+);
+```
+### `Verify` Creation
+```shell
+select * from users;
+```
+
+## `login`
+```shell
+CREATE TABLE login (
+  id serial PRIMARY KEY,
+  hash varchar(100) NOT NULL,
+  email text UNIQUE not null
+);
+```
+### `Verify` Creation
+```shell
+select * from login;
+```
+
+## `Clear` Screen
+```shell
+\! clear
+```
+
+### Use a framework like [knex](https://knexjs.org/) or, [pg-promise](https://vitaly-t.github.io/pg-promise/) to connect backend with the database...
+
+
+
+
 
 ## `PostgreSQL` Info...
 ```shell
@@ -338,3 +396,19 @@ psql --help
 ## Until next time...
 ## Take Care.
 ## ;)
+
+##
+##
+##
+
+## Project Specific Details: `face-detection backend`
+- Using [VS Code](https://code.visualstudio.com/) for this, and for all other projects, for all times... It's the best `:)`
+- Using [React.js](https://react.dev/) with [create-react-app](https://create-react-app.dev/), but [vite](https://vitejs.dev/) is the best.
+- Using [Express.js](https://expressjs.com/) for backend
+- Using [npm](https://www.npmjs.com/) instead of [yarn](https://yarnpkg.com/)... idk ;)
+- Using [Postman](https://www.postman.com/) for endpoints testing ([APIs](https://www.postman.com/what-is-an-api/))
+- Using [PostgreSQL](https://www.postgresql.org/) on [WSL/Ubuntu](https://learn.microsoft.com/en-us/windows/wsl/)
+- Using [DBeaver](https://dbeaver.io/) for database management
+- Using [knex](https://knexjs.org/), but [pg-promise](https://vitaly-t.github.io/pg-promise/) is good too.
+- Using [Pycharm](https://www.jetbrains.com/pycharm/) to write is [Markdown](https://www.markdownguide.org/) file for some reason... Use [ghostwriter](https://ghostwriter.kde.org/download/#windows) ;)
+- 
