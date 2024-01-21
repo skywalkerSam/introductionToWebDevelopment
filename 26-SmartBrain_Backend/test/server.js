@@ -3,6 +3,24 @@
 const express = require('express');
 const bcrypt = require('bcrypt');
 const cors = require('cors');
+const knex = require('knex')
+
+const db = knex({
+    client: 'pg',
+    connection: {
+        host: '127.0.0.1',
+        port: 5432,
+        user: 'postgres',
+        password: 'notpostgres',
+        database: 'prod'
+    }
+});
+
+// console.log(db.select('*').from('users'));
+db.select('*').from('users').then(data => {
+    console.log(data);
+});
+
 
 const app = express();
 
@@ -13,38 +31,38 @@ const port = 3333;
 const saltRounds = 10;
 
 // not a real db ;)
-const db = {
-    users: [
-        {
-            id: '0',
-            name: 'sam',
-            email: 'sam@skywalkersam.dev',
-            password: 'sam',
-            joined: new Date(),
-            entries: 0,
-        },
-        {
-            id: '1',
-            name: 'starboy',
-            email: 'starboy@skywalkersam.dev',
-            // password: 'starboy',
-            joined: new Date(),
-            entries: 0,
-        }
-    ],
-    login: [
-        {
-            id: '0',
-            hash: '',
-            email: 'sam@skywalkersam.dev',
-        },
-        {
-            id: '1',
-            hash: '',
-            email: 'starboy@skywalkersam.dev',
-        }
-    ]
-}
+// const db = {
+//     users: [
+//         {
+//             id: '0',
+//             name: 'sam',
+//             email: 'sam@skywalkersam.dev',
+//             password: 'sam',
+//             joined: new Date(),
+//             entries: 0,
+//         },
+//         {
+//             id: '1',
+//             name: 'starboy',
+//             email: 'starboy@skywalkersam.dev',
+//             // password: 'starboy',
+//             joined: new Date(),
+//             entries: 0,
+//         }
+//     ],
+//     login: [
+//         {
+//             id: '0',
+//             hash: '',
+//             email: 'sam@skywalkersam.dev',
+//         },
+//         {
+//             id: '1',
+//             hash: '',
+//             email: 'starboy@skywalkersam.dev',
+//         }
+//     ]
+// }
 
 
 app.get('/', (req, res) => {
@@ -71,23 +89,33 @@ app.post('/signin', (req, res) => {
 
 
 app.post('/signup', (req, res) => {
-
     const { name, email, password } = req.body;
     if (!name || !email || !password) {
-        return res.status(400).json("Error signing up...");
+        return res.status(400).json("Please fill out the required information...!");
     }
-
     bcrypt.hash(password, saltRounds, function(err, hash) {
-        db.users.push({
-            id: '2',
-            name: name,
+        db('users')
+        .returning('*')
+        .insert({
             email: email,
-            // password: hash,
-            joined: new Date(),
-            entries: 0,
-        });
+            name: name,
+            joined: new Date()
+        })
+        .then(user => {
+            res.json(user[0]);
+        })
+        .catch(err => res.status(400).json("Error Signing Up... Try Again!"));   //err
 
-    res.json(db.users[db.users.length - 1]);
+        // db.users.push({
+        //     id: '2',
+        //     name: name,
+        //     email: email,
+        //     // password: hash,
+        //     joined: new Date(),
+        //     entries: 0,
+        // });
+
+    // res.json(db.users[db.users.length - 1]);
     // res.json("Signed Up Successfully...");
     });
 
