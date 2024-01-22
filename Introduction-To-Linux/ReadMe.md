@@ -278,6 +278,31 @@ sudo snap install package_name
 sudo snap install package_name --classic
 ```
 
+## `List` the changes associated with the snap
+```shell
+snap changes package_name
+```
+```shell
+snap changes nextcloud
+```
+
+## `Info` about the snap
+```shell
+snap info package_name
+```
+```shell
+snap info nextcloud
+```
+
+## `Snap Connections` 
+```shell
+snap connections package_name
+```
+```shell
+snap connections nextcloud
+```
+
+
 ## `Remove` a package
 ```shell
 sudo snap remove package_name
@@ -285,8 +310,12 @@ sudo snap remove package_name
 
 ## Some useful `snap-packages`
 - code  (VS Code)
+- postman
 - chromium
+- firefox
+- nextcloud
 - spotify
+- pycharm
 - microk8s
 
 
