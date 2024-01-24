@@ -39,7 +39,7 @@
 
 - Windows installation is a shitshow, using `WSL`!
 - Use [DBeaver](https://dbeaver.io/download/) for database management!
-
+- Or, just use [VS Code](https://code.visualstudio.com/) for everything... lol ;)
 ## `Install DBeaver` using winget
 
 ```shell
@@ -401,7 +401,7 @@ psql --help
 ##
 ##
 
-## Project Specific Details: `face-detection backend`
+## Project Specific Details: `face-detection-backend`
 - Using [VS Code](https://code.visualstudio.com/) for this, and for all other projects, for all times... It's the best `:)`
 - Using [React.js](https://react.dev/) with [create-react-app](https://create-react-app.dev/), but [vite](https://vitejs.dev/) is the best.
 - Using [Express.js](https://expressjs.com/) for backend
