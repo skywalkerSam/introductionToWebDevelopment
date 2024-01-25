@@ -29,20 +29,24 @@ app.get('/', (req, res) => {
 app.post('/signin', (req, res) => {
     const { email, password } = req.body;
 
-    db.select('email', 'hash').from('login').where({ email })     // email : email
+    db.select('email', 'hash').from('login').where({ email })
         .then(hash => {
             hash = hash[0].hash;
-            // console.log(hash.length);
-            // res.json(hash);
             if (hash.length) {
                 bcrypt.compare(password, hash, function (err, result) {
-                    // console.log(result);
-                    (result) ? res.json("You're In... Welcome Back :)")
-                        : res.status(400).json("Wrong Credentials...!");
+                    if (result) {
+                        return db.select('*').from('users').where({ email })
+                            .then(user => {
+                                res.json(user[0]);
+                            })
+                            .catch(err => res.status(400).json("Error Signing In...!"));
+                    } else {
+                        res.status(400).json("Wrong Credentials, Try Again...!");
+                    }
                 })
             }
         })
-        .catch(err => res.status(400).json("Error Signing In...!"));
+    .catch(err => res.status(400).json("User not found... Try Signing Up!"));
 });
 
 app.post('/signup', (req, res) => {
@@ -56,7 +60,6 @@ app.post('/signup', (req, res) => {
                 .into('login')
                 .returning('email')
                 .then(loginEmail => {
-                    // console.log(loginEmail);
                     return trx('users')
                         .returning('*')
                         .insert({
@@ -65,13 +68,14 @@ app.post('/signup', (req, res) => {
                             joined: new Date()
                         })
                         .then(user => {
-                            res.json(user[0].name + ", Signed Up Successfully...!");
+                            res.json(user[0]);
+                            // console.log(user[0]);
                         })
                 })
                 .then(trx.commit)
                 .catch(trx.rollback)
         })
-            .catch(err => res.status(400).json("Error Signing Up... Try Again!"));   //err
+            .catch(err => res.status(400).json("User already exists... Try Signing In!"));   
     })
 });
 
@@ -82,7 +86,6 @@ app.get('/profile/:userId', (req, res) => {
         id: userId
     })
         .then(user => {
-            // console.log(user[0]);
             (user.length) ? res.json(user[0])
                 : res.status(400).json("User not found...!");
         })
@@ -91,12 +94,10 @@ app.get('/profile/:userId', (req, res) => {
 
 app.put('/image', (req, res) => {
     const { id } = req.body;
-
-    db('users').where({ id })     // id : id
-        .increment('entries', 1)
+    db('users').where({ id })   
         .returning('entries')
+        .increment('entries', 1)
         .then(entries => {
-            // console.log(entries);
             (entries.length) ? res.json(entries[0].entries)
                 : res.status(400).json("Entry not found...!");
         })
