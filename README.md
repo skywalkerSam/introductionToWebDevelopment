@@ -9,6 +9,8 @@ Getting Started with Web Development
 
 - [freeCodeCamp.org](https://www.freecodecamp.org/)
 
+- [Zero To Mastery](https://zerotomastery.io/)
+
 - [The Complete Web Developer](https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/)
 
 - [The Complete Python Developer](https://www.udemy.com/course/complete-python-developer-zero-to-mastery/)
