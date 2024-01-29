@@ -2,6 +2,11 @@
 
 Getting Started with Web Development
 
+...
+
+![We do these things because...](./Resources/memes/weDoTheseThingsBecause_.jpg)
+
+...
 
 ## Sources:
 
@@ -32,7 +37,7 @@ Getting Started with Web Development
 
 ...
 
-![Just read the documentation](./just-read-the-documentation.jpg)
+![Just read the documentation](./Resources/memes/justReadTheDocumentation_.jpg)
 
 ### Until next time...
 # ;)
