@@ -1,57 +1,109 @@
-# Git - The Version Control System (VCS)
+# [Introduction to Git & GitHub](./Resources/gettingStartedWithGit-ZTM.pdf)
 
-    >_  Git - A popular open source distributed version control system.
+A list of basic `git` commands can be found [here...!](./Resources/git-cheat-sheet-GitHub.pdf)
 
-    >_  Github - A web-based hosting service for version control using Git.
+- `Git`: A popular open source distributed version control system
 
-    >_  Gitlab - A web-based DevOps lifecycle tool that provides a Git repository manager.
+- `Github`: A web-based hosting service for version control using git
+
+- `GitLab`: A web-based DevOps lifecycle tool with a git repository manager
 
 
+## Clone a repository
+```shell
+git clone <URL>
+```
 
-## Basic Git Commands
+## Install using `winget`
+```shell
+winget install git.git
+```
 
-    >_  winget install git.git
+## Install using `brew`
+```shell
+brew install git
+```
 
-    >_  sudo apt install git    / sudo pacman -S git    / sudo dnf install git      / brew install git
+## Install using `apt`
+```shell
+sudo apt install git
+```
 
-    >_  git     / git help      /git --help
+## Install using `dnf`
+```shell
+sudo dnf install git 
+```
 
-    >_  git --version
+## Install using `pacman`
+```shell
+sudo pacman -S git
+```
 
-    >_  git config --list
+## Initialize a git repository (`repo`)
+```shell
+git init
+```
 
-    >_  git config --global user.email "youremail@abc.xyz"
+## `Configure` git user & email
+```shell
+git config --global user.name "Your Name"
+```
+```shell
+git config --global user.email "youremail@abc.xyz"
+```
 
-    >_  git config --global user.name "Your Name"
+## Create a `new-branch` and switch
+```shell
+git branch -M new-branch
+```
 
-    >_  git init
+## `Status` of the repository
+```shell
+git status
+```
+## Fetch upstream & status
+```shell
+git pull ; git status
+```
 
-    >_  git status
+## Add files `--all`
+```shell
+git add .
+```
 
-    >_  git add *       / git add <FILEname\DIRECTORY>      / git add .
+## Commit files
+![git commit -m "WHAT"?](./Resources/memes/gitCommit-m___.png)
+```shell
+git commit -m "Getting Started"
+```
+## ;)
 
-    >_  git rm
+## `Push` changes
+```shell
+git push origin new-branch
+```
 
-    >_  git branch      / git branch <BRANCH-NAME>
+### `Reminder`: Don't fall for this... lol ;)
+![](./Resources/memes/gitWorkflow-LOL.png)
 
-    >_  git branch -M tests
+## Recover/Restore a deleted file
+```shell
+git restore <filename.extension>
+```
 
-    >_  git switch      / git checkout <BRANCH-NAME>
+## Access git `logs`
+```shell
+git log
+```
 
-    >_  git checkout -b <BRANCH-NAME>       : Create & goto the repo...
+## `Be careful` while using this one...
+![git push origin main --force](./Resources/memes/gitPushOriginMain--force.jpg)
+```shell
+git push origin main --force
+```
 
-    >_  git commit -m "Initial Commit"
+`NOTE`: `main` & `master` branches are the same but the conventions have changed... new repositories defaults to the `main` branch. 
 
-    >_  git fetch
+## Until next time...
 
-    >_  git clone <Repo-URL>
-
-    >_  git pull
-
-    >_  git push     / git push origin main\ <BRANCH-NAME>
-
-    >_  git merge main
-
-    >_  git remote -v
-
-    >_  git log
+# ;)
