@@ -7,8 +7,8 @@ Life's one funny mf... I really thought that it was goin' to be easy but what ca
 
 Let's just keep going... im doin' it for the very first time so, maybe i shouldn't expect too much... No Expectations!
 
-
 ## Musical Sources
+
 - [After Hours](https://open.spotify.com/album/4yP0hdKOZPNshxUOjY0cZj)
 - [Starboy](https://open.spotify.com/album/2ODvWsOgouMbaA5xf0RkJe)
 - [AUSTIN](https://open.spotify.com/album/6r1lh7fHMB499vGKtIyJLy)
