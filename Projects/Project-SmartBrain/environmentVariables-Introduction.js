@@ -28,7 +28,7 @@ console.log(process.pid)
 const PORT = process.env.PORT || 3000
 const DATABASE_URL = process.env.DATABASE_URL || 'postgres://localhost:5432/test'
 
-const app = require('http').createServer((req, res) => {res.send('Hello!')})
+const app = require('http').createServer((req, res) => { res.send('Hello!') })
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`)
     console.log(`Database URL is ${DATABASE_URL}`)
@@ -38,8 +38,8 @@ app.listen(PORT, () => {
 /* Setting up environment variables:
 
 BASH: 
-    - PORT=3000 node notes.js     ( server.js )
-    - DATABASE_URL=postgres://localhost:5432/prod node notes.js
+    - PORT=3000 node server.js
+    - DATABASE_URL=postgres://localhost:5432/prod node server.js
 
 Again, setting up env variables inside windows is a shitshow, use WSL!
 
