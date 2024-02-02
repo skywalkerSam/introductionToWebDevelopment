@@ -13,7 +13,7 @@ Enter your Clarifai PAT and username inside `controllers/image.js`.
 - Postman
 - VS Code
 
-## Using `nodemon`, put this under "scripts" in package.json
+## Using nodemon, put this under `"scripts"` in package.json
 
 ```json
 "start": "nodemon server.js"
