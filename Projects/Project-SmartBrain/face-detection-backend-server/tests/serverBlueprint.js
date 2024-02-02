@@ -47,16 +47,17 @@ const db = knex({
     }
 });
 
-app.get('/', (req, res) => { res.json("Welcome to Face Detection API...") });
+app.get('/', (req, res) => {res.json("Welcome to Face Detection API...")});
 
 // Dependency Injection
-app.post('/signin', (req, res) => { signin.handleSignin(req, res, db, bcrypt) });
-app.post('/signup', (req, res) => { signup.handleSignup(req, res, db, bcrypt, saltRounds) });
-app.get('/profile/:userId', (req, res) => { profile.handleGetProfile(req, res, db) });
-app.put('/image', (req, res) => { image.handleImage(req, res, db) });
-app.post('/imageurl', (req, res) => { image.clarifaiRequest(req, res) });
+app.post('/signin', (req, res) => {signin.handleSignin(req, res, db, bcrypt)});
+app.post('/signup', (req, res) => {signup.handleSignup(req, res, db, bcrypt, saltRounds)});
+app.get('/profile/:userId', (req, res) => {profile.handleGetProfile(req, res, db)});
+app.put('/image', (req, res) => {image.handleImage(req, res, db)});
+app.post('/imageurl', (req, res) => {image.clarifaiRequest(req, res)});
 
 
 app.listen(port, () => {
     console.log(`\nServer running on: http://localhost:${port} \n\nPress Ctrl+C to stop.`)
 })
+
