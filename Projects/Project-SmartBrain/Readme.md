@@ -14,6 +14,8 @@ Let's just keep going... im doin' it for the very first time so, maybe i shouldn
 - [AUSTIN](https://open.spotify.com/album/6r1lh7fHMB499vGKtIyJLy)
 - [DAMN.](https://open.spotify.com/album/4eLPsYPBmXABThSJ821sqY)
 - [Her Loss](https://open.spotify.com/album/5MS3MvWHJ3lOZPLiMxzOU6)
+- [Goodbye & Good Riddance](https://open.spotify.com/album/6tkjU4Umpo79wwkgPMV3nZ)
+- [beerbongs & bentleys](https://open.spotify.com/album/6trNtQUgC8cgbWcqoMYkOR)
 - [SPIDER-MAN: Into The Spider-Verse](https://open.spotify.com/album/35s58BRTGAEWztPo9WqCIs)
 - [SPIDER-MAN: ACROSS THE SPIDER-VERSE](https://open.spotify.com/album/1bwbZJ6khPJyVpOaqgKsoZ)
 - [Entergalactic](https://open.spotify.com/album/4aW4iDepQUl5ZCHd1Gli68)
