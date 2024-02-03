@@ -42,7 +42,7 @@ const initialState = {
         id: '',
         name: '',
         email: '',
-        entries: 0,    
+        entries: 0,
         joined: '',
     }
 }
@@ -103,33 +103,33 @@ export default class App extends Component {
     onPictureSubmit = () => {
         this.setState({ imageUrl: this.state.input })
         // const IMAGE_URL = this.state.input;
-        
+
         fetch('http://localhost:3333/imageurl', {
             method: 'post',
-            headers: {'Content-Type': 'application/json'},
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 input: this.state.input
             })
         })
-        .then(response => response.json())
-        .then(result => this.displayFaceBox(this.calculateFaceLocation(result)))
-        .catch(err => console.log(err))
+            .then(response => response.json())
+            .then(result => this.displayFaceBox(this.calculateFaceLocation(result)))
+            .catch(err => console.log(err))
 
         console.log('Fetching the Image... ')
-        
+
         fetch('http://localhost:3333/image', {
             method: 'put',
-            headers: {'Content-Type': 'application/json'},
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 id: this.state.user.id
             })
         })
-        .then(response => response.json())
-        .then(count => {
-            // Object.assign doesn't creates a new object, it references to the original object!
-            this.setState(Object.assign(this.state.user, { entries: count }))
-        })
-        .catch(err => console.log(err))
+            .then(response => response.json())
+            .then(count => {
+                // Object.assign doesn't creates a new object, it references to the original object!
+                this.setState(Object.assign(this.state.user, { entries: count }))
+            })
+            .catch(err => console.log(err))
 
         // const raw = JSON.stringify({
         //     "user_app_id": {
@@ -159,7 +159,7 @@ export default class App extends Component {
         // fetch("https://api.clarifai.com/v2/models/" + MODEL_ID + "/versions/" + MODEL_VERSION_ID + "/outputs", requestOptions)
         //     .then(response => response.json())
         //     .then(result => this.displayFaceBox(this.calculateFaceLocation(result)))
-            
+
         // .catch(error => console.log('Error Occoured: ', error));
     }
 

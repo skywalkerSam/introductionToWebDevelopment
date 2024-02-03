@@ -22,7 +22,7 @@ const handleSignin = (req, res, db, bcrypt) => {
                 })
             }
         })
-    .catch(err => res.status(400).json("User not found... Try Signing Up!"));
+        .catch(err => res.status(400).json("User not found... Try Signing Up!"));
 }
 
 module.exports = {

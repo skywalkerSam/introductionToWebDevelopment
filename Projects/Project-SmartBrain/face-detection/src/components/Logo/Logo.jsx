@@ -1,8 +1,8 @@
 import starboy_logo from './favicon.png';
 
-export function Logo({onRouteChange}) {
+export function Logo({ onRouteChange }) {
 
-  const updateRoute= () => {
+  const updateRoute = () => {
     onRouteChange("sign-in");
   }
 

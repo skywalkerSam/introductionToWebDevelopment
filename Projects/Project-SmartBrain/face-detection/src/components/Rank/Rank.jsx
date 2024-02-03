@@ -1,5 +1,5 @@
-export const Rank = ({name, entries}) => {
-    return(
+export const Rank = ({ name, entries }) => {
+    return (
         <div>
             <div className="white-80 f3 ">
                 {`${name}, Your Current Entries are...`}
