@@ -37,7 +37,7 @@ export class SignIn extends Component {
                     this.props.onRouteChange('face-detect')
                 } else { alert(user) }
             })
-        .catch(err => console.log(err))
+            .catch(err => console.log(err))
     }
 
 

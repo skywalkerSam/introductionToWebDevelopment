@@ -1,6 +1,6 @@
 // Sign Up Route Handler
 
- const handleSignup = (req, res, db, bcrypt, saltRounds) => {
+const handleSignup = (req, res, db, bcrypt, saltRounds) => {
     const { name, email, password } = req.body;
     if (!name || !email || !password) {
         return res.status(400).json("Invalid Form Submission...!");

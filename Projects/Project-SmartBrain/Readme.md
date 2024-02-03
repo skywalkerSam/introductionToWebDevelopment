@@ -21,6 +21,7 @@ Let's just keep going... im doin' it for the very first time so, maybe i shouldn
 - [Entergalactic](https://open.spotify.com/album/4aW4iDepQUl5ZCHd1Gli68)
 - [if...](https://open.spotify.com/playlist/6ROrmnPhG1dB0IXG1zgY0Q)
 - [Peace Of Mind](https://open.spotify.com/playlist/7611gkft61GOQMtpm6sgFR)
+- [Time](https://open.spotify.com/album/63TYyeXlBYoYKNvE6rT3hI)
 
 ## Until next time...
 
