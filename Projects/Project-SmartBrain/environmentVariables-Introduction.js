@@ -25,7 +25,7 @@ console.log(process.pid)
 
 // console.log(process.env)
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000;
 const DATABASE_URL = process.env.DATABASE_URL || 'postgres://localhost:5432/test'
 
 const app = require('http').createServer((req, res) => { res.send('Hello!') })

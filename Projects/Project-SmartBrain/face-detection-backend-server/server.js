@@ -28,7 +28,8 @@ const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
-const port = 3333;
+const PORT = process.env.PORT || 3333;
+// const DATABASE_URL = process.env.DATABASE_URL || 'postgres://localhost:5432/prod'
 const saltRounds = 10;
 
 const app = express();
@@ -57,6 +58,6 @@ app.put('/image', (req, res) => { image.handleImage(req, res, db) });
 app.post('/imageurl', (req, res) => { image.clarifaiRequest(req, res) });
 
 
-app.listen(port, () => {
-    console.log(`\nServer running on: http://localhost:${port} \n\nPress Ctrl+C to stop.`)
+app.listen(PORT, () => {
+    console.log(`\nServer running on: http://localhost:${PORT} \n\nPress Ctrl+C to stop.`)
 })
