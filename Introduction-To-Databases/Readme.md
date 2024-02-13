@@ -35,12 +35,14 @@
 - riak
 - MongoDB, Document Oriented - (MongoDB Query Language)
 
-## `Getting Started` with PostgreSQL
+## Getting Started with `PostgreSQL`
 
 - Windows installation is a shitshow, using `WSL`!
 - Use [DBeaver](https://dbeaver.io/download/) for database management!
 - Or, just use [VS Code](https://code.visualstudio.com/) for everything... lol ;)
-## `Install DBeaver` using winget
+
+
+## Install `DBeaver` using `winget`
 
 ```shell
 winget search dbeaver
@@ -49,7 +51,7 @@ winget search dbeaver
 winget install dbeaver.dbeaver
 ```
 
-## `Install postgresql` using APT
+## Install `postgresql` using `APT`
 
 ```shell
 sudo apt install postgresql
@@ -64,7 +66,7 @@ sudo systemctl start postgresql
 - status
 - restart
 
-## `Log in` as root user - postgres
+## Log in as root: `postgres`
 
 ```shell
 sudo su - postgres
@@ -74,10 +76,21 @@ sudo su - postgres
 psql -U postgres
 ```
 
-## Change database user `password`
+## Create a database
+
+```shell
+createdb test
+```
+
+## Change database `user password`
 
 ```shell
 ALTER USER username WITH PASSWORD 'new_password';
+```
+
+## Create a new database user
+```shell
+CREATE USER starboy WITH PASSWORD 'helloworld...lol';
 ```
 
 ## `Log In` to a specific database
@@ -86,15 +99,12 @@ ALTER USER username WITH PASSWORD 'new_password';
 psql -h localhost -U postgres -d test
 ```
 
-## `Create` a new database
+## Create a new database
 ```shell
 CREATE DATABASE test;
 ```
-```shell
-createdb test
-```
 
-## `List databases`
+## List databases
 ```shell
 \list
 ```
@@ -102,17 +112,18 @@ createdb test
 \l
 ```
 
-## `List users`
+## List users
 ```shell
 \du
 ```
 
-## `Clear` Screen
+## Clear Screen
 ```shell
 \! clear
 ```
+Yes, there's a space before `clear`...!
 
-## [SQL Data Types](https://www.digitalocean.com/community/tutorials/sql-data-types)
+# [SQL Data Types](https://www.digitalocean.com/community/tutorials/sql-data-types)
 
 - Depending on different databases, some data type might not work in one while working flawlessly in another );
 - Data types often could be database specific!
@@ -148,25 +159,26 @@ createdb test
 - json
 - xml
 
-## `Create` a table
+## Create a `table`
 ```shell
 CREATE TABLE table_name (column_1 datatype, column_2 datatype, column_3 datatype);
+```
+
+```shell
+create table users (name text, age smallint, birthday date);
 ```
 
 - The uppercase syntax is just a formality, small case works too... lol ;)
 - The semicolon ( `;` ) at the end of the syntax is `Important`!
 - If you don't put `;` at the end, the console will throw an `error`, press `CTRL + C` and continue...
 
-```shell
-create table users (name text, age smallint, birthday date);
-```
 
-## `List` tables
+## List tables
 ```shell
 \d
 ```
 
-## `Insert` into a table
+## Insert into a table
 ```shell
 INSERT INTO table_name(column_1, column_2, column_3) VALUES (value_1, value_2, value_3);
 ```
@@ -174,15 +186,17 @@ INSERT INTO table_name(column_1, column_2, column_3) VALUES (value_1, value_2, v
 insert into users(name, age, birthday) values ('Sam', 32, '2002-12-31');
 ```
 
-## `Select` from a table
+## Select from a table
 ```shell
 SELECT name, age, birthday FROM users;
 ```
 
-### `Tip:` Use Up & Down Arrow Keys to move through used commands in console.
+`Tip:` Use Up & Down Arrow Keys to move through used commands in console.
 
-## The `most used command` in SQL
+
+## This is probably the most used command in SQL...
 - Wildcard ( `*` )
+
 ```shell
 select * from table_name;
 ```
@@ -198,14 +212,16 @@ ALTER TABLE table_name ADD column_name datatype;
 alter table users add score smallint;
 ```
 
-## `Update value` based on certain condition
+## Update value based on certain condition
 ```shell
 UPDATE table_name SET column_name = value WHERE column_identifier = column_value;
 ```
 ```shell
 update users set score=0 where name='Sam';
 ```
-### `AND` & `OR` Operators, just like Javascript );
+
+
+## `AND` & `OR` Operators, just like Javascript );
 ```shell
 update users set score=0 where name='Sam' or name='Starboy';
 ```
@@ -213,30 +229,32 @@ update users set score=0 where name='Sam' or name='Starboy';
 ## Find all column names that `starts with the letter 'A'`
 - It's case-sensitive so, it's A `not 'a'`
 - `%` here means basically, whatever!
+
 ```shell
 SELECT * FROM table_name WHERE column_name LIKE 'A%';
 ```
 ```shell
 select * from users where name like 'A%';
 ```
-### And, vice-versa ( ends with `a`)
+## And, vice-versa ( ends with `a`)
 ```shell
 select * from users where name like '%a';
 ```
 
-## Sort the table in `Descending Order`
+## `Sort` the table in Descending Order
 ```shell
 SELECT * FROM table_name ORDER BY column_name DESC;
 ```
 ```shell
 select * from users order by score desc;
 ```
-### And, vice-versa ( `Ascending Order` )
+
+## And, vice-versa ( `Ascending Order` )
 ```shell
 select * from users order by score asc;
 ```
 
-## SQL Functions: Average,`AVG()`
+## `SQL Functions`: Average, AVG()
 ```shell
 SELECT AVG(column_name) FROM table_name;
 ```
@@ -244,7 +262,7 @@ SELECT AVG(column_name) FROM table_name;
 select avg(score) from users;
 ```
 
-## `SUM()`
+## SUM()
 ```shell
 SELECT SUM(column_name) FROM table_name;
 ```
@@ -252,7 +270,7 @@ SELECT SUM(column_name) FROM table_name;
 select sum(score) from users;
 ```
 
-## `COUNT()`
+## COUNT()
 ```shell
 SELECT COUNT(column_name) FROM table_name;
 ```
@@ -260,8 +278,9 @@ SELECT COUNT(column_name) FROM table_name;
 select count(name) from users;
 ```
 
-## Joining Tables:  Create Table `login`
+## Joining Tables:  `Create Table login`
 - ID auto-incrementing not null, a `Primary Key`
+
 ```shell
 CREATE TABLE login(
   ID serial NOT NULL PRIMARY KEY,
@@ -270,19 +289,20 @@ CREATE TABLE login(
 );
 ```
 
-## `Insert` Into login
+## Insert Into login
 ```shell
 INSERT INTO login (secret,name) VALUES ('xyz', 'Sam');
 ```
 ```shell
 insert into login(secret,name) values('idk', 'Starboy');
 ```
-### Read the table 
+
+## Read table 
 ```shell
  select * from login;
 ```
 
-## Let's JOIN `users` and `login`
+## Let's `JOIN` users and login
 The real power of Relational Databases! (`Schemas`), Separation of concerns!
 
 - Sam is a foreign key in login, and in users Sam is a primary key. (`name`)
@@ -301,7 +321,7 @@ DELETE FROM table_name WHERE column='Something';
 delete from login where name='Unknown';
 ```
 
-## `Drop Table` ;)
+## Drop Table`!`
 - Be Careful with this!
 
 ```shell
@@ -311,11 +331,13 @@ DROP TABLE table_name;
 drop table users;
 ```
 
-### just got access to prod...
-![*Intern after deleting the production database*](drop_database_prod.jpg)
-## ;)
+### When you play on prod...
 
-## `Drop Database`!
+![*Intern after deleting the production database*](drop_database_prod.jpg)
+
+### Please don't... lol ;)
+
+## Drop Database`!`
 - Be `Extra Careful` with this!
 - You can't drop the database while you're currently logged in to the same database.
 ```shell
@@ -330,7 +352,7 @@ drop database test;
 \list
 ```
 
-# `Setting up a database` from scratch! 
+# Setting up a database from scratch! 
 - Part of the `face-detection backend` project 
 
 ## Create a database
@@ -348,12 +370,12 @@ CREATE TABLE users (
   joined TIMESTAMP NOT NULL
 );
 ```
-### `Verify` Creation
+## Verify Creation
 ```shell
 select * from users;
 ```
 
-## `login`
+## Database: login
 ```shell
 CREATE TABLE login (
   id serial PRIMARY KEY,
@@ -361,23 +383,19 @@ CREATE TABLE login (
   email text UNIQUE not null
 );
 ```
-### `Verify` Creation
+## Verify Creation
 ```shell
 select * from login;
 ```
 
-## `Clear` Screen
+## Clear Screen
 ```shell
 \! clear
 ```
 
-### Use a framework like [knex](https://knexjs.org/) or, [pg-promise](https://vitaly-t.github.io/pg-promise/) to connect backend with the database...
+Use a framework like [knex](https://knexjs.org/) or, [pg-promise](https://vitaly-t.github.io/pg-promise/) to connect backend with the database...
 
-
-
-
-
-## `PostgreSQL` Info...
+## PostgreSQL `Info`...
 ```shell
 psql --version
 ```
@@ -385,7 +403,7 @@ psql --version
 psql -V
 ```
 
-### Stuck, Need `Help?`
+### Need `Help`?
 ```shell
 psql --help
 ```
@@ -394,8 +412,8 @@ psql --help
 ![How did they program a programming language to program a program to program programs?](./the_program_paradox.jpg)
 
 ## Until next time...
-## Take Care.
-## ;)
+
+# ;)
 
 ##
 ##
