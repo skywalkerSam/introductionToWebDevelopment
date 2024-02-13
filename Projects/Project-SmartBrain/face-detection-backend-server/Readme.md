@@ -1,6 +1,11 @@
 # Backend server for [face-detection](https://github.com/skywalkerSam/face-detection)
 
-Enter your Clarifai PAT and username inside `controllers/image.js`.
+Here's the link to the deployment of [face-detection-backend](https://github.com/skywalkerSam/face-detection-backend)
+
+- Edit database configurations under `server.js`
+- Enter your Clarifai PAT and username inside `controllers/image.js`
+- Using `gRPC` instead of REST
+
 
 ## Server Specifications:
 - Express.js
