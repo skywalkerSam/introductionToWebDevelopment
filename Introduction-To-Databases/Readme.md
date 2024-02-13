@@ -90,7 +90,7 @@ ALTER USER username WITH PASSWORD 'new_password';
 
 ## Create a new database user
 ```shell
-CREATE USER starboy WITH PASSWORD 'HelloWorld';
+CREATE USER starboy WITH PASSWORD 'helloworld...lol';
 ```
 
 ## `Log In` to a specific database
