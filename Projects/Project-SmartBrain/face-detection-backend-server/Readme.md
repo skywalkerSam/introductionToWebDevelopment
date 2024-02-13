@@ -1,7 +1,7 @@
 # Backend server for [face-detection](https://github.com/skywalkerSam/face-detection)
 
-### To setup postgresql database for the project, [go to the database section...](https://github.com/skywalkerSam/Introduction-To-Web-Development/tree/main/Introduction-To-Databases)
-### Here's the link to the deployment of [face-detection-backend](https://github.com/skywalkerSam/face-detection-backend)
+### To setup `postgresql` database for the project, [go to the database section...](https://github.com/skywalkerSam/Introduction-To-Web-Development/tree/main/Introduction-To-Databases)
+### Here's the link to the `deployment` of [face-detection-backend](https://github.com/skywalkerSam/face-detection-backend)
 
 
 ## Some guidelines...
