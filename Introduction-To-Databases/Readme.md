@@ -236,7 +236,7 @@ SELECT * FROM table_name WHERE column_name LIKE 'A%';
 ```shell
 select * from users where name like 'A%';
 ```
-### And, vice-versa ( ends with `a`)
+## And, vice-versa ( ends with `a`)
 ```shell
 select * from users where name like '%a';
 ```
