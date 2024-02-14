@@ -372,7 +372,7 @@ CREATE TABLE users (
 ```
 ## Verify Creation
 ```shell
-select * from users;
+\d
 ```
 
 ## Database: login
