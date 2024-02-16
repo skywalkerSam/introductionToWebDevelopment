@@ -9,7 +9,9 @@ Getting Started with Web Development
 ...
 
 
-## Projects:
+## My Projects:
+
+- [skywalkersam.dev - Under Development!](https://skywalkersam.dev)
 
 - [Face Detection](https://github.com/skywalkerSam/face-detection-vite)
 
@@ -30,7 +32,16 @@ Getting Started with Web Development
 - [The Hello World Project](https://github.com/skywalkerSam/The-Hello-World-Project)
 
 
-## Sources:
+## My Other Websites ( `Legacy` )
+
+- [skywalkersam.github.io](https://skywalkersam.github.io/)
+
+- [skywalkersam.pythonanywhere.com](https://skywalkersam.pythonanywhere.com/)
+
+- [skywalkersam.net](https://skywalkersam.net)
+
+
+## Learning Sources:
 
 - [Fireship.io](https://fireship.io/)
 
