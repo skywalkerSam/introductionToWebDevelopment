@@ -45,7 +45,7 @@ document.getElementsByClassName("")[0]
 
 ## Query Selectors
 
-It's important to CACHE selectors in `variables`
+It's important to CACHE selectors in `variables`, you already know why... don't ya?
 
 ```shell
 document.querySelector("h1")
