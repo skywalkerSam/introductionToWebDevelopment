@@ -1,6 +1,9 @@
 /* TODO:
 - DRY the code / Refactor: Callback functions
 - Debug Keydown event listener: Enter key not working!!! - DONE!
+
+- Toggle `.done` class on list items
+- Add a delete button to all list items
 */
 
 // DOM Events
