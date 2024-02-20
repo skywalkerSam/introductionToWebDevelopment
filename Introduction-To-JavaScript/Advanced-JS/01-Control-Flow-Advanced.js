@@ -1,4 +1,4 @@
-// Syntax: Terenary Operator
+// Terenary Operator
 
 true? "It's True": "It's False";    // "It's True"
 
@@ -17,8 +17,7 @@ console.log(answer);
 
 
 
-// switch statement
-
+// Switch-case
 function moveCommand(direction) {
     var whatHappens;
     switch(direction) {
