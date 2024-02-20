@@ -42,8 +42,10 @@
 ## [Comparison Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
 
 - `!==`
+    - `!=`
 
 - `===`
+    - `==`
 
 - `>=`
 
@@ -190,6 +192,16 @@ A function() must `return` something
 ### true != true 
 - `false`
 
+#
+
+
+`NOTE`: Don't stress much about it, It's just how JavaScript works...!
+
+![JavaScript in a nutshell](./Resources/memes/jsInANutshell.png)
+
+Just for meme purposes... lol ;)
+
+#
 
 
 ##  Make a String
