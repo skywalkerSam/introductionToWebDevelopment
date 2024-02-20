@@ -1,11 +1,11 @@
 /*
 # Data Structures...
-
-   >_  Array   
-   >_  Object   (like python's dictonaries...)
+   - Array     (Like, python's list[])
+   - Object   (like python's dictonaries{})
 
 */
 
+// Object's properties...
 var carbonBased = {
    lifeForm:"Biological, Human Civilization",
    origin:"Earth, Solar System, Milky Way Galaxy",
@@ -64,7 +64,7 @@ console.log(siliconBased);
 
 
 
-// Objects in an array...
+// Objects inside an array...
 var humanCivilization = [
    {
       lifeForm:"Carbon Based",
@@ -87,10 +87,11 @@ console.log(humanCivilization[1]);
 
 
 
-// Anything could be in Objects...
+// Methods, anything could be inside an object...
 var universe = {
    conditions: true,
    objects: ["Fundamental Particles", "Fundamental Forces"],
+   // Functions inside an object, methods()...
    evolution: function() {
       console.log("Just evolved, one step ahead...");
    }
@@ -134,5 +135,3 @@ function myExperienceOne() {
 
 
 console.log(myExperienceOne());
-
-

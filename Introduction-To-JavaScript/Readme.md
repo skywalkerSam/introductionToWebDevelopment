@@ -39,7 +39,7 @@
 - Roundup
 
 
-## [JavaScript Comparison Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
+## [Comparison Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
 
 - `!==`
 
@@ -54,19 +54,31 @@
 - `<`
 
 
-## JavaScript Variables
+## Variables
+Variables are containers for storing data values
 
-- var
-- let ( ES6 )
-- const ( ES6 )
+- `var`
+- `let` ( ES6 )
+- `const` ( ES6 )
+
+
+## Variable naming conventions
+
+- `camelCase`: JavaScript
+
+- `CONSTANTS`: Immutable, Shouldn't be modified...!
+
+- `snake_case`: Python
+
+- `PascalCase`: C/C++
 
 
 ## Conditionals
 
-- if
-- else if
-- else
-- switch case
+- `if`
+- `else if`
+- `else`
+- `switch`-`case`
 - Ternary Operators ( `?`  `:` ) 
 
 
@@ -82,16 +94,16 @@ A function() must `return` something
 
 - const x = function name() {}
 - `function name() {}`
-- Arrow Functions ( ES6 ): `() => {}`
+- [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) ( ES6 ): `() => {}`
 
 
 
 ## Loops
 
-- for
-- forEach ( ES6 )
-- do
-- while
+- `for`
+- `forEach` ( ES6 )
+- `do`
+- `while`
 
 
 
