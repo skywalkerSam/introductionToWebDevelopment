@@ -130,7 +130,17 @@ document.querySelectorAll("li")[1].parentElement.parentElement.children;
 
 # DOM Events
 
+Visit `Introduction.js` and `index.html` for more info...
 
+- [MDN Web Docs: Event reference](https://developer.mozilla.org/en-US/docs/Web/Events)
+
+- [Javascript Char Codes (Key Codes)](https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes)
+
+- `createElement()`
+
+- `appendChild()`
+
+- `createTextNode()`
 
 
 
