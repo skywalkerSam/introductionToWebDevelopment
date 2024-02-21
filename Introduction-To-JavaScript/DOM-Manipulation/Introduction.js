@@ -1,5 +1,5 @@
 /* TODO:
-- DRY the code / Refactor: Callback functions
+- DRY the code / Refactor: Callback functions - DONE!
 - Debug Keydown event listener: Enter key not working!!! - DONE!
 
 - Toggle `.done` class on list items
@@ -35,6 +35,20 @@ function addItemUponEnter(event){
     }
 }
 
+// Toggle `.done` class on list items
+function toggleDoneClass(event){
+    
+}
+
+
 // Event Listeners
 button0.addEventListener("click", addItemUponClick);
 input0.addEventListener("keydown", addItemUponEnter);
+
+
+
+/* Sources:
+
+https://developer.mozilla.org/en-US/docs/Web/API/Document
+
+*/
