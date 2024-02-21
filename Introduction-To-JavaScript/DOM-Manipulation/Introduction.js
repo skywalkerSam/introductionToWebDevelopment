@@ -21,7 +21,7 @@ function listItemCreation() {
 }
 
 // addItemUponClick
-function addItemUponClick(){
+function addItemUponClick() {
     // console.log("You know... I'm just a button... I don't do much... I just exist for some reason... idk...")
     if (input0.value.trim().length !== 0) {
         listItemCreation();
@@ -29,15 +29,20 @@ function addItemUponClick(){
 }
 
 // addItemUponEnter
-function addItemUponEnter(event){
+function addItemUponEnter(event) {
     if (event.code === "Enter" && input0.value.trim().length !== 0) {
         listItemCreation();
     }
 }
 
 // Toggle `.done` class on list items
-function toggleDoneClass(event){
-    
+function toggleDoneClass(event) {
+
+}
+
+// Add a delete button to all list items
+function addDeleteButton() {
+
 }
 
 
