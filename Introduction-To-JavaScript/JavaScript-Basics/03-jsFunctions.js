@@ -49,14 +49,16 @@ life(materials)
 
 // karma function
 const karma = [
-  'Love',
-  'Hate',
-  'Change',
-  'Rage',
-  'Horny',
-  'Sad',
-  'Just Feelings...',
-  'Do not go gentle into that good night...!'
+    'Hope',
+    'Love',
+    'Hate',
+    'Change',
+    'Rage',
+    'Horny',
+    'Sad',
+    'Death',
+    'Despair',
+    'Do not go gentle into that good night...!',
 ]
 
 function fuckThisLife(shit){
