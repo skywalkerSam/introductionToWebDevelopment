@@ -142,6 +142,8 @@ Visit `Introduction.js` and `index.html` for more info...
 
 - `appendChild()`
 
+- `removeChild()`
+
 - `createTextNode()`
 
 
