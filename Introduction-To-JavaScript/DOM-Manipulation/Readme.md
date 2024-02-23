@@ -1,6 +1,8 @@
 # DOM Manipulation
 
-Stands for `Document Object Model`. It's just an Object of the parent object `Window`.
+Stands for `Document Object Model`. It's an object of the object `Window`.
+
+- [Document](https://developer.mozilla.org/en-US/docs/Web/API/Document)
 
 - Change all the HTML elements in a page
 
@@ -128,7 +130,7 @@ document.querySelectorAll("li")[1].parentElement.parentElement.children;
 ```
 
 
-# DOM Events
+# [DOM Events](https://developer.mozilla.org/en-US/docs/Web/API/Document#events)
 
 Visit `Introduction.js` and `index.html` for more info...
 
@@ -139,6 +141,8 @@ Visit `Introduction.js` and `index.html` for more info...
 - `createElement()`
 
 - `appendChild()`
+
+- `removeChild()`
 
 - `createTextNode()`
 

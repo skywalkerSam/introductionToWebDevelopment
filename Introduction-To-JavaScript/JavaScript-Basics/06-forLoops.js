@@ -3,7 +3,7 @@
 todos = [
     "Wake Up",
     "Coffee",
-    "Research & Develop",
+    "Research & Development",
     "Coffee",
     "Sleep..."
 ];
