@@ -1,10 +1,11 @@
 # Introduction to JavaScript
 `NEVER` write Vanilla JavaScript, or you'll end up creating your own little JS Framework, and the last thing this world needs is another JavaScript Framework... ;)
 
-- [JavaScript Data Types & Data Structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+![JS Devs](./Resources/memes/js-devs.jpg)
 
+## [JavaScript Data Types & Data Structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
 
-## Data Types
+### Data Types
 
 1. Number 
 2. String
@@ -15,7 +16,7 @@
 7. Symbol (new in ECMAScript 6) 
 
 
-## [Data Structures](https://www.freecodecamp.org/news/data-structures-in-javascript-with-examples/)
+### [Data Structures](https://www.freecodecamp.org/news/data-structures-in-javascript-with-examples/)
 
 `Primitive`
 -
