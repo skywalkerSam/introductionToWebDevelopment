@@ -1,4 +1,5 @@
 # Introduction to JavaScript
+`NEVER` write Vanilla JavaScript, or you'll end up creating your own little JS Framework, and the last thing this world needs is another JavaScript Framework... ;)
 
 - [JavaScript Data Types & Data Structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
 
