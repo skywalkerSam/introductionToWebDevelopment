@@ -1,4 +1,4 @@
-# [REACT - THE FULL COURSE](https://fireship.io/courses/react/)
+# [100sec Of React](https://fireship.io/courses/react/)
 A JavaScript Library for Building UIs. (`Facebook, 2013`) 
 
 - [React](https://github.com/facebook/react) ( [react.dev](https://react.dev/))
@@ -18,10 +18,3 @@ A JavaScript Library for Building UIs. (`Facebook, 2013`)
 
 
 
-
-
-#
-
-## Until next time...
-
-# ;)
