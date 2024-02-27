@@ -2,11 +2,10 @@
 A JavaScript Library for Building UIs. (`Facebook, 2013`) 
 
 - [React](https://github.com/facebook/react) ( [react.dev](https://react.dev/))
-- [React Ecosystem](https://github.com/enaqx/awesome-react)
 - [React Native](https://github.com/facebook/react-native)
 
 
-## Sources
+## [React Ecosystem](https://github.com/enaqx/awesome-react)
 - Static Site: [Gatsby](https://www.gatsbyjs.com/)
 - Server-side Rendering: [NEXT.js](https://nextjs.org/)
 - Animation: [react-spring](https://www.react-spring.dev/)
