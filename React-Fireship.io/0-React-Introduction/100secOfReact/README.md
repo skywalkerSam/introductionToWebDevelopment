@@ -1,5 +1,5 @@
 # [100sec Of React](https://fireship.io/courses/react/)
-A JavaScript Library for Building UIs. (`Facebook, 2013`) 
+Built with [`Vite`](https://vitejs.dev/guide/)!
 
 - [React](https://github.com/facebook/react) ( [react.dev](https://react.dev/))
 - [React Ecosystem](https://github.com/enaqx/awesome-react)
