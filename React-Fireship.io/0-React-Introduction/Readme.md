@@ -1,4 +1,5 @@
 # [Anatomy of React](https://fireship.io/courses/react/basics-anatomy/)
+Only export one component per file...!
 
 
 ## React Build Tools
