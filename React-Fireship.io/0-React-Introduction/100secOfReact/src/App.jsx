@@ -2,15 +2,28 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import starboy_logo from '/starboy_logo.png'
 
-//Component: NameCard
-function NameCard({name}){
+
+// Component: Logo
+function Logo(){
   return(
     <div>
-      <p>🔥 Hello {name}!</p>
+      <a href="https://skywalkersam.github.io" target="_blank">
+        <img src={starboy_logo} alt='Starboy Logo' className='logo'></img>
+      </a>
     </div>
-  )
-}
+    )
+  }
+  
+  // Component: NameCard
+  function NameCard({name}){
+    return(
+      <div>
+        <p> <Logo></Logo>Hello {name}! </p>
+      </div>
+    )
+  }
 
 
 function App() {
@@ -32,12 +45,12 @@ function App() {
 
       {/* Parsing the props to component */}
       <NameCard name="Starboy"></NameCard>
-      <NameCard name={"Starboy," + " " + 19}></NameCard>
+      <NameCard name={"Starboy," + " " + 19}></NameCard>    {/* You can even pass a component like this...! */}
 
 
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          Count is {count}x ...fucked!
+          You're {count}x ...fucked!
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
@@ -51,3 +64,37 @@ function App() {
 }
 
 export default App
+
+
+
+
+{/*
+
+import React from 'react';
+import './style.css';
+
+function Card(props) {
+  return (
+    <section>
+      <h2>{props.icon} Title</h2>
+      {props.children}
+    </section>
+  );
+}
+
+function MyIcon() {
+  return <i>🔥</i>;
+}
+
+export default function App() {
+  return (
+    <div>
+      <Card icon={<MyIcon />}>
+        <p>The body of the card</p>
+      </Card>
+    </div>
+  );
+}
+
+
+*/}
