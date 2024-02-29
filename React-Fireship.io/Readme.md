@@ -23,18 +23,6 @@ There are many ways to build a React app, Here's some common ones...
 - [Gatsby](https://www.gatsbyjs.com/docs/quick-start/)
 
 
-## React Files
-Purpose of the files in your React project...
-
-- `.JSX`: JavaScript Syntax Extension. It's a syntax that allows you to write HTML in JavaScript.
-- `package.json`: The main file that defines the dependencies and other settings for your project.
-- `node_modules`: Source code for dependencies. Do not touch.
-- `public`: The directory where your static files are stored.
-- `src/index.js`: Main entrypoint to bootstrap the app.
-- `src/App.js`: The root component of the app.
-- `src/App.spec.js`: Unit tests for the app.
-- `src/*.css`: Styles for the app.
-
 
 
 
