@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import starboy_logo from '/starboy_logo.png'
+import LoadingButton from './components/LoadingButton'
 
 
 // Component: Logo
@@ -28,6 +29,7 @@ function Logo(){
 
 function App() {
   const [count, setCount] = useState(0)
+  const [isLoading, setIsLoading] = useState(false);
 
   return (
     <>
@@ -43,9 +45,17 @@ function App() {
 
       <h1>100sec Of React</h1>
 
+
       {/* Parsing the props to component */}
-      <NameCard name="Starboy"></NameCard>
+
+      {/* <NameCard name="Starboy"></NameCard> */}
       <NameCard name={"Starboy," + " " + 19}></NameCard>    {/* You can even pass a component like this...! */}
+      
+      <LoadingButton
+        label="Load more..."
+        loading={isLoading}
+        onClick={() => setIsLoading(!isLoading)}
+      />
 
 
       <div className="card">

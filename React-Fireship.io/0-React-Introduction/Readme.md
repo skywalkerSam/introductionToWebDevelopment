@@ -15,13 +15,25 @@ Only export **one** component per file...!
 - `src/*.css`: Styles for the app.
 
 
+
 ## React Components
-`JSX`: A JavaScript friendly version of HTML.
+`JSX`: JavaScript XML, a JS friendly version of HTML.
 
 - **React Dev Tools**!
 - Define Components with **JSX**
 - Share Data with **Props**
 - **Virtual DOM** and React Fiber
+
+
+
+## Conditional Rendering
+Use `{}` for **JavaScript** expressions inside JSX.
+
+1. **If Else**
+2. **Ternary** `? :`
+
+
+
 
 
 
