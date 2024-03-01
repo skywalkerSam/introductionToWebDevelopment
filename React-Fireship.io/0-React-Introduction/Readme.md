@@ -31,8 +31,14 @@ Use `{}` for **JavaScript** expressions inside JSX.
 
 1. **If Else**
 2. **Ternary** `? :`
+3. **And** `&&`
 
 
+
+## Loops
+Use `.map()` to loop through an array and render a list of components.
+
+- **Key** prop is required for each item in the list.
 
 
 
