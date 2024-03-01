@@ -7,24 +7,44 @@ import LoadingButton from './components/LoadingButton'
 
 
 // Component: Logo
-function Logo(){
-  return(
+function Logo() {
+  return (
     <div>
       <a href="https://skywalkersam.github.io" target="_blank">
         <img src={starboy_logo} alt='Starboy Logo' className='logo'></img>
       </a>
     </div>
-    )
-  }
-  
-  // Component: NameCard
-  function NameCard({name}){
-    return(
-      <div>
-        <p> <Logo></Logo>Hello {name}! </p>
-      </div>
-    )
-  }
+  )
+}
+
+// Component: NameCard
+function NameCard({ name }) {
+  return (
+    <div>
+      <p> <Logo></Logo>Hello {name}! </p>
+    </div>
+  )
+}
+
+// array of random data
+const random_data = [
+  { id: 1, name: 'Fido 🐕' },
+  { id: 2, name: 'Snowball 🐈' },
+  { id: 3, name: 'Murph 🐈‍⬛' },
+  { id: 4, name: 'Zelda 🐈' },
+];
+
+// Loops: PetList
+function PetList() {
+  return(
+    <ul>
+      {random_data &&   // Render only if there's data available...!
+        random_data.map(({id, name}) => {
+          return <li key={id}>{name}</li>
+        })}
+    </ul>
+  )
+}
 
 
 function App() {
@@ -50,12 +70,15 @@ function App() {
 
       {/* <NameCard name="Starboy"></NameCard> */}
       <NameCard name={"Starboy," + " " + 19}></NameCard>    {/* You can even pass a component like this...! */}
-      
+
       <LoadingButton
         label="Load more..."
         loading={isLoading}
         onClick={() => setIsLoading(!isLoading)}
       />
+
+      <h2>Pet Names ...lol ;)</h2>
+      <PetList></PetList>
 
 
       <div className="card">
