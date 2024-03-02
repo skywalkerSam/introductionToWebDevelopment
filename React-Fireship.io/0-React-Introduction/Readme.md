@@ -42,9 +42,9 @@ Use `.map()` to loop through an array and render a list of components.
 
 
 
-## Events
+# Events
 
-### Vanilla JS Events
+## Vanilla JS Events
 ```javascript
 const button = document.querySelector('button');
 
@@ -53,8 +53,7 @@ button.addEventListener('click', (event) => {
 })
 ```
 
-
-### React Synthetic Events
+## React Synthetic Events
 ```javascript
 function Events() {
 
