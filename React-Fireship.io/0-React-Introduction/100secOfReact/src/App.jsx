@@ -9,37 +9,34 @@ import LoadingButton from './components/LoadingButton'
 // Component: Logo
 function Logo() {
   return (
-    <div>
-      <a href="https://skywalkersam.github.io" target="_blank">
-        <img src={starboy_logo} alt='Starboy Logo' className='logo'></img>
-      </a>
-    </div>
+    <a href="https://skywalkersam.github.io" target="_blank">
+      <img src={starboy_logo} alt='Starboy Logo' className='logo'></img>
+    </a>
   )
 }
 
 // Component: NameCard
 function NameCard({ name }) {
   return (
-    <div>
-      <p> <Logo></Logo>Hello {name}! </p>
-    </div>
+    <p> <Logo></Logo>Hello {name}! </p>
   )
 }
 
 // array of random data
-const random_data = [
-  { id: 1, name: 'Fido 🐕' },
-  { id: 2, name: 'Snowball 🐈' },
-  { id: 3, name: 'Murph 🐈‍⬛' },
-  { id: 4, name: 'Zelda 🐈' },
+const pet_data_lol = [
+  { id: 1, name: 'The Dog 🐕' },
+  { id: 2, name: 'The Cat 🐈' },
+  { id: 3, name: 'Un gato bonito! 🐈‍⬛' },
+  { id: 4, name: 'El gato 🐈' },
+  { id: 5, name: 'El perro 🐕' },
 ];
 
 // Loops: PetList
 function PetList() {
-  return(
+  return (
     <ul>
-      {random_data &&   // Render only if there's data available...!
-        random_data.map(({id, name}) => {
+      {pet_data_lol &&   // Render only if there's data available...!
+        pet_data_lol.map(({ id, name }) => {
           return <li key={id}>{name}</li>
         })}
     </ul>
@@ -47,9 +44,29 @@ function PetList() {
 }
 
 
+// Input Event Component
+function InputEvent({ value, handleChange }) {
+  console.log(value)
+  return (
+    <input type="text"
+      placeholder='What does future holds...?'
+      value={value}
+      onChange={handleChange} />
+  )
+}
+
+
+// Main App()
 function App() {
   const [count, setCount] = useState(0)
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false)
+  const [value, setValue] = useState('')
+
+  // Events
+  function handleChange(event) {
+    setValue(event.target.value)
+    // console.log(event.target, event.target.value)
+  }
 
   return (
     <>
@@ -64,21 +81,27 @@ function App() {
 
 
       <h1>100sec Of React</h1>
-
-
       {/* Parsing the props to component */}
 
       {/* <NameCard name="Starboy"></NameCard> */}
-      <NameCard name={"Starboy," + " " + 19}></NameCard>    {/* You can even pass a component like this...! */}
+      <NameCard 
+        name={"Starboy," + " " + 19}>   {/* You can even pass a component like this...! */}
+      </NameCard>    
 
       <LoadingButton
-        label="Load more..."
+        label="nothing..."
         loading={isLoading}
         onClick={() => setIsLoading(!isLoading)}
       />
 
       <h2>Pet Names ...lol ;)</h2>
       <PetList></PetList>
+
+      {/* You need to provide the components the necessary props, bc Components are dumb af ...lol ;) */}
+      <InputEvent
+        value={value}
+        handleChange={handleChange}>
+      </InputEvent>
 
 
       <div className="card">

@@ -1,20 +1,22 @@
 # [100sec Of React](https://fireship.io/courses/react/)
-Built with [`Vite`](https://vitejs.dev/guide/)!
+Built with [Vite](https://vitejs.dev/guide/)!
 
-- [React](https://github.com/facebook/react) ( [react.dev](https://react.dev/))
-- [React Ecosystem](https://github.com/enaqx/awesome-react)
-- [React Native](https://github.com/facebook/react-native)
+### As you have seen in this 100sec of React, as you add more n more components, the `App.jsx` gets so fuckin hard to manage. 
 
+- Keep all the components in their own separate files, even in their own separate folders.
 
-## Sources
-- Static Site: [Gatsby](https://www.gatsbyjs.com/)
-- Server-side Rendering: [NEXT.js](https://nextjs.org/)
-- Animation: [react-spring](https://www.react-spring.dev/)
-- Forms: [FORMIK](https://formik.org/)
-- State Management: [Redux](https://redux.js.org/), [MobX](https://mobx.js.org/README.html), [RECOil](https://recoiljs.org), [XState](https://xstate.js.org/)
+### Maintain code readability. Just as life, try to give your code some meaning. At least give 'em a meaningful name ...lol ;)
 
-&, More...
+- Remember when you tried to read it after just 2 days? ...lol ;)
 
 
 
+
+
+
+
+#
+
+## Just Keep Going, Until Next Time...
+# ;)
 
