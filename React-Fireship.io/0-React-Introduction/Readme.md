@@ -54,7 +54,7 @@ button.addEventListener('click', (event) => {
 ```
 
 ## React Synthetic Events
-```python
+```javascript
 function Events() {
 
   return <button onClick={(event => console.log(event))}>Click</button>
