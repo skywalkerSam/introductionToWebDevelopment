@@ -42,6 +42,27 @@ Use `.map()` to loop through an array and render a list of components.
 
 
 
+## Events
+
+### Vanilla JS Events
+```javascript
+const button = document.querySelector('button');
+
+button.addEventListener('click', (event) => {
+    console.log(event);
+})
+```
+
+
+### React Synthetic Events
+```javascript
+function Events() {
+
+  return <button onClick={(event => console.log(event))}>Click</button>
+}
+```
+
+
 
 
 
