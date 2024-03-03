@@ -5,6 +5,24 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [prevCount, setPrevCount] = useState(0)
+
+  // const [state, setState] = useState({ count: 0, user: 'Bob' });
+
+  const handleClick = () => {
+    setCount((prev) => {      // `prev` is a parameter, holds the previous state of count
+      setPrevCount(prev);
+    });
+    setCount(count + 1);
+  };
+
+  // const handleClick = () => {
+  //   setState({
+  //     ...state,l
+  //     count: state.count + 1,
+  //   });
+  // };
+
 
   return (
     <>
@@ -16,7 +34,18 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+
+      <h1>Introduction to State</h1>
+
+      <h2>Previous count: {prevCount}</h2>
+      <h2>Current count: {count}</h2>
+      {/* <h3>Count: {state.count}</h3>
+      <h3>User: {state.user}</h3> */}
+      <button onClick={handleClick} className='button0'>Increment</button>
+
+
+
+
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}

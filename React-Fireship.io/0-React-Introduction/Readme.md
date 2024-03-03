@@ -1,11 +1,10 @@
-# `React Introduction`: **100sec** Of React
+# ⚛️`React in 100 Seconds`: **100sec** Of React
+What is React.js?
 
 
-## [Anatomy of React](https://fireship.io/courses/react/basics-anatomy/)
-Only export **one** component per file...!
+## [💀 Anatomy of React](https://fireship.io/courses/react/basics-anatomy/)
+What are all the files in a React project?
 
-
-## Purpose of React Files
 - `package.json`: The main file that defines the **dependencies and other settings** for your project.
 - `node_modules`: Source code for dependencies. Do not touch.
 - `public`: The directory where your **Static Files** are stored.
@@ -13,19 +12,26 @@ Only export **one** component per file...!
 - `src/App.js`: The root component of the app.
 - `src/App.spec.js`: Unit tests for the app.
 - `src/*.css`: Styles for the app.
+  
+`NOTE`:  Only export **one** component per file...!
 
 
-## React Components
-`JSX`: JavaScript XML, a JS friendly version of HTML.
+# 🗃️ Components
+How does a **component-based architecture** for building UIs actually work?
 
-- **React Dev Tools**!
+- `JSX`: JavaScript XML, a JS friendly version of HTML.
 - Define Components with **JSX**
 - Share Data with **Props**
 - **Virtual DOM** and React Fiber
+- Install **React Dev Tools**!
 
 
-## Conditional Rendering
-Use `{}` for **JavaScript** expressions inside JSX.
+# 🔀 Conditional Rendering
+How to render a component based on a boolean condition
+
+- Use `{}` for **JavaScript** expressions inside JSX.
+  
+## Options to choose from...
 
 1. **If Else**
 2. **Ternary** `? :`
@@ -33,14 +39,17 @@ Use `{}` for **JavaScript** expressions inside JSX.
 
 
 
-## Loops
-Use `.map()` to loop through an array and render a list of components.
+# ➰ Loops
+How to render a collection of items in JSX
+
+- `.map()` to loop through an array and render a list of components.
 
 - **Key** prop is required for each item in the list.
 
 
 
-# Events
+# 💥 Events
+How to handle events in JSX
 
 ## Vanilla JS Events
 ```javascript
@@ -60,7 +69,9 @@ function Events() {
 ```
 
 
-## State
+# 🔄 State
+Working with the useState hook
+
 There are multiple ways to manage states, keep it simple, and don't use **third-party state management** libraries like Redux, MobX, or Recoil unless you absolutely have to...!
 
 - **useState()** Hook
@@ -128,14 +139,67 @@ function Stateful() {
 ```
 
 
+# 🌱 Lifecycle and Effects
+Working with the **useEffect** hook
+
+## Lifecycle with Class Components
+```javascript
+class Lifecycle extends React.Component {
+  
+  componentDidMount() {
+    // Initialize
+  }
+
+  componentDidUpdate() {
+    // Updated
+  }
+
+  componentWillUnmount() {
+    // Removed
+  }
+}
+```
+
+## Lifecycle With useEffect()
+`useEffect()` is a React hook that can be used only inside **functional components**
+
+```javascript
+function Lifecycle() {
+
+  const [count] = useState(0);
+
+  useEffect(() => {
+    
+    console.log('count updated!')
+
+    return () => console.log('destroyed!')
+
+  }, [count]);
+
+}
+```
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+- [ ] Done
 
 #
 
 ## Until next time...
+
 # ;)
