@@ -68,7 +68,7 @@ There are multiple ways to manage states, keep it simple, and don't use **third-
         - `state`: The current state.
         - `setState`: A function() that updates the state.
   
-- **State** is how you update the data over time, and is mutable.
+- **State** is how you update the data over time.
     - Uni-directional data flow...
     - Every time a state changes, the component **re-renders**.
     - When you assign a new value, the old value is fucked.
