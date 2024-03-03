@@ -15,7 +15,6 @@ Only export **one** component per file...!
 - `src/*.css`: Styles for the app.
 
 
-
 ## React Components
 `JSX`: JavaScript XML, a JS friendly version of HTML.
 
@@ -23,7 +22,6 @@ Only export **one** component per file...!
 - Define Components with **JSX**
 - Share Data with **Props**
 - **Virtual DOM** and React Fiber
-
 
 
 ## Conditional Rendering
@@ -60,6 +58,31 @@ function Events() {
   return <button onClick={(event => console.log(event))}>Click</button>
 }
 ```
+
+
+## State
+There are multiple ways to manage states, keep it simple, and don't use **third-party state management** libraries like Redux, MobX, or Recoil unless you absolutely have to...!
+
+- **useState()** Hook
+    - `const [state, setState] = useState(initialState);`
+        - `state`: The current state.
+        - `setState`: A function() that updates the state.
+  
+- **State** is how you update the data over time, and is mutable.
+    - Uni-directional data flow...
+    - Every time a state changes, the component **re-renders**.
+    - When you assign a new value, the old value is fucked.
+        - So, in order to save the old value from getting fucked, use `...keepPreviousState`, it merges with the old value.
+    
+- **Props** are how you share data between components, and are immutable by default.
+
+- **Hook** is a function() that can be called on top level of your component to use different features of your framework i.e. React.
+
+
+
+
+
+
 
 
 
