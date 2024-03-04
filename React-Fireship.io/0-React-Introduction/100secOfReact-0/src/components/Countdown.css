@@ -1,0 +1,14 @@
+.button1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: 1%;
+    height: 2.75rem;
+    min-width: 6.5rem;
+    color: #000000cc;
+    border-radius: 9px;
+    background: #2cf907;
+    /* box-shadow: 0px 0px 12px #03030350; */
+  }
+  

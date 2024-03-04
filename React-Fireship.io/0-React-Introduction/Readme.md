@@ -160,7 +160,7 @@ class Lifecycle extends React.Component {
 }
 ```
 
-## Lifecycle With useEffect()
+## Lifecycle with useEffect()
 `useEffect()` is a React hook that can be used only inside **functional components**
 
 ```javascript

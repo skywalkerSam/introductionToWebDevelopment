@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Countdown from './components/Countdown'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -36,12 +37,17 @@ function App() {
       </div>
 
       <h1>Introduction to State</h1>
-
+      <hr />
       <h2>Previous count: {prevCount}</h2>
       <h2>Current count: {count}</h2>
       {/* <h3>Count: {state.count}</h3>
       <h3>User: {state.user}</h3> */}
       <button onClick={handleClick} className='button0'>Increment</button>
+
+      <h1>Lifecycle & Effects</h1>
+      <hr />
+      <Countdown hr={0} min={2} sec={0}></Countdown>
+
 
 
 
@@ -50,6 +56,7 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+        <h3>Life goes on...</h3>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
