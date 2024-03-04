@@ -183,7 +183,52 @@ function Lifecycle() {
 # 🌲 Context
 Working with the React Context API
 
-- 
+- Do not do **prop drilling**. If you have to, `useContext()`
+- Too much data can cause **performance issues**...!
+
+## Example of Prop Drilling
+```javascript
+function PropDrilling() {
+
+  const [count] = useState(0);
+
+  return <Child count={count} />
+}
+
+function Child({ count }) {
+  return <GrandChild count={count} />
+}
+
+function GrandChild({ count }) {
+  return <div>{count}</div>
+}
+```
+
+## Sharing Data with Context
+```javascript
+function PropDrilling() {
+
+  const [count] = useState(0);
+
+  return (
+    <CountContext.Provider value={count}>
+      <Child />
+    </CountContext.Provider>
+  )
+}
+
+function Child() {
+  return <GrandChild />
+}
+
+function GrandChild() {
+
+  const count = useContext(CountContext);
+
+  return <div>{count}</div>
+}
+```
+
 
 
 
