@@ -188,7 +188,7 @@ Working with the React Context API
 
 ## Define context
 ```javascript
-const CountContext = createContext(0);
+const CountContext = createContext();
 ```
 
 
