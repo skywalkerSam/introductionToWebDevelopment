@@ -183,8 +183,14 @@ function Lifecycle() {
 # 🌲 Context
 Working with the React Context API
 
-- Do not do **prop drilling**. If you have to, `useContext()`
-- Too much data can cause **performance issues**...!
+- **prop drilling** isn't good. If you have to, `useContext()`
+- Too much data can lead to **performance issues** in your application...!
+
+## Define context
+```javascript
+const CountContext = createContext(0);
+```
+
 
 ## Example of Prop Drilling
 ```javascript
