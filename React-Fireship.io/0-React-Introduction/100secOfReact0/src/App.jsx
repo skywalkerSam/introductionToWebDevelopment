@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Countdown from './components/Countdown'
 
-// Context - Not Working!!!
+// Context
 const CountContext = createContext();
 
 function CountProvider({ children }) {
@@ -25,9 +25,10 @@ function Count() {
 }
 
 function CountButton() {
-  const { setCount } = useContext(CountContext);
+  // The error was here with the over-engineered onClick event, and with var/const.... lol ;)
+  var { count, setCount } = useContext(CountContext);
   return (
-    <button onClick={() => setCount((count) => setCount(++count))}
+    <button onClick={() => setCount(++count)}
       className='button2'>
       Increment
     </button>
