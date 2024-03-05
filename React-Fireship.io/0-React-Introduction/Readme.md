@@ -186,12 +186,6 @@ Working with the React Context API
 - **prop drilling** isn't good. If you have to, `useContext()`
 - Too much data can lead to **performance issues** in your application...!
 
-## Define context
-```javascript
-const CountContext = createContext();
-```
-
-
 ## Example of Prop Drilling
 ```javascript
 function PropDrilling() {
@@ -208,6 +202,11 @@ function Child({ count }) {
 function GrandChild({ count }) {
   return <div>{count}</div>
 }
+```
+
+## Define context
+```javascript
+const CountContext = createContext();
 ```
 
 ## Sharing Data with Context
