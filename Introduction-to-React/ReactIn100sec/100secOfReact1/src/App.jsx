@@ -1,4 +1,4 @@
-import { useState, useContext, createContext } from 'react'
+import { Component, useState, useContext, createContext } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -24,7 +24,8 @@ function Count() {
 }
 
 function CountButton() {
-  var { count, setCount } = useContext(CountContext);
+  // Error was here, remember it?
+  let { count, setCount } = useContext(CountContext);
   return (
     <button onClick={() => setCount(++count)}
       className='button1'>
@@ -33,12 +34,40 @@ function CountButton() {
   );
 }
 
+// Error Boundary
+class ErrorBoundary extends Component {     // React.Component
+  // State for class component
+  constructor(props) {
+    super(props);
+    // Change to true to enable error
+    this.state = { hasError: false };    // true
+  }
+  static getDerivedStateFromError(error) {
+    return { hasError: true };
+  }
+  componentDidCatch(err, errInfo) {
+    console.log('Something went horribly wrong... lol ;)', err, errInfo);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="error-boundary">
+          <h3>Fallback UI</h3>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <>
+    <ErrorBoundary>
+      {/* Error Boundary */}
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -54,6 +83,7 @@ function App() {
         <Count />
         <CountButton />
       </CountProvider>
+      
       <hr />
 
 
@@ -68,7 +98,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-    </>
+    </ErrorBoundary>
   )
 }
 

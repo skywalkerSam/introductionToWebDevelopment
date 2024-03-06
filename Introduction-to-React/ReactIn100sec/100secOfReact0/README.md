@@ -1,75 +1,5 @@
-# ⚛️`React in 100 Seconds`: **100sec** Of React
-What is React.js?
-
-
-## [💀 Anatomy of React](https://fireship.io/courses/react/basics-anatomy/)
-What are all the files in a React project?
-
-- `package.json`: The main file that defines the **dependencies and other settings** for your project.
-- `node_modules`: Source code for dependencies. Do not touch.
-- `public`: The directory where your **Static Files** are stored.
-- `src/index.js`: Main entrypoint to bootstrap the app.
-- `src/App.js`: The root component of the app.
-- `src/App.spec.js`: Unit tests for the app.
-- `src/*.css`: Styles for the app.
-  
-`NOTE`:  Only export **one** component per file...!
-
-
-# 🗃️ Components
-How does a **component-based architecture** for building UIs actually work?
-
-- `JSX`: JavaScript XML, a JS friendly version of HTML.
-- Define Components with **JSX**
-- Share Data with **Props**
-- **Virtual DOM** and React Fiber
-- Install **React Dev Tools**!
-
-
-# 🔀 Conditional Rendering
-How to render a component based on a boolean condition
-
-- Use `{}` for **JavaScript** expressions inside JSX.
-  
-## Options to choose from...
-
-1. **If Else**
-2. **Ternary** `? :`
-3. **And** `&&`
-
-
-
-# ➰ Loops
-How to render a collection of items in JSX
-
-- `.map()` to loop through an array and render a list of components.
-
-- **Key** prop is required for each item in the list.
-
-
-
-# 💥 Events
-How to handle events in JSX
-
-## Vanilla JS Events
-```javascript
-const button = document.querySelector('button');
-
-button.addEventListener('click', (event) => {
-    console.log(event);
-})
-```
-
-## React Synthetic Events
-```javascript
-function Events() {
-
-  return <button onClick={(event => console.log(event))}>Click</button>
-}
-```
-
-
-# 🔄 State
+[//]: # (100secOfReact-0)
+# 🔄 [States In React](https://fireship.io/courses/react/basics-state/)
 Working with the useState hook
 
 There are multiple ways to manage states, keep it simple, and don't use **third-party state management** libraries like Redux, MobX, or Recoil unless you absolutely have to...!
@@ -90,7 +20,7 @@ There are multiple ways to manage states, keep it simple, and don't use **third-
 - **Hook** is a function() that can be called on top level of your component to use different features of your framework i.e. React.
 
 
-## Basic Usage: useState()
+## Basic Usage: `useState()`
 
 ```javascript
 function Stateful() {
@@ -115,7 +45,6 @@ function Stateful() {
 }
 ```
 
-
 ## Updating objects with useState()
 ```javascript
 function Stateful() {
@@ -137,6 +66,7 @@ function Stateful() {
   );
 }
 ```
+
 
 
 # 🌱 Lifecycle and Effects
@@ -178,6 +108,7 @@ function Lifecycle() {
 
 }
 ```
+
 
 
 # 🌲 Context
@@ -235,67 +166,6 @@ function GrandChild() {
 ```
 
 
-# 🚨 Error Boundries
-How do Error Boundaries work in React?
-
-```javascript
-class ErrorBoundary extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { hasError: false };
-  }
-
-  static getDerivedStateFromError(error) {
-    return { hasError: true };
-  }
-
-  componentDidCatch(error, errorInfo) {
-    console.log('something went horribly wrong', error, errorInfo);
-  }
-
-  render() {
-    if (this.state.hasError) {
-      return <h1>Fallback UI</h1>;
-    }
-
-    return this.props.children;
-  }
-}
-
-// Example Usage
-
-function Main() {
-  return (
-    <Dashboard>
-      <ErrorBoundary>
-        <Orders />
-      </ErrorBoundary>
-    </Dashboard>
-  );
-}
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-- [ ] Done
-
-#
-
-## Until next time...
+## Just Keep Going, Until Next Time...
 
 # ;)
