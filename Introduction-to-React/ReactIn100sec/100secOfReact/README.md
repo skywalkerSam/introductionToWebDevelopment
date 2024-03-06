@@ -1,13 +1,6 @@
-# [REACT - THE FULL COURSE](https://fireship.io/courses/react/)
-A JavaScript Library for Building UIs. (`Facebook, 2013`)
-
-
-- [React](https://github.com/facebook/react) ( [react.dev](https://react.dev/))
-- [React Native](https://github.com/facebook/react-native)
-
-
-
 # ⚛️ [100sec Of React](https://fireship.io/courses/react/basics-react)
+
+Built with [Vite](https://vitejs.dev/guide/)
 
 ## [React Ecosystem](https://github.com/enaqx/awesome-react)
 - Static Site: [Gatsby](https://www.gatsbyjs.com/)
@@ -19,7 +12,7 @@ A JavaScript Library for Building UIs. (`Facebook, 2013`)
 
 
 
-# 💀 Anatomy of React
+# [💀 Anatomy of React](https://fireship.io/courses/react/basics-anatomy/)
 
 ## React Build Tools
 There are many ways to build a React app, Here's some common ones...
@@ -176,235 +169,24 @@ function Events() {
 
 
 
-# 🔄 [State](https://fireship.io/courses/react/basics-state/)
-Working with the useState hook
+# My Experiences...
 
-There are multiple ways to manage states, keep it simple, and don't use **third-party state management** libraries like Redux, MobX, or Recoil unless you absolutely have to...!
+## As you have seen in this 100sec of React, as you add more n more components, the `App.jsx` gets so fuckin hard to manage. 
 
-- **useState()** Hook
-    - `const [state, setState] = useState(initialState);`
-        - `state`: The current state.
-        - `setState`: A function() that updates the state.
-  
-- **State** is how you update the data/values over time.
-    - Uni-directional data flow...
-    - Every time a state changes, the component **re-renders**.
-    - When you assign a new value, the old value is fucked.
-        - So, in order to save the old value from getting fucked, use `...keepPreviousState`, it merges with the old value.
-    
-- **Props** are how you share data between components, and are immutable by default.
+- Keep all the components in their own separate files, even in their own separate folders.
 
-- **Hook** is a function() that can be called on top level of your component to use different features of your framework i.e. React.
+## Maintain code readability. Just as life, try to give your code some meaning. At least give 'em a meaningful name ...lol ;)
 
+- Remember when you tried to read it after just 2 days? ...lol ;)
 
-## Basic Usage: `useState()`
 
-```javascript
-function Stateful() {
 
-  const [count, setCount] = useState(0);
-  const [prevCount, setPrevCount] = useState(0);
 
-  const handleClick = () => {
-    setCount((prev) => {
-      setPrevCount(prev);
-      setCount(count + 1);
-    });
-  };
 
-  return (
-    <>
-      <h3>Current count: {count}</h3>
-      <h3>Previous count: {prevCount}</h3>
-      <button onClick={handleClick}>Increment</button>
-    </>
-  );
-}
-```
 
-## Updating objects with useState()
-```javascript
-function Stateful() {
-  const [state, setState] = useState({ count: 0, user: 'Bob' });
-
-  const handleClick = () => {
-    setState({
-      ...state,
-      count: state.count + 1,
-    });
-  };
-
-  return (
-    <>
-      <h3>Count: {state.count}</h3>
-      <h3>User: {state.user}</h3>
-      <button onClick={handleClick}>Increment</button>
-    </>
-  );
-}
-```
-
-
-
-# 🌱 Lifecycle and Effects
-Working with the **useEffect** hook
-
-## Lifecycle with Class Components
-```javascript
-class Lifecycle extends React.Component {
-  
-  componentDidMount() {
-    // Initialize
-  }
-
-  componentDidUpdate() {
-    // Updated
-  }
-
-  componentWillUnmount() {
-    // Removed
-  }
-}
-```
-
-## Lifecycle with useEffect()
-`useEffect()` is a React hook that can be used only inside **functional components**
-
-```javascript
-function Lifecycle() {
-
-  const [count] = useState(0);
-
-  useEffect(() => {
-    
-    console.log('count updated!')
-
-    return () => console.log('destroyed!')
-
-  }, [count]);
-
-}
-```
-
-
-
-# 🌲 Context
-Working with the React Context API
-
-- **prop drilling** isn't good. If you have to, `useContext()`
-- Too much data can lead to **performance issues** in your application...!
-
-## Example of Prop Drilling
-```javascript
-function PropDrilling() {
-
-  const [count] = useState(0);
-
-  return <Child count={count} />
-}
-
-function Child({ count }) {
-  return <GrandChild count={count} />
-}
-
-function GrandChild({ count }) {
-  return <div>{count}</div>
-}
-```
-
-## Define context
-```javascript
-const CountContext = createContext();
-```
-
-## Sharing Data with Context
-```javascript
-function PropDrilling() {
-
-  const [count] = useState(0);
-
-  return (
-    <CountContext.Provider value={count}>
-      <Child />
-    </CountContext.Provider>
-  )
-}
-
-function Child() {
-  return <GrandChild />
-}
-
-function GrandChild() {
-
-  const count = useContext(CountContext);
-
-  return <div>{count}</div>
-}
-```
-
-
-
-# 🚨 [Error Boundries](https://fireship.io/courses/react/basics-error-boundry/)
-How do Error Boundaries work in React?
-
-```javascript
-class ErrorBoundary extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { hasError: false };
-  }
-
-  static getDerivedStateFromError(error) {
-    return { hasError: true };
-  }
-
-  componentDidCatch(error, errorInfo) {
-    console.log('something went horribly wrong', error, errorInfo);
-  }
-
-  render() {
-    if (this.state.hasError) {
-      return <h1>Fallback UI</h1>;
-    }
-
-    return this.props.children;
-  }
-}
-
-// Example Usage
-
-function Main() {
-  return (
-    <Dashboard>
-      <ErrorBoundary>
-        <Orders />
-      </ErrorBoundary>
-    </Dashboard>
-  );
-}
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-- [ ] Done
 
 #
 
-## Until next time...
-
+## Just Keep Going, Until Next Time...
 # ;)
+
