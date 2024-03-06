@@ -19,7 +19,7 @@ A JavaScript Library for Building UIs. (`Facebook, 2013`)
 
 
 
-# [💀 Anatomy of React](https://fireship.io/courses/react/basics-anatomy/)
+# 💀 Anatomy of React
 
 ## React Build Tools
 There are many ways to build a React app, Here's some common ones...
