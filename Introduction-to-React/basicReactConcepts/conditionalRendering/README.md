@@ -27,7 +27,7 @@ function Conditional({ count }) {
 ```
 
 # Challenge
-Define a LoadingButton component. The button takes loading state, onClick, and label as props then renders the label or loader depending on the loading state.
+Define a `LoadingButton` component. The button takes loading state, onClick, and label as props then renders the **label** or **loader** depending on the loading state.
 
 
 
