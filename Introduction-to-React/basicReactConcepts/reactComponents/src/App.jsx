@@ -7,14 +7,11 @@ function App(){
 
   return(
     <div>
-      <h1>React In 100sec</h1>
+      <h1>React Components</h1>
 
       <div>
         <h2>
-
-          <button onClick={() => {setCount(++count)}}>
-            Unlimited Power... {count}!
-          </button>
+          
         </h2>
       </div>
     </div>
