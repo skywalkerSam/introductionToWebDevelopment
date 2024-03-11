@@ -2,7 +2,7 @@
 # 🔀 Conditional Rendering
 Conditional rendering is a very common pattern where you render a component based on a boolean condition. There are several ways to implement conditional rendering in React.
 
-## 1. If Else
+# 1. If Else
 ```javascript
 function Conditional({ count }) {
 
@@ -14,16 +14,18 @@ function Conditional({ count }) {
 }
 ```
 
-## 2. Ternary `? :`
+# 2. Ternary `? :`
 ```javascript
 {count % 2 === 0 ? <h1>Count is even</h1> : <h1>Count is odd</h1> }
 ```
 
-## 3. Logical And `&&`
+# 3. Logical And `&&`
 ```javascript
 {count && 2 === 0 ? <h1>Count is even</h1> }
 ```
 
+# Challenge
+Define a LoadingButton component. The button takes loading state, onClick, and label as props then renders the label or loader depending on the loading state.
 
 
 
