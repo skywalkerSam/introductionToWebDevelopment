@@ -2,20 +2,28 @@
 A JavaScript Library for Building UIs. (`Facebook, 2013`)
 
 
+# ⚛️ [100sec Of React](https://fireship.io/courses/react/basics-react)
 - [React](https://github.com/facebook/react) ( [react.dev](https://react.dev/))
 - [React Native](https://github.com/facebook/react-native)
 
 
-
-# ⚛️ [100sec Of React](https://fireship.io/courses/react/basics-react)
-
-## [React Ecosystem](https://github.com/enaqx/awesome-react)
+# [React Ecosystem](https://github.com/enaqx/awesome-react)
 - Static Site: [Gatsby](https://www.gatsbyjs.com/)
 - Server-side Rendering: [NEXT.js](https://nextjs.org/)
 - Animation: [react-spring](https://www.react-spring.dev/)
 - Forms: [FORMIK](https://formik.org/)
 - State Management: [Redux](https://redux.js.org/), [MobX](https://mobx.js.org/README.html), [RECOil](https://recoiljs.org), [XState](https://xstate.js.org/)
 &, More...
+
+## A basic `React Component`
+
+```javascript
+function App(){
+    return <h1>Hello World!</h1>
+}
+
+export default App
+```
 
 
 
