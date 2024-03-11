@@ -1,5 +1,5 @@
 
-# 🗃️ React Components
+# 🗃️ [React Components](https://fireship.io/courses/react/basics-components/)
 How does a **component-based architecture** for building UIs actually work?
 
 - `JSX`: JavaScript XML, a JS friendly version of HTML.
