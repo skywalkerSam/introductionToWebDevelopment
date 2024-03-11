@@ -1,6 +1,8 @@
 
-# 🔀 Conditional Rendering
+# 🔀 [Conditional Rendering](https://fireship.io/courses/react/basics-conditional-rendering/)
+
 Conditional rendering is a very common pattern where you render a component based on a boolean condition. There are several ways to implement conditional rendering in React.
+
 
 # 1. If Else
 ```javascript
