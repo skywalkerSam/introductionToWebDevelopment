@@ -47,7 +47,7 @@ What makes React so powerful, is that when this data changes the library knows h
 
 
 # Challenge
-Define a set of 2 components - `Card` and `Icon`. the card takes the icon as a prop, then renders custom HTML below it with `props.children`
+Define a set of 2 components - **Card** and **Icon**. the card takes the icon as a prop, then renders custom HTML below it with `props.children`
 
 
 
