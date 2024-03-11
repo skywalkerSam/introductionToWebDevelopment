@@ -15,7 +15,7 @@ function Card(props) {
   return (
     <div className='card'>
       {props.logo}
-      {props.children}
+      {props.children}    {/* Content Projection */}
     </div>
   )
 }
