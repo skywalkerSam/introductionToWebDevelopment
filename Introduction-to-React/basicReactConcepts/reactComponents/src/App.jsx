@@ -1,18 +1,46 @@
-import { useState } from 'react'
+import { Children, useState } from 'react'
 import './App.css'
 import 'tachyons'
+import starboyLogo from './assets/starboy_logo.png'
 
-function App(){
-  let [count, setCount] = useState(0)
-
-  return(
+function Logo() {
+  return (
     <div>
+      <img src={starboyLogo} alt="Starboy Logo" className='logo' />
+    </div>
+  )
+}
+
+function Card(props) {
+  return (
+    <div className='card'>
+      {props.logo}
+      {props.children}
+    </div>
+  )
+}
+
+function App() {
+  let [title, setTitle] = useState('skywalkerSam')
+
+  return (
+    <div className='mr3 grey'>
       <h1>React Components</h1>
+      <hr />
 
       <div>
-        <h2>
-          
-        </h2>
+
+        <Card logo={<Logo></Logo>}>
+          <div>
+            <p>We're all just little stardusts heading into the unkown... indefinitely.</p>
+          </div>
+          <button
+            className='mt5 pointer'
+            onClick={() => { setTitle('Starboy') }}>
+            {title}
+          </button>
+        </Card>
+
       </div>
     </div>
   )

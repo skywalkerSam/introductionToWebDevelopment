@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #00e1ff;
+  background-color: #000000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -54,7 +54,7 @@ button:focus-visible {
   outline: 3px rgb(236, 75, 75);
 }
 button:active {
-  transform: scale(4.3);
+  transform: scale(1.25);
 }
 
 @media (prefers-color-scheme: light) {
