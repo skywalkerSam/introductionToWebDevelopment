@@ -32,7 +32,7 @@ function App() {
 
         <Card logo={<Logo></Logo>}>
           <div>
-            <p>We're all just little stardusts heading into the unkown... indefinitely.</p>
+            <p>We're all just little stardusts heading into the unknown... indefinitely.</p>
           </div>
           <button
             className='mt5 pointer'
