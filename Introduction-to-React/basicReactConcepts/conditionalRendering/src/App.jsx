@@ -1,46 +1,41 @@
-import { Children, useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 import 'tachyons'
-import starboyLogo from './assets/starboy_logo.png'
 
-function Logo() {
+function LoadingButton(props) {
   return (
-    <div>
-      <img src={starboyLogo} alt="Starboy Logo" className='logo' />
+    <div className='mt5'>
+      {props.children}    {/* This content projection shit is fuckin' awesome ;) */}
     </div>
   )
 }
 
-function Card(props) {
+function LoadingAnimation(props) {
   return (
-    <div className='card'>
-      {props.logo}
-      {props.children}    {/* Content Projection */}
+    <div className='mt5'>
+      <button className='loader'></button>
+      {props.children}
     </div>
   )
 }
 
 function App() {
-  let [title, setTitle] = useState('skywalkerSam')
+  let [loading, setLoading] = useState(true)
 
   return (
     <div className='mr3 grey'>
-      <h1>React Components</h1>
-      <hr />
-
       <div>
-
-        <Card logo={<Logo></Logo>}>
-          <div>
-            <p>We're all just little stardusts heading into the unknown... indefinitely.</p>
-          </div>
-          <button
-            className='mt5 pointer'
-            onClick={() => { setTitle('Starboy') }}>
-            {title}
-          </button>
-        </Card>
-
+        <h1>Conditional Rendering</h1>
+      </div>
+      <div>
+        {loading ?
+          <LoadingButton>
+            <button
+              onClick={() => setLoading(false)}>
+              Show loading animation...
+            </button>
+          </LoadingButton>
+          : <LoadingAnimation></LoadingAnimation>}
       </div>
     </div>
   )

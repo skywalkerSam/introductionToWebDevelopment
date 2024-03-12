@@ -26,10 +26,10 @@ function Conditional({ count }) {
 {count && 2 === 0 ? <h1>Count is even</h1> }
 ```
 
-# Challenge
+# Challenge!
 Define a `LoadingButton` component. The button takes loading state, onClick, and label as props then renders the **label** or **loader** depending on the loading state.
 
-
+`Tip`: This content projection shit is fuckin' awesome ;)
 
 
 #
