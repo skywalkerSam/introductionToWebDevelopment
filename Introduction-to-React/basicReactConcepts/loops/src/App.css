@@ -88,3 +88,7 @@ p {
     transform: rotate(360deg);
   }
 }
+
+li {
+  color: greenyellow;
+}

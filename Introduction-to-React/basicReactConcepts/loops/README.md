@@ -1,36 +1,39 @@
 
-# 🔀 [Conditional Rendering](https://fireship.io/courses/react/basics-conditional-rendering/)
+# ➰ Loops
+How to render a collection of items in JSX
 
-Conditional rendering is a very common pattern where you render a component based on a boolean condition. There are several ways to implement conditional rendering in React.
+- `.map()` to loop through an array and render a list of components.
+- **Key** prop is required for each item in the list.
 
+## Array Map
+The most common way to loop over a collection of data in React is to use the Array map method. It takes a callback function that gets called on each element to transform the data into UI elements.
 
-# 1. If Else
 ```javascript
-function Conditional({ count }) {
+const data = [
+  { id: 1, name: 'Fido 🐕' },
+  { id: 2, name: 'Snowball 🐈' },
+  { id: 3, name: 'Murph 🐈‍⬛' },
+  { id: 4, name: 'Zelda 🐈' },
+];
 
-  if (count > 5) {
-    return <h1>Count is greater than 5</h1>;
-  } else {
-    return <h1>Count is less than 5</h1>;
-  }
+function ListOfAnimals() {
+  return (
+    <ul>
+      {data && // Only render if there's data - see 'Conditional Rendering'
+        data.map(({ id, name }) => {
+          return <li key={id}>{name}</li>;
+        })}
+    </ul>
+  );
 }
 ```
 
-# 2. Ternary `? :`
-```javascript
-{count % 2 === 0 ? <h1>Count is even</h1> : <h1>Count is odd</h1> }
-```
-
-# 3. Logical And `&&`
-```javascript
-{count && 2 === 0 ? <h1>Count is even</h1> }
-```
 
 # Challenge!
-Define a `LoadingButton` component. The button takes loading state, onClick, and label as props then renders the **label** or **loader** depending on the loading state.
+Define an array of animals called data. Use a `.map()` to return a list of all the animals in the data array.
 
-`Tip`: This content projection shit is fuckin' awesome ;)
 
+`Tip`: **Expressions** and **Statements** are two different things, you can only use expressions inside JSX (`JavaScript Expression`)
 
 #
 
