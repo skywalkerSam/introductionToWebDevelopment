@@ -1,5 +1,5 @@
 
-# ➰ Loops
+# ➰ [Loops](https://fireship.io/courses/react/basics-loops/)
 How to render a collection of items in JSX
 
 - `.map()` to loop through an array and render a list of components.
