@@ -1,5 +1,5 @@
 
-# 💥 Events
+# 💥 [Events](https://fireship.io/courses/react/basics-events/)
 How to handle events in JSX
 
 # Events in Vanilla JS
@@ -24,8 +24,13 @@ function Events() {
 Implement a text input that updates the input value and logs the event target.
 
 
+
 # Takeaways
-`Tip`: **Expressions** and **Statements** are two different things, you can only use expressions inside JSX (`JavaScript Expression`)
+
+- Make it **simple**, NEVER overcomplicate things!
+  
+
+**NOTE**: **Expressions** and **Statements** are two different things, you can only use expressions inside JSX (`JavaScript Expression`)
 
 
 #
