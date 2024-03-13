@@ -75,7 +75,7 @@ Implement a **handleClick()** function to handle state using `useState()`.
 
 # Takeaways...
 
-- Make it **simple**, NEVER overcomplicate things!
+- Keep it **simple**, DON'T try to overcomplicate things unnecessarily!
   
 
 **NOTE**: **Expressions** and **Statements** are two different things, you can only use expressions inside JSX (`JavaScript Expression`)
