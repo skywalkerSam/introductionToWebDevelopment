@@ -37,7 +37,7 @@ function App() {
       <IncrementComponent onClick={handleIncrement}></IncrementComponent>
 
       <div className='mt4'>
-        <h2>{prevCount} => {count}</h2>     {/* Intentional, for real! LOL ;)*/}
+        <h2>{prevCount} => {count}</h2>     {/* Intentional, for real! lol ;)*/}
         
       </div>
       
