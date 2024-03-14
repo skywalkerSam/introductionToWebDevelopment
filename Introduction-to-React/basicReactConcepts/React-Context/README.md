@@ -1,52 +1,65 @@
 
-# 🌱 [Lifecycle and Effects](https://fireship.io/courses/react/basics-lifecycle/)
-Working with the **useEffect()** hook
+# 🌲 [Context](https://fireship.io/courses/react/basics-context/)
+Working with the React Context API
 
-# Lifecycle with Class Components
+- **prop drilling** isn't good. If you have to, `useContext()`
+- Too much data can lead to **performance issues** in your application...!
+
+# Example of Prop Drilling
 ```javascript
-class Lifecycle extends React.Component {
-  
-  componentDidMount() {
-    // Initialize
-  }
-
-  componentDidUpdate() {
-    // Updated
-  }
-
-  componentWillUnmount() {
-    // Removed
-  }
-}
-```
-
-# Lifecycle with useEffect()
-`useEffect()` is a React hook that can be used only inside **functional components**
-
-```javascript
-function Lifecycle() {
+function PropDrilling() {
 
   const [count] = useState(0);
 
-  useEffect(() => {
-    
-    console.log('count updated!')
+  return <Child count={count} />
+}
 
-    return () => console.log('destroyed!')
+function Child({ count }) {
+  return <GrandChild count={count} />
+}
 
-  }, [count]);
+function GrandChild({ count }) {
+  return <div>{count}</div>
+}
+```
 
+# Define context
+```javascript
+const CountContext = createContext();
+```
+
+# Sharing Data with Context
+```javascript
+function PropDrilling() {
+
+  const [count] = useState(0);
+
+  return (
+    <CountContext.Provider value={count}>
+      <Child />
+    </CountContext.Provider>
+  )
+}
+
+function Child() {
+  return <GrandChild />
+}
+
+function GrandChild() {
+
+  const count = useContext(CountContext);
+
+  return <div>{count}</div>
 }
 ```
 
 
+# Challenge
+Create `CountContext` and `CountProvider` that uses `{ count, setCount }` as its values. This will allow the count and `setCount` function to be passed to any of its `{children}` in the tree. Create 2 components `Count` and `CountButton` that can each call `useContext(CountContext)` to update the count and display the current count value.
 
-# Challenge!
-Implement a `CountdownTimer` component that implements `useState()` and `useEffect()` in conjunction with `setInterval()` to handle the timer. Make sure you use the `useEffect()` hook to call `clearTimeout()` when the component is destroyed.
 
 
 # Takeaways...
-
 - Keep it **simple**, DON'T try to overcomplicate things unnecessarily!
   
 
