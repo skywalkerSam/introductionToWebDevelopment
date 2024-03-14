@@ -1,3 +1,9 @@
+/*
+DEV: skywalkerSam
+Purpose: Countdown Timer
+Stardate: 12024.03.14.1353
+*/
+
 import './App.css'
 import 'tachyons'
 import React, { useState, useEffect } from 'react'
