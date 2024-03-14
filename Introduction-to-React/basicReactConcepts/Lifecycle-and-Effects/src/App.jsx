@@ -34,7 +34,7 @@ function Countdown(props) {
   }
 
   // Pause
-  function pauseCountdown() {
+  function handlePause() {
     setPause(!paused)
   }
 
@@ -71,7 +71,7 @@ function Countdown(props) {
       <div className='mr3 mt5'>
         <button
           className='green'
-          onClick={pauseCountdown}>
+          onClick={handlePause}>
           {paused ? 'Let\' Go...' : 'STOP!'}
         </button>
 
