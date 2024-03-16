@@ -1,9 +1,7 @@
 
 # 🌲 [Context](https://fireship.io/courses/react/basics-context/)
-Working with the React Context API
+Working with the **React Context API**
 
-- **prop drilling** isn't good. If you have to, `useContext()`
-- Too much data can lead to **performance issues** in your application...!
 
 # Example of Prop Drilling
 ```javascript
@@ -23,12 +21,13 @@ function GrandChild({ count }) {
 }
 ```
 
+
 # Define context
 ```javascript
 const CountContext = createContext();
 ```
 
-# Sharing Data with Context
+## Sharing Data with Context
 ```javascript
 function PropDrilling() {
 
@@ -59,8 +58,12 @@ Create `CountContext` and `CountProvider` that uses `{ count, setCount }` as its
 
 
 
-# Takeaways...
-- Keep it **simple**, DON'T try to overcomplicate things unnecessarily!
+# NOTES:
+- Keep it **Simple**, don't over-engineer things unnecessarily!
+- Uni-directional data flow, **Parent to child** only, not vice-versa!
+- Everytime the state changes, the component **re-renderes**.
+- **Prop drilling** isn't good in long-term but if you have to, `useContext()`
+- Keep it minimal, too much data can lead to **performance issues**!
   
 
 `NOTE`: **Expressions** and **Statements** are two different things, you can only use expressions inside JSX (**JavaScript Expression**)

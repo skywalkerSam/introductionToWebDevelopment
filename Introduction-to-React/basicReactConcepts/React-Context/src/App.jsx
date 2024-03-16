@@ -1,89 +1,52 @@
-/*
-DEV: skywalkerSam
-Purpose: Countdown Timer
-Stardate: 12024.03.14.1353
-*/
-
 import './App.css'
 import 'tachyons'
-import React, { useState, useEffect } from 'react'
+import { useState, useContext, createContext } from 'react'
 
-// Countdown Component
-function Countdown(props) {
-  // States
-  let [over, setOver] = useState(false)
-  let [paused, setPause] = useState(true)
-  let [[h, m, s], setTime] = useState([props.hr, props.min, props.sec])
+/* NOTES:
+- Everytime the state changes, the component re-renderes.
 
+*/
 
-  // Tick
-  function tick() {
-    // console.log(over, paused)
+// createContext
+const CountContext = createContext()
 
-    if (paused || over) {
-      return null
-    } else if (h === 0 && m === 0 && s === 0) {
-      setOver(true)
-    } else if (m === 0 && s === 0) {
-      setTime([h - 1, 59, 59])
-    } else if (s === 0) {
-      setTime([h, m - 1, 59])
-    } else {
-      setTime([h, m, s - 1])
-    }
-  }
+// CountProvider
+function CountProvider(props) {
+  const [count, setCount] = useState(0)
 
-  // Pause
-  function pauseCountdown() {
-    setPause(!paused)
-  }
+  return (
+    <CountContext.Provider value={[count, setCount]}>
+      {props.children}
+    </CountContext.Provider>
+  )
+}
 
-  // Reset
-  function resetCountdown() {
-    setTime([props.hr, props.min, props.sec])
-    setPause(true)
-    setOver(false)
-  }
-
-  // Format time values to `00:00:00`
-  function formatValues(values) {
-    return values.toString().padStart(2, '0')
-  }
-
-  // useEffect, 1000ms
-  useEffect(() => {
-    let ticker = setInterval(() => tick(), 1000)
-    return (() => {
-      clearInterval(ticker)
-    })
-  })
-
+// Component-1: show
+//re-render
+function ChildComponent() {
+  const count = useContext(CountContext)
 
   return (
     <div>
-
-      <div>
-        <h1>
-          {formatValues(h)}:{formatValues(m)}:{formatValues(s)}
-        </h1>
-      </div>
-
-      <div className='mr3 mt5'>
-        <button
-          className='green'
-          onClick={pauseCountdown}>
-          {paused ? 'Let\' Go...' : 'STOP!'}
-        </button>
-
-        <button
-          className='ml4 red'
-          onClick={resetCountdown}>
-          Fuck, Reset!
-        </button>
-      </div>
-
+      <h2 className='mt6 mb3 f2'>
+        First Component, {count}
+      </h2>
     </div>
+  )
+}
 
+
+// Component-2: update
+//change
+function GrandchildComponent() {
+  let [count, setCount] = useContext(CountContext)
+
+  return (
+    <div>
+      <button onClick={() => setCount(++count)}>
+        Increment by 1
+      </button>
+    </div>
   )
 }
 
@@ -91,15 +54,18 @@ function Countdown(props) {
 function App() {
 
   return (
-    <div className='mr3 red'>
-
+    <div className='mr3 grey'>
       <div>
-
-        <h1 className='green'>Lifecycle and Effects</h1>
+        <h1 className='light-blue'>useContext</h1>
         <hr />
       </div>
 
-      <Countdown hr={0} min={0} sec={30}></Countdown>
+      <div>
+        <CountProvider>
+          <ChildComponent></ChildComponent>
+          <GrandchildComponent></GrandchildComponent>
+        </CountProvider>
+      </div>
 
     </div>
   )
