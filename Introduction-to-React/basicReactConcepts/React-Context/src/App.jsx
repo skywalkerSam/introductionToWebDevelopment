@@ -3,7 +3,7 @@ import 'tachyons'
 import { useState, useContext, createContext } from 'react'
 
 /* NOTES:
-- Everytime the state changes, the component re-renderes.
+- Everytime the state changes, the component re-renders.
 
 */
 

@@ -61,7 +61,7 @@ Create `CountContext` and `CountProvider` that uses `{ count, setCount }` as its
 # NOTES:
 - Keep it **Simple**, don't over-engineer things unnecessarily!
 - Uni-directional data flow, **Parent to child** only, not vice-versa!
-- Everytime the state changes, the component **re-renderes**.
+- Everytime the state changes, the component **re-renders**.
 - **Prop drilling** isn't good in long-term but if you have to, `useContext()`
 - Keep it minimal, too much data can lead to **performance issues**!
   
