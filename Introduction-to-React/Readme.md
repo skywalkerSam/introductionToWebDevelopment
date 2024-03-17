@@ -2,14 +2,13 @@
 A JavaScript Library for Building UIs. (`Facebook, 2013`)
 
 
+
+# ⚛️ [100sec Of React](https://fireship.io/courses/react/basics-react)
 - [React](https://github.com/facebook/react) ( [react.dev](https://react.dev/))
 - [React Native](https://github.com/facebook/react-native)
 
 
-
-# ⚛️ [100sec Of React](https://fireship.io/courses/react/basics-react)
-
-## [React Ecosystem](https://github.com/enaqx/awesome-react)
+# [React Ecosystem](https://github.com/enaqx/awesome-react)
 - Static Site: [Gatsby](https://www.gatsbyjs.com/)
 - Server-side Rendering: [NEXT.js](https://nextjs.org/)
 - Animation: [react-spring](https://www.react-spring.dev/)
@@ -17,6 +16,16 @@ A JavaScript Library for Building UIs. (`Facebook, 2013`)
 - State Management: [Redux](https://redux.js.org/), [MobX](https://mobx.js.org/README.html), [RECOil](https://recoiljs.org), [XState](https://xstate.js.org/)
 &, More...
 
+
+## A basic `React Component`
+
+```javascript
+function App(){
+    return <h1>Hello World!</h1>
+}
+
+export default App
+```
 
 
 # 💀 Anatomy of React
@@ -33,6 +42,7 @@ There are many ways to build a React app, Here's some common ones...
 npx create-react-app my-app
 ```
 
+
 ## React Files
 Get familiar with the files in your React project.
 
@@ -48,7 +58,10 @@ Get familiar with the files in your React project.
 
 
 
-# 🗃️ Components
+# 
+
+
+# 🗃️ [React Components](https://fireship.io/courses/react/basics-components/)
 How does a **component-based architecture** for building UIs actually work?
 
 - `JSX`: JavaScript XML, a JS friendly version of HTML.
@@ -58,7 +71,7 @@ How does a **component-based architecture** for building UIs actually work?
 - **Virtual DOM** and React Fiber
 - Install **React Dev Tools**!
 
-## Define Components with JSX
+# Define Components with JSX
 Now in your code, define a component by declaring a JavaScript function. It can use the function keyword, or be a function expression if you prefer. It’s return value is the UI represented in a JavaScript friendly version of HTML called JSX. It typically starts with parentheses, followed by exactly one parent element, or an empty element called a fragment, followed by some HTML. But it’s no ordinary HTML - it can also run JavaScript allowing you to include dynamic values from your code using braces. Once a component is defined it can be declared or used in other parts of the UI similar to other HTML elements.
 
 ```javascript
@@ -69,7 +82,7 @@ function MyComponent() {
 <MyComponent />
 ```
 
-## Share Data with Props
+# Share Data with Props
 You can pass data into a component with props. Every functional component has a props argument that can accept external data. A prop can be a primitive value like a string or number, and object, or even another React component. Components can pass props from a parent to child, but not vice versa. This means that any state or data that changes is owned by one component, and can only be used by its children. This creates a one-way or unidirectional dataflow that keeps your code modular and predictable.
 
 ```javascript
@@ -91,15 +104,25 @@ function MyComponent({ name }) {
 <MyComponent name={`JeffD` + 23} />
 ```
 
-## Virtual DOM and React Fiber
+# Virtual DOM and React Fiber
 What makes React so powerful, is that when this data changes the library knows how to efficiently rerend any each component using an internal mechanism called the Virtual DOM and more recently React Fiber. You don’t need to know much about VDOM or Fiber to use React, but it is important to be aware that it’s the magic that reconciles your react code with the real DOM in the browser at runtime. It you want to go further down this rabbit hole, check out the official documentation.
 
 
+# [Challenge](https://github.com/skywalkerSam/Introduction-To-Web-Development/blob/fireship/Introduction-to-React/basicReactConcepts/reactComponents/src/App.jsx)
+Define a set of 2 components - **Card** and **Icon**. the card takes the icon as a prop, then renders custom HTML below it with `props.children` ( **Content Projection** )
 
-# 🔀 Conditional Rendering
+
+
+#
+
+
+
+# 🔀 [Conditional Rendering](https://fireship.io/courses/react/basics-conditional-rendering/)
+
 Conditional rendering is a very common pattern where you render a component based on a boolean condition. There are several ways to implement conditional rendering in React.
 
-## 1. If Else
+
+# 1. If Else
 ```javascript
 function Conditional({ count }) {
 
@@ -111,25 +134,34 @@ function Conditional({ count }) {
 }
 ```
 
-## 2. Ternary `? :`
+# 2. Ternary `? :`
 ```javascript
 {count % 2 === 0 ? <h1>Count is even</h1> : <h1>Count is odd</h1> }
 ```
 
-## 3. Logical And `&&`
+# 3. Logical And `&&`
 ```javascript
 {count && 2 === 0 ? <h1>Count is even</h1> }
 ```
 
+# Challenge!
+Define a `LoadingButton` component. The button takes loading state, onClick, and label as props then renders the **label** or **loader** depending on the loading state.
+
+`Tip`: This content projection shit is fuckin' awesome ;)
 
 
-# ➰ Loops
+
+#
+
+
+
+# ➰ [Loops](https://fireship.io/courses/react/basics-loops/)
 How to render a collection of items in JSX
 
 - `.map()` to loop through an array and render a list of components.
 - **Key** prop is required for each item in the list.
 
-## Array Map
+# Array Map
 The most common way to loop over a collection of data in React is to use the Array map method. It takes a callback function that gets called on each element to transform the data into UI elements.
 
 ```javascript
@@ -153,11 +185,19 @@ function ListOfAnimals() {
 ```
 
 
+# Challenge!
+Define an array of animals called data. Use a `.map()` to return a list of all the animals in the data array.
 
-# 💥 Events
+
+
+#
+
+
+
+# 💥 [Events](https://fireship.io/courses/react/basics-events/)
 How to handle events in JSX
 
-## Events in Vanilla JS
+# Events in Vanilla JS
 ```javascript
 const button = document.querySelector('button');
 
@@ -166,7 +206,7 @@ button.addEventListener('click', (event) => {
 })
 ```
 
-## Events in React
+# Events in React
 ```javascript
 function Events() {
 
@@ -175,8 +215,16 @@ function Events() {
 ```
 
 
+# Challenge
+Implement a text input that updates the input value and logs the event target.
 
-# 🔄 [State](https://fireship.io/courses/react/basics-state/)
+
+
+#
+
+
+
+# 🔄 [React State](https://fireship.io/courses/react/basics-state/)
 Working with the useState hook
 
 There are multiple ways to manage states, keep it simple, and don't use **third-party state management** libraries like Redux, MobX, or Recoil unless you absolutely have to...!
@@ -197,7 +245,7 @@ There are multiple ways to manage states, keep it simple, and don't use **third-
 - **Hook** is a function() that can be called on top level of your component to use different features of your framework i.e. React.
 
 
-## Basic Usage: `useState()`
+# Basic Usage: `useState()`
 
 ```javascript
 function Stateful() {
@@ -222,7 +270,8 @@ function Stateful() {
 }
 ```
 
-## Updating objects with useState()
+
+# Updating objects with useState()
 ```javascript
 function Stateful() {
   const [state, setState] = useState({ count: 0, user: 'Bob' });
@@ -245,11 +294,19 @@ function Stateful() {
 ```
 
 
+# Challenge!
+Implement a **handleClick()** function to handle state using `useState()`.
 
-# 🌱 Lifecycle and Effects
-Working with the **useEffect** hook
 
-## Lifecycle with Class Components
+
+#
+
+
+
+# 🌱 [Lifecycle and Effects](https://fireship.io/courses/react/basics-lifecycle/)
+Working with the **useEffect()** hook
+
+# Lifecycle with Class Components
 ```javascript
 class Lifecycle extends React.Component {
   
@@ -267,7 +324,7 @@ class Lifecycle extends React.Component {
 }
 ```
 
-## Lifecycle with useEffect()
+# Lifecycle with useEffect()
 `useEffect()` is a React hook that can be used only inside **functional components**
 
 ```javascript
@@ -288,13 +345,22 @@ function Lifecycle() {
 
 
 
-# 🌲 Context
-Working with the React Context API
+# Challenge!
+Implement a `CountdownTimer` component that implements `useState()` and `useEffect()` in conjunction with `setInterval()` to handle the timer. Make sure you use the `useEffect()` hook to call `clearTimeout()` when the component is destroyed.
 
-- **prop drilling** isn't good. If you have to, `useContext()`
-- Too much data can lead to **performance issues** in your application...!
+- [Countdown Timer](https://github.com/skywalkerSam/timer)
 
-## Example of Prop Drilling
+
+
+#
+
+
+
+# 🌲 [Context](https://fireship.io/courses/react/basics-context/)
+Working with the **React Context API**
+
+
+# Example of Prop Drilling
 ```javascript
 function PropDrilling() {
 
@@ -312,7 +378,8 @@ function GrandChild({ count }) {
 }
 ```
 
-## Define context
+
+# Define context
 ```javascript
 const CountContext = createContext();
 ```
@@ -343,6 +410,14 @@ function GrandChild() {
 ```
 
 
+# Challenge
+Create `CountContext` and `CountProvider` that uses `{ count, setCount }` as its values. This will allow the count and `setCount` function to be passed to any of its `{children}` in the tree. Create 2 components `Count` and `CountButton` that can each call `useContext(CountContext)` to update the count and display the current count value.
+
+
+
+#
+
+
 
 # 🚨 [Error Boundries](https://fireship.io/courses/react/basics-error-boundry/)
 How do Error Boundaries work in React?
@@ -371,8 +446,8 @@ class ErrorBoundary extends React.Component {
   }
 }
 
-// Example Usage
 
+// Example Usage
 function Main() {
   return (
     <Dashboard>
@@ -382,29 +457,34 @@ function Main() {
     </Dashboard>
   );
 }
+
 ```
 
 
+# Challenge!
+Create an `ErrorBoundary` class component that provides a **fallback UI** in the event an error occurs.
+
+
+#
+
+
+# NOTES:
+- Keep it **Simple**, don't over-engineer things unnecessarily!
+- Uni-directional data flow, **Parent to child** only, not vice-versa!
+- Everytime the state changes, the component **re-renders**.
+- **Prop drilling** isn't good in long-term but if you have to, `useContext()`
+- Keep it minimal, too much data can lead to **performance issues**!
+  
+
+`NOTE`: **Expressions** and **Statements** are two different things, you can only use expressions inside JSX (**JavaScript Expression**)
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-- [ ] Done
 
 #
 
 ## Until next time...
 
 # ;)
+- [X] Done
