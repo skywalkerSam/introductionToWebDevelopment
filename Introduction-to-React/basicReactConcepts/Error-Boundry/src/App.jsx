@@ -1,74 +1,75 @@
 import './App.css'
 import 'tachyons'
-import { useState, useContext, createContext } from 'react'
+import { useState, Component } from 'react'
 
-/* NOTES:
-- Everytime the state changes, the component re-renders.
+// ErrorBoundry Class Component
+class ErrorBoundry extends Component {
 
-*/
+  // Error State, moved to the App()
+  // constructor(props) {
+  //   super(props)
+  //   this.state = { hasError: false }   // true
+  // }
 
-// createContext
-const CountContext = createContext()
+  // Update Error Status
+  static getDerivedStateFromError(error) {
+    // return { hasError: true };
+    this.props.setHasError(true)
+  }
+  componentDidCatch(error, info) {
+    console.log('Fuck, Something went horribily wrong here...!', error, info)
+  }
 
-// CountProvider
-function CountProvider(props) {
-  const [count, setCount] = useState(0)
+  // Error UI
+  render() {
+    console.log(this.props.hasError)
+    
+    if (this.props.hasError) {
+      return (
+        <div className='error-boundry red'>
+          <h2 className='mt6'>
+            Fuck, Something went horribily wrong here...!
+          </h2>
+        </div>
+      )
+    }
+    return (this.props.children)
+  }
 
-  return (
-    <CountContext.Provider value={[count, setCount]}>
-      {props.children}
-    </CountContext.Provider>
-  )
-}
-
-// Component-1: show
-//re-render
-function ChildComponent() {
-  const count = useContext(CountContext)
-
-  return (
-    <div>
-      <h2 className='mt6 mb3 f2'>
-        First Component, {count}
-      </h2>
-    </div>
-  )
-}
-
-
-// Component-2: update
-//change
-function GrandchildComponent() {
-  let [count, setCount] = useContext(CountContext)
-
-  return (
-    <div>
-      <button onClick={() => setCount(++count)}>
-        Increment by 1
-      </button>
-    </div>
-  )
+  // And that's why you use functional components... lol ;)
 }
 
 
 function App() {
-
+  // Moving the error state up!
+  const [hasError, setHasError] = useState(false)   // true
+  
   return (
     <div className='mr3 grey'>
-      <div>
-        <h1 className='light-blue'>useContext</h1>
+      <div className='mb6'>
+        <h1>
+          <a className='red'
+            href="https://fireship.io/courses/react/basics-error-boundry/">Error Boundry</a>
+        </h1>
         <hr />
       </div>
 
-      <div>
-        <CountProvider>
-          <ChildComponent></ChildComponent>
-          <GrandchildComponent></GrandchildComponent>
-        </CountProvider>
-      </div>
-
+      <ErrorBoundry hasError={hasError} setHasError={setHasError}>
+        <div className='no-error-boundry green'>
+          <button
+            onClick={() => setHasError(true)}>
+            <h2 className='mt6 green'>
+              No errors, Enjoy your day... :)
+            </h2>
+          </button>
+        </div>
+      </ErrorBoundry>
     </div>
   )
 }
 
+
 export default App
+
+
+// I know it's "boundary" but, idk... I like it this way. :P

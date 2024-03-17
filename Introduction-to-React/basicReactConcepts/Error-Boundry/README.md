@@ -26,8 +26,8 @@ class ErrorBoundary extends React.Component {
   }
 }
 
-// Example Usage
 
+// Example Usage
 function Main() {
   return (
     <Dashboard>
@@ -37,9 +37,12 @@ function Main() {
     </Dashboard>
   );
 }
+
 ```
 
 
+# Challenge
+Create an `ErrorBoundary` class component that provides a **fallback UI** in the event an error occurs.
 
 
 
@@ -52,6 +55,8 @@ function Main() {
   
 
 `NOTE`: **Expressions** and **Statements** are two different things, you can only use expressions inside JSX (**JavaScript Expression**)
+
+
 
 
 #

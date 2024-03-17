@@ -37,7 +37,8 @@ h1 {
 
 button {
   border-radius: 8px;
-  border: 3px solid whitesmoke;
+  /* border: 3px solid whitesmoke; */
+  border: none;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;

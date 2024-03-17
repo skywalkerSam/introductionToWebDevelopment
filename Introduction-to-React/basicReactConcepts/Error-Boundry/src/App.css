@@ -92,3 +92,16 @@ p {
 li {
   color: greenyellow;
 }
+
+
+.error-boundry {
+  padding: 0.5rem 1rem;
+  border: solid 4px #ff0000;
+  border-radius: 2rem;
+}
+
+.no-error-boundry {
+  padding: 0.5rem 1rem;
+  border: solid 4px #00ff04;
+  border-radius: 1rem;
+}
