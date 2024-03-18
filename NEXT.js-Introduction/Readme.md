@@ -40,6 +40,21 @@ Best of both worlds. Re-generate pages in the background dynamically on each req
 
 
 
+# Start a NEXT Project
+
+```shell 
+npx create-next-app
+```
+
+
+
+
+
+#
+
+
+
+
 ## Until next time...
 
 # ;)
