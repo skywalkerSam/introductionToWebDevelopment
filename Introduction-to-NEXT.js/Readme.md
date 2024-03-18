@@ -35,7 +35,7 @@ Rendering the page at build time
 
 
 # Incremental Static Regeneration (`ISR`)
-Best of both worlds. Re-generate the page in th background dynamically on each request while serving the static page.
+Best of both worlds. Re-generate the page in the background dynamically on each request while serving the static page.
 
 
 
