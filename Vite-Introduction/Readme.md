@@ -2,7 +2,7 @@
 
 [Vite Official Website](https://vitejs.dev/)
 
-Vite is a build tool that aims to provide a faster and leaner development experience for modern web projects.
+A JavaScript build tool that simplifies the way we build and develop frontend web applications, provides a faster development experience, and a faster production builds using **HMR** (Hot Module Replacement) and **ESBuild**.
 
 ## Installation
 
