@@ -1,17 +1,18 @@
 # [Introduction to NEXT.js](https://nextjs.org/)
-A React framework for production. 
+The React Framework for the Web
 
 - Search Engine Optimization (`SEO`)
 
 
+
+#
+
+
+
 # Server-side Rendering (`SSR`)
-Rendering the page on each request
+Rendering the pages on each request
 
 - Dynamic content/data
-
-
-
-
 
 
 
@@ -20,13 +21,9 @@ Rendering the page on each request
 
 
 # Static Site Generation (`SSG`) or, Pre-rendering
-Rendering the page at build time
+Rendering the pages at build time
 
 - Static content
-
-
-
-
 
 
 
@@ -35,13 +32,12 @@ Rendering the page at build time
 
 
 # Incremental Static Regeneration (`ISR`)
-Best of both worlds. Re-generate the page in th background dynamically on each request while serving the static page.
-
-
+Best of both worlds. Re-generate pages in the background dynamically on each request while serving the static page.
 
 
 
 #
+
 
 
 ## Until next time...
