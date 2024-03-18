@@ -35,9 +35,9 @@
 
 
 
-![Just read the documentation](./Resources/memes/justReadTheDocumentation_.jpg)
-
 `Tip`: Just read the damn Documentation!
+
+![Just read the documentation](./Resources/memes/justReadTheDocumentation_.jpg)
 
 
 
