@@ -480,6 +480,13 @@ Create an `ErrorBoundary` class component that provides a **fallback UI** in the
 
 
 
+#
+
+
+
+# Life goes on...
+![It's time to learn a new JS Framework lol](./Resources/Memes/hold-my-beer.webp)
+
 
 
 #
