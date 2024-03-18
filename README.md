@@ -37,10 +37,15 @@
 
 ![Just read the documentation](./Resources/memes/justReadTheDocumentation_.jpg)
 
-### `Tip`: Just read the damn Documentation!
+`Tip`: Just read the damn Documentation!
 
 
-## Additional Sources (`LEGACY`)
+
+#
+
+
+
+# Additional Sources (`LEGACY`)
 
 - [Introduction to Computer Science and Programming Specialization](https://www.coursera.org/specializations/introduction-computer-science-programming)
 
