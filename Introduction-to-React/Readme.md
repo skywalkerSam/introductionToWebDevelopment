@@ -30,6 +30,8 @@ export default App
 
 # 💀 Anatomy of React
 
+![The React Way](./Resources/Memes/the-react-way.webp)
+
 ## React Build Tools
 There are many ways to build a React app, Here's some common ones...
 
@@ -304,7 +306,8 @@ Implement a **handleClick()** function to handle state using `useState()`.
 
 
 # 🌱 [Lifecycle and Effects](https://fireship.io/courses/react/basics-lifecycle/)
-Working with the **useEffect()** hook
+Working with the `useEffect()` hook
+- Be careful not to create a **memory leak**/**while loop** when using **useEffect()**.
 
 # Lifecycle with Class Components
 ```javascript
