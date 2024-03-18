@@ -30,6 +30,8 @@ export default App
 
 # 💀 Anatomy of React
 
+![The React Way](./Resources/Memes/the-react-way.webp)
+
 ## React Build Tools
 There are many ways to build a React app, Here's some common ones...
 
@@ -304,7 +306,8 @@ Implement a **handleClick()** function to handle state using `useState()`.
 
 
 # 🌱 [Lifecycle and Effects](https://fireship.io/courses/react/basics-lifecycle/)
-Working with the **useEffect()** hook
+Working with the `useEffect()` hook
+- Be careful not to create a **memory leak**/**while loop** when using **useEffect()**.
 
 # Lifecycle with Class Components
 ```javascript
@@ -479,6 +482,13 @@ Create an `ErrorBoundary` class component that provides a **fallback UI** in the
 `NOTE`: **Expressions** and **Statements** are two different things, you can only use expressions inside JSX (**JavaScript Expression**)
 
 
+
+#
+
+
+
+# Life goes on...
+![It's time to learn a new JS Framework lol](./Resources/Memes/hold-my-beer.webp)
 
 
 
