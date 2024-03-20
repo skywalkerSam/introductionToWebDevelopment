@@ -14,7 +14,7 @@
 - App Manifest: `manifest.json`
 - **Chrome Lighthouse**: Run audits on your PWA
 - Service Workers: `service-worker.js`
-- **Workbox**: A JS library for PWA development
+- **Workbox**: Production-ready service worker libraries and tooling.
   - Workbox recipes: `workbox-config.js`
 
 ## Install `workbox-cli` as an npm package
