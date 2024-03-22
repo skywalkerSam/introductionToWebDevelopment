@@ -2,6 +2,8 @@
 
 **Prograssive Web Apps** are an awesome alternative to building native Android/IOS applications without that **30%** cut that Google/Apple takes from your revenue.
 
+[Learn PWA (web.dev)](https://web.dev/learn/pwa/)
+
 - With Vite, you have to install `vite-plugin-pwa` to get PWA features
 
   - [**vite-plugin-pwa** Guide](https://vite-pwa-org.netlify.app/guide/)
@@ -51,8 +53,6 @@ npx workbox-cli wizard
 ```shell
 npx pwa-asset-generator ./icon.png ./icons
 ```
-
-`NOTE`: This is a starter project without the vite-plugin-pwa! Just trying to understand the basics of PWAs. It's not working as expected! Let's go with the plugin next time... lol ;)
 
 ## Until next time...
 
