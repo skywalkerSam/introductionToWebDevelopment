@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import "./App.css";
-import { addTopping } from "./pizzaSlice";
+import { addTopping, toggleGluten } from "./pizzaSlice";
 
 export default function App() {
   const pizza = useSelector((state) => state.pizza);
@@ -15,15 +15,22 @@ export default function App() {
       </div>
 
       <div>
-        <h2>Pizza Demo</h2>
+        <h2>Customize your Pizza</h2>
         {pizza.toppings.map((topping) => (
-          <div key={topping}>{topping}</div>
+          <div key={topping}>
+            <h3>{topping}</h3>
+          </div>
         ))}
       </div>
 
       <button onClick={() => dispatch(addTopping("Pepperoni"))}>
-        Add Pepperoni
+        + Pepperoni
       </button>
+      <button onClick={() => dispatch(addTopping("Extra Cheese"))}>
+        + Extra Cheese
+      </button>
+      <br />
+      {/* <button onClick={()=> dispatch(toggleGluten())}>Toggle Gluten</button> */}
     </div>
   );
 }
