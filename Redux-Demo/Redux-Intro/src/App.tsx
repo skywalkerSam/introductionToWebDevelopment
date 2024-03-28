@@ -1,10 +1,14 @@
 import { useDispatch, useSelector } from "react-redux";
 import "./App.css";
 import { addTopping, toggleGluten } from "./pizzaSlice";
+import "tachyons";
+import { useState } from "react";
+
 
 export default function App() {
   const pizza = useSelector((state) => state.pizza);
   const dispatch = useDispatch();
+  let [toppingCount, setToppingCount] = useState(1);
 
   return (
     <div>
@@ -15,10 +19,12 @@ export default function App() {
       </div>
 
       <div>
-        <h2>Customize your Pizza</h2>
+        <h2 className="red">Customize your Pizza...</h2>
         {pizza.toppings.map((topping) => (
           <div key={topping}>
-            <h3>{topping}</h3>
+            <p className="greenyellow">
+              {topping} x{toppingCount}
+            </p>
           </div>
         ))}
       </div>
