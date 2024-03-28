@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useDispatch, useSelector } from "react-redux";
+import "./App.css";
+import { addTopping } from "./pizzaSlice";
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const pizza = useSelector((state) => state.pizza);
+  const dispatch = useDispatch();
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div>
+      <div className="mb3 mt1">
+        <h1>Introduction to Redux</h1>
+        <p>with React</p>
+        <hr />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
 
-export default App
+      <div>
+        <h2>Pizza Demo</h2>
+        {pizza.toppings.map((topping) => (
+          <div key={topping}>{topping}</div>
+        ))}
+      </div>
+
+      <button onClick={() => dispatch(addTopping("Pepperoni"))}>
+        Add Pepperoni
+      </button>
+    </div>
+  );
+}
