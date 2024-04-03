@@ -23,8 +23,9 @@ const animals = [...Array(250).keys()].map((id) => {
 });
 
 // GET endpoint to search for animals
-app.get("/animals", (req, res) => {
-  const q = req.query.q?.toLowerCase().trim() || "";
+app.get("", (req, res) => {
+  const q = req.
+  query.q?.toLowerCase().trim() || "";
   const results = animals.filter((animal) =>
     animal.type.toLowerCase().includes(q)
   );
