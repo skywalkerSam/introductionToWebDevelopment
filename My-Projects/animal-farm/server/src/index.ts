@@ -23,9 +23,8 @@ const animals = [...Array(250).keys()].map((id) => {
 });
 
 // GET endpoint to search for animals
-app.get("", (req, res) => {
-  const q = req.
-  query.q?.toLowerCase().trim() || "";
+app.get('/animals', (req, res) => {
+  const q = req.query.q?.toLowerCase().trim() || '';
   const results = animals.filter((animal) =>
     animal.type.toLowerCase().includes(q)
   );
@@ -37,3 +36,8 @@ app.get("", (req, res) => {
 app.listen(PORT, () =>
   console.log(`Server running on http://localhost:${PORT}`)
 );
+
+
+// Query example... http://localhost:8080/animals/?q=horse
+
+// npm run build ; node .
