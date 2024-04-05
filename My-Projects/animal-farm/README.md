@@ -4,4 +4,4 @@
 
 [Frontend search for Animal Farm](https://fireship.io/courses/react/1-react-search/)
 
-[Animals - Maroon5](https://open.spotify.com/track/3h4T9Bg8OVSUYa6danHeH5?si=ce1c6279e1ba4ce5)
+[Animals - Maroon5](https://open.spotify.com/album/0KJe8iJqOpahl1CprfAThy?si=EScuMlffQgqA2Jb0kCxfHQ)
