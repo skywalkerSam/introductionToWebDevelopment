@@ -1,16 +1,17 @@
 import "./App.css";
 import "tachyons";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useDebugValue } from "react";
 import Animal from "./components/Animals";
 
-function App() {
+// Custom hook: useAnimalSearch
+function useAnimalSearch() {
   const [animals, setanimals] = useState([]);
 
   // Cache last query
   useEffect(() => {
     // `localStorage` is a key-value store built into the browser
     const lastQuery = localStorage.getItem("lastQuery");
-    search(lastQuery);
+    search(lastQuery || ""); // If no last query, search for all animals
   }, []); // Empty array means run once
 
   // Search function
@@ -26,6 +27,14 @@ function App() {
     localStorage.setItem("lastQuery", q.toLowerCase().trim());
   };
 
+  useDebugValue(animals ?? "Loading...")
+
+  return { animals, search };
+}
+
+function App() {
+  const { animals, search } = useAnimalSearch();
+  
   return (
     <div>
       <div>
@@ -44,6 +53,7 @@ function App() {
       <div>
         <ul>
           {animals.map((animal) => (
+            // Spread operator to pass all properties of `animal` as props
             <Animal key={animal.id} {...animal}></Animal>
           ))}
 
