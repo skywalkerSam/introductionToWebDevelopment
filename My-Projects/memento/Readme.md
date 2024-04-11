@@ -4,6 +4,8 @@
 npx create-react-app memento --template cra-template-pwa
 ```
 
+## Using [Firebase](https://firebase.google.com/)
+
 ```shell
 npm i -g firebase-tools
 ```
@@ -16,7 +18,7 @@ firebase login
 firebase init hosting
 ```
 
-`NOTE`: Select the `build` folder as the public directory.
+**NOTE**: Select the `build` folder as the public directory.
 
 ```shell
 npm run build
