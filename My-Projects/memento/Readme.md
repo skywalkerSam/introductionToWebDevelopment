@@ -29,3 +29,7 @@ firebase deploy
 ```
 
 [Application Hosting URL - Firebase](https://memento-34c4f.web.app)
+
+## [Game UI](https://fireship.io/courses/react/2-game-ui/)
+
+Using plain CSS Animation for now, will be using `Framer Motion` in the future.

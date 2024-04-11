@@ -10,7 +10,7 @@ export default function shuffle() {
         { image: '/assets/node.png' },
         { image: '/assets/firebase.png' },
         { image: '/assets/stack.png' },
-        { image: '/assets/fireship.png' },
+        { image: '/assets/html5.png' },
     ]
     // Duplicating the array [1, 2, 3, 1, 2, 3]
     return ([...assets, ...assets]

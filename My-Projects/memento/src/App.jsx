@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import shuffle from './utilities/shuffle';
+import Card from './components/Card';
 
 export default function App() {
   const [cards, setCards] = useState(shuffle);
@@ -12,7 +13,7 @@ export default function App() {
         cards.map((card) => {
           const { image, id, matched } = card;
 
-          // Rather than returning a div, we return a Card component
+          // Rather than returning a div, we return a Card component...
           return (
             <Card
               key={id}

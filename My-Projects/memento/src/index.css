@@ -2,6 +2,10 @@
 warning in VSCode,change the css.lint.unknownAtRules setting to ignore. */
 @import-normalize;
 
+/* 
+    Using plain CSS Animations, will be using a React CSS library `Framer Motion` in the future... (https://www.framer.com/motion/)
+*/
+
 :root {
   --text: #f66936;
   /* --text: white; */
@@ -10,7 +14,7 @@ warning in VSCode,change the css.lint.unknownAtRules setting to ignore. */
   /* --card: greenyellow; */
 
   --orange: #ffa200;
-  
+
   --bg: linear-gradient(135deg, #fc2473, #f66936);
   /* --bg: black; */
 

@@ -1,8 +1,26 @@
 // Card.jsx
 
-export default function Card(){
+export default function Card(props) {
+    // I like using props instead of destructuring...
     return (
-        <div>
+        <div className="card">
+            {
+                /* 
+                    pass className={condition ? value : undefined} instead. 
+                */
+            }
+            <div className={props.selected && 'selected'}>
+                <img
+                    src={props.image}
+                    alt="Card Front"
+                    className="card-face" />
+
+                <img
+                    src="/assets/fireship.png"
+                    alt="Card Back"
+                    className="card-back" 
+                    onClick={props.onClick}/>
+            </div>
 
         </div>
     )
