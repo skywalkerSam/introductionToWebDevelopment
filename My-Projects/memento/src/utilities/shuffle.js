@@ -14,6 +14,7 @@ export default function shuffle() {
     ]
     // Duplicating the array [1, 2, 3, 1, 2, 3]
     return ([...assets, ...assets]
+        // Use the Fisher-Yates (also known as Knuth) shuffle algorithm.
         .sort(() => Math.random() - 0.5)
         .map((card) => ({ ...card, id: Math.random() }))
     )

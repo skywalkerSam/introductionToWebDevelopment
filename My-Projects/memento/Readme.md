@@ -33,3 +33,11 @@ firebase deploy
 ## [Game UI](https://fireship.io/courses/react/2-game-ui/)
 
 Using plain CSS Animation for now, will be using `Framer Motion` in the future.
+
+[CSS Grid](https://www.youtube.com/watch?v=uuOXPWCh-6o)
+
+[CSS Animation](https://www.youtube.com/watch?v=HZHHBwzmJLk)
+
+## [Game Logic](https://fireship.io/courses/react/2-game-logic/)
+
+The logic...
