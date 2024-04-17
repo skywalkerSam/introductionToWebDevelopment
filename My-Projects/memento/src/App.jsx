@@ -1,32 +1,50 @@
+/**
+DEV: skywalkerSam
+Aim: Memory Card Game, memento
+Stardate: 12024.04.18.0240
+
+
+DEV NOTES:
+- `!` is the base logic
+
+*/
+
 import React, { useState, useEffect } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import shuffle from './utilities/shuffle'
 import Card from './components/Card'
+import Header from './components/Header';
 
 export default function App() {
   const [cards, setCards] = useState(shuffle)    // Shuffled stated cards array from assets
   const [firstPick, setFirstPick] = useState(null)
   const [secondPick, setSecondPick] = useState(null)
   const [intentionalFreeze, setintentionalFreeze] = useState(false)   // Intentional Delay
-  const [wins, setWins] = useState(0)
+  let [wins, setWins] = useState(0)
 
-
+  // handle click, primary logic
   function handleClick(card) {
     if (!intentionalFreeze) {
       firstPick ? setSecondPick(card) : setFirstPick(card)
     }
   }
 
-
-  function handleFlip() {
+  // handle turn, reset picks, and intentional freeze
+  function handleTurn() {
     setFirstPick(null)
     setSecondPick(null)
-    setintentionalFreeze(false)
+    setintentionalFreeze(true)     // true, for testing
   }
 
+  // new game
+  function handleNewGame(){
+    setWins(0)
+    handleTurn()
+    setCards(shuffle)
+  }
 
-  // game logic
+  // main game logic, useEffect
   useEffect(() => {
     let timer;
 
@@ -47,12 +65,12 @@ export default function App() {
           })
         })
         // turn the cards back over
-        handleFlip()
+        handleTurn()
       } else {
         setintentionalFreeze(true)
         // delay between selections
         timer = setTimeout(() => {
-          handleFlip()
+          handleTurn()
         }, 1000)
 
       }
@@ -68,27 +86,43 @@ export default function App() {
 
   // what defines a win?
   useEffect(() => {
+    let verifyWin = cards.filter((card) => !card.matched)
+
+    if (cards.length && verifyWin.length < 1) {
+      setWins(++wins)
+      handleTurn()
+      setCards(shuffle)
+      console.log('Wins:', wins)
+      // console.log('cards length:', cards.length)
+      // console.log('verifyWin:', verifyWin.length)
+      // console.log('cards:', cards)
+    }
 
   }, [cards, wins])
 
+
   return (
-    <div className="grid">
-      {
-        cards.map((card) => {
-          const { image, id, matched } = card;
+    <div>
+      <Header handleNewGame={handleNewGame} wins={wins}></Header>
 
-          // Rather than returning a div, we return a Card component...
-          return (
-            <Card
-              key={id}
-              image={image}
-              selected={card === firstPick || card === secondPick || matched}
-              onClick={() => handleClick(card)}>
+      <div className="grid">
+        {
+          cards.map((card) => {
+            const { image, id, matched } = card;
 
-            </Card>
-          )
-        })
-      }
+            // Rather than returning a div, we return a Card component...
+            return (
+              <Card
+                key={id}
+                image={image}
+                selected={card === firstPick || card === secondPick || matched}
+                onClick={() => handleClick(card)}>
+
+              </Card>
+            )
+          })
+        }
+      </div>
     </div>
   );
 }
