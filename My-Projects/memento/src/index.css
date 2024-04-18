@@ -7,16 +7,16 @@ warning in VSCode,change the css.lint.unknownAtRules setting to ignore. */
 */
 
 :root {
-  --text: #f66936;
-  /* --text: white; */
 
-  --card: #202426;
-  /* --card: greenyellow; */
+  --card: transparent;
+  --text: grey;
+  --title: red;
+  --wins: greenyellow;
+  --buttonColor: red;
+  --buttonBorder: greenyellow;
 
-  --orange: #ffa200;
-
-  --bg: linear-gradient(135deg, #fc2473, #f66936);
-  /* --bg: black; */
+  /* --bg: linear-gradient(135deg, #fc2473, #f66936); */
+  --bg: black;
 
   --delay: 200ms;
   --rotate-0: rotateY(0deg);
@@ -24,7 +24,8 @@ warning in VSCode,change the css.lint.unknownAtRules setting to ignore. */
   --transition: all ease-in 200ms;
 
   --radius: 0.75rem;
-  --shadow: 1px 1px 13px #03030390;
+  --shadow: 1px 1px 13px grey;
+  /* --buttonShadow: 1px 1px 13px greenyellow; */
 
   --card-width: 150px;
   --card-width-mobile: 20vw;
@@ -70,20 +71,24 @@ header {
   animation: var(--card-enter);
   justify-content: space-evenly;
 }
+h2 {
+  margin: auto;
+  color: var(--title);
+  font-size: 1.9rem;
+}
 h3 {
   margin: auto;
-  color: var(--text);
-}
-h4 {
-  margin: auto;
-  color: var(--orange);
+  color: var(--wins);
 }
 button {
-  border: none;
-  outline: none;
-  padding: 0.5rem;
-  border-radius: 3px;
+  color: var(--buttonColor);
+  background: var(--card);
+  border: 1px solid var(--buttonBorder);
+  /* outline: var(--buttonShadow); */
+  padding: 0.6rem;
+  border-radius: 6px;
   margin: auto;
+  font-size: large;
 }
 
 /* ========= Grid ========================= */
@@ -104,6 +109,7 @@ button {
   width: var(--card-width);
   animation: var(--card-enter);
   border-radius: var(--radius);
+  border: 1px solid var(--shadow);
 }
 .card img {
   width: 100%;

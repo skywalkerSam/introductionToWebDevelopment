@@ -16,7 +16,7 @@ export default function Card(props) {
                     className="card-face" />
 
                 <img
-                    src="/assets/fireship.png"
+                    src="/assets/logo.png"
                     alt="Card Back"
                     className="card-back" 
                     onClick={props.onClick}/>

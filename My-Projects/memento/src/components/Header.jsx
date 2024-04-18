@@ -8,8 +8,8 @@ export default function Header({wins, handleReset}) {
 
     return (
         <header className="header">
-            <h4>Wins: {wins}</h4>
-            <h3>Memento</h3>
+            <h3>Wins: {wins}</h3>
+            <h2>Memento</h2>
             <button onClick={handleReset}>Reset Game!</button>
         </header>
     )
