@@ -10,7 +10,6 @@ DEV NOTES:
 */
 
 import React, { useState, useEffect } from 'react';
-// import logo from './logo.svg';
 import './App.css';
 import shuffle from './utilities/shuffle'
 import Card from './components/Card'
@@ -22,6 +21,11 @@ export default function App() {
   const [secondPick, setSecondPick] = useState(null)
   const [intentionalFreeze, setIntentionalDelay] = useState(false)   // Intentional Delay
   let [wins, setWins] = useState(0)
+
+  // welcome message
+  // useEffect(() => {
+  //   console.log('Welcome to Memento!')
+  // }, [])
 
   // handle click, primary logic
   function handleClick(card) {
