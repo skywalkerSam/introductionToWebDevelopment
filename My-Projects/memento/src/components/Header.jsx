@@ -1,15 +1,16 @@
 import { useEffect } from "react";
 
-export default function Header(props) {
+// using props.shit bloats the code, so im destructuring...
+export default function Header({wins, handleReset}) {
     useEffect(
-        () => (document.title = (`Wins: ${props.wins}`)), [props.wins]
+        () => {document.title = 'Wins: ' + wins}, [wins]
     )
 
     return (
         <header className="header">
-            <h4>Wins: {props.wins}</h4>
-            <h3>Memory Game</h3>
-            <button onClick={props.handleNewGame}>New Game!</button>
+            <h4>Wins: {wins}</h4>
+            <h3>Memento</h3>
+            <button onClick={handleReset}>Reset Game!</button>
         </header>
     )
 }

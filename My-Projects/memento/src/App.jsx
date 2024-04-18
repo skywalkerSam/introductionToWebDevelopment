@@ -20,7 +20,7 @@ export default function App() {
   const [cards, setCards] = useState(shuffle)    // Shuffled stated cards array from assets
   const [firstPick, setFirstPick] = useState(null)
   const [secondPick, setSecondPick] = useState(null)
-  const [intentionalFreeze, setintentionalFreeze] = useState(false)   // Intentional Delay
+  const [intentionalFreeze, setIntentionalDelay] = useState(false)   // Intentional Delay
   let [wins, setWins] = useState(0)
 
   // handle click, primary logic
@@ -30,15 +30,15 @@ export default function App() {
     }
   }
 
-  // handle turn, reset picks, and intentional freeze
+  // handle turn, reset picks, and intentional delay...
   function handleTurn() {
     setFirstPick(null)
     setSecondPick(null)
-    setintentionalFreeze(true)     // true, for testing
+    setIntentionalDelay(false)
   }
 
-  // new game
-  function handleNewGame(){
+  // reset
+  function handleReset() {
     setWins(0)
     handleTurn()
     setCards(shuffle)
@@ -67,7 +67,7 @@ export default function App() {
         // turn the cards back over
         handleTurn()
       } else {
-        setintentionalFreeze(true)
+        // setIntentionalDelay(true)     // for testing
         // delay between selections
         timer = setTimeout(() => {
           handleTurn()
@@ -76,8 +76,8 @@ export default function App() {
       }
     }
 
+    // cleanup
     return () => {
-      // cleanup
       clearTimeout(timer)
     }
 
@@ -103,7 +103,7 @@ export default function App() {
 
   return (
     <div>
-      <Header handleNewGame={handleNewGame} wins={wins}></Header>
+      <Header handleReset={handleReset} wins={wins}></Header>
 
       <div className="grid">
         {
