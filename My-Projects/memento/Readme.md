@@ -1,5 +1,9 @@
 # [Memory Game Intro - Fireship.io](https://fireship.io/courses/react/2-intro/)
 
+I feel like it's the first ever **"real"** project done by me, lol ;)
+
+[Application URL with Firebase](https://memento-34c4f.web.app)
+
 ```shell
 npx create-react-app memento --template cra-template-pwa
 ```
@@ -28,8 +32,6 @@ npm run build
 firebase deploy
 ```
 
-[Application Hosting URL - Firebase](https://memento-34c4f.web.app)
-
 ## [Game UI](https://fireship.io/courses/react/2-game-ui/)
 
 Using plain CSS Animation for now, will be using `Framer Motion` in the future.
@@ -41,3 +43,9 @@ Using plain CSS Animation for now, will be using `Framer Motion` in the future.
 ## [Game Logic](https://fireship.io/courses/react/2-game-logic/)
 
 The logic...
+
+## [PWA Integration](https://fireship.io/courses/react/2-pwa/)
+
+- `service-worker.js`
+- **Navigator API**
+- `useAppBadge()`

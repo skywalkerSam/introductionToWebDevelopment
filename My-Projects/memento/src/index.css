@@ -15,7 +15,10 @@ warning in VSCode,change the css.lint.unknownAtRules setting to ignore. */
   --buttonColor: red;
   --buttonBorder: greenyellow;
 
+  --orange: orange;
+
   /* --bg: linear-gradient(135deg, #fc2473, #f66936); */
+  /* --bg: transparent; */
   --bg: black;
 
   --delay: 200ms;

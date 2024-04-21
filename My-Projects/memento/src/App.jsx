@@ -1,6 +1,6 @@
-/**
-DEV: skywalkerSam
-Aim: Memory Card Game, memento
+/** 
+DEV: @skywalkerSam
+Aim: Memory Card Game, Memento
 Stardate: 12024.04.18.0240
 
 
@@ -13,14 +13,16 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import shuffle from './utilities/shuffle'
 import Card from './components/Card'
-import Header from './components/Header';
+import Header from './components/Header'
+import useAppBadge from './hooks/useAppBadge';
 
 export default function App() {
   const [cards, setCards] = useState(shuffle)    // Shuffled stated cards array from assets
   const [firstPick, setFirstPick] = useState(null)
   const [secondPick, setSecondPick] = useState(null)
-  const [intentionalFreeze, setIntentionalDelay] = useState(false)   // Intentional Delay
+  const [intentionalDelay, setIntentionalDelay] = useState(false)   // Intentional Delay
   let [wins, setWins] = useState(0)
+  const [setBadge, clearBadge] = useAppBadge()    // app badge for installed PWAs
 
   // welcome message
   // useEffect(() => {
@@ -29,7 +31,7 @@ export default function App() {
 
   // handle click, primary logic
   function handleClick(card) {
-    if (!intentionalFreeze) {
+    if (!intentionalDelay) {
       firstPick ? setSecondPick(card) : setFirstPick(card)
     }
   }
@@ -43,6 +45,7 @@ export default function App() {
 
   // reset
   function handleReset() {
+    clearBadge()
     setWins(0)
     handleTurn()
     setCards(shuffle)
@@ -71,7 +74,7 @@ export default function App() {
         // turn the cards back over
         handleTurn()
       } else {
-        // setIntentionalDelay(true)     // for testing
+        setIntentionalDelay(true)     // for testing
         // delay between selections
         timer = setTimeout(() => {
           handleTurn()
@@ -95,6 +98,7 @@ export default function App() {
     if (cards.length && verifyWin.length < 1) {
       setWins(++wins)
       handleTurn()
+      setBadge()
       setCards(shuffle)
       console.log('Wins:', wins)
       // console.log('cards length:', cards.length)
@@ -130,3 +134,5 @@ export default function App() {
     </div>
   );
 }
+
+// P.S. I like using traditional js function expressions, but I also like the arrow function syntax. idk...

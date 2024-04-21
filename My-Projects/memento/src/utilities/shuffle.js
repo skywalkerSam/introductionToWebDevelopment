@@ -1,5 +1,4 @@
-// shuffle.js
-// because, shuffle is a utility, not a component!
+// utility: shuffle.js
 
 export default function shuffle() {
     const assets = [

@@ -1,4 +1,4 @@
-// Card.jsx
+// component: Card.jsx
 
 export default function Card(props) {
     // I like using props instead of destructuring...

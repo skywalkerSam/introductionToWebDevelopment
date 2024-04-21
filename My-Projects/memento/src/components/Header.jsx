@@ -1,3 +1,5 @@
+// component: Header.jsx
+
 import { useEffect } from "react";
 
 // using props.shit bloats the code, so im destructuring...
