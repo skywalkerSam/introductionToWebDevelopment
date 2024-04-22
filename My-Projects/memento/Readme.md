@@ -1,4 +1,4 @@
-# [Memory Game Intro - Fireship.io](https://fireship.io/courses/react/2-intro/)
+# [Memento: The Memory Game, Fireship.io](https://fireship.io/courses/react/2-intro/)
 
 I feel like it's the first ever **"real"** project ever done by me... lol ;)
 
