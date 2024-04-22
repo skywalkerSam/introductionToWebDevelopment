@@ -1,6 +1,6 @@
 # [Memory Game Intro - Fireship.io](https://fireship.io/courses/react/2-intro/)
 
-I feel like it's the first ever **"real"** project done by me, lol ;)
+I feel like it's the first ever **"real"** project ever done by me... lol ;)
 
 [Application URL with Firebase](https://memento-34c4f.web.app)
 
@@ -46,6 +46,11 @@ The logic...
 
 ## [PWA Integration](https://fireship.io/courses/react/2-pwa/)
 
+- **PWA** Update
 - `service-worker.js`
 - **Navigator API**
 - `useAppBadge()`
+
+## Until next time...
+
+## ;)
