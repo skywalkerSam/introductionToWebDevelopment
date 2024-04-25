@@ -1,4 +1,5 @@
 # Introduction to JavaScript
+
 `NEVER` write Vanilla JavaScript, or you'll end up creating your own little JS Framework, and the last thing this world needs is another JavaScript Framework... ;)
 
 ![JS Devs](./Resources/memes/js-devs.jpg)
@@ -7,27 +8,26 @@
 
 ### Data Types
 
-1. Number 
+1. Number
 2. String
 3. Boolean
 4. Undefined
 5. Null
 6. Object
-7. Symbol (new in ECMAScript 6) 
-
+7. Symbol (new in ECMAScript 6)
 
 ### [Data Structures](https://www.freecodecamp.org/news/data-structures-in-javascript-with-examples/)
 
 `Primitive`
--
+
 - Arrays ( list )
-    - Multidimensional array
+      - Multidimensional array
 
 - Objects ( map, dictionary, or hash-table )
       - Key-Value pairs
 
 `Non-primitive`
--
+
 - Stacks
 
 - Queues
@@ -40,14 +40,13 @@
 
 - Roundup
 
-
 ## [Comparison Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
 
 - `!==`
-    - `!=`
+      - `!=`
 
 - `===`
-    - `==`
+      - `==`
 
 - `>=`
 
@@ -57,14 +56,13 @@
 
 - `<`
 
-
 ## Variables
+
 Variables are containers for storing data values
 
 - `var`
 - `let` ( ES6 )
 - `const` ( ES6 )
-
 
 ## Variable naming conventions
 
@@ -76,15 +74,13 @@ Variables are containers for storing data values
 
 - `PascalCase`: C/C++
 
-
 ## Conditionals
 
 - `if`
 - `else if`
 - `else`
 - `switch`-`case`
-- Ternary Operators ( `?`  `:` ) 
-
+- Ternary Operators ( `?`  `:` )
 
 ## Logical Operators
 
@@ -92,15 +88,13 @@ Variables are containers for storing data values
 - `||`: or
 - `!`: not!
 
-
 ## Functions
+
 A function() must `return` something
 
 - const x = function name() {}
 - `function name() {}`
 - [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) ( ES6 ): `() => {}`
-
-
 
 ## Loops
 
@@ -108,8 +102,6 @@ A function() must `return` something
 - `forEach` ( ES6 )
 - `do`
 - `while`
-
-
 
 ## Some Common Functions
 
@@ -121,81 +113,99 @@ A function() must `return` something
 
 - `print()`: Print the webpage, not like python...!
 
-
-
 ## Calculations with Numbers & Strings
 
 ### 3 + "6"
+
 - `"36"`
 
-### 9 - "6" 
+### 9 - "6"
+
 - `3`
 
 ### 9 % 3
+
 - `0`
 
 ### "Java" + "Script"
+
 - `"JavaScript"`
 
 ### " " + " "
+
 - `''`
 
-### " " + 0 
+### " " + 0
+
 - `'0'`
 
 ### true + true
+
 - `2`
 
-### true + false 
+### true + false
+
 - `1`
 
-### false + true 
+### false + true
+
 - `1`
 
 ### true - false
+
 - `1`
 
 ### false - true
+
 - `-1`
 
-### 6 - 9 
+### 6 - 9
+
 - `-3`
 
-### "Starboy" - "Sam" 
+### "Starboy" - "Sam"
+
 - `NaN`
 
-### 9 >= 6 
+### 9 >= 6
+
 - `true`
 
-### 0 === 1 
+### 0 === 1
+
 - `false`
 
-### 9 <= 6 
+### 9 <= 6
+
 - `false`
 
-### 0 !== 0 
+### 0 !== 0
+
 - `false`
 
-### "A" > "B" 
+### "A" > "B"
+
 - `false`
 
-### "B" < "C" 
+### "B" < "C"
+
 - `true`
 
-### "a" > "A" 
+### "a" > "A"
+
 - `true`
 
-### "b" < "A" 
+### "b" < "A"
+
 - `false`
 
-### true === false 
+### true === false
+
 - `false`
 
-### true != true 
+### true != true
+
 - `false`
-
-#
-
 
 `NOTE`: Don't stress much about it, It's just how JavaScript works...!
 
@@ -203,19 +213,13 @@ A function() must `return` something
 
 Just for meme purposes... lol ;)
 
-#
-
-
-##  Make a String
+## Make a String
 
 "Hi There! It's sunny out" by using the + sign.
 
 - "Hi There! " + "It\'s \"sunny\" out"
 
 Or, just use the `'`/`"` interchangeably...
-
-
-
 
 ## Special Keywords
 
@@ -253,8 +257,6 @@ Or, just use the `'`/`"` interchangeably...
 - with
 - yield
 
-
-
 ## Until next time...
 
-# ;)
+## ;)
