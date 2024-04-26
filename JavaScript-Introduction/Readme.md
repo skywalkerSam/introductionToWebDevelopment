@@ -1,4 +1,4 @@
-# Introduction to JavaScript
+# [Introduction to JavaScript](https://fireship.io/courses/js/101-js-in-100-seconds/)
 
 `NEVER` write Vanilla JavaScript, or you'll end up creating your own little JS Framework, and the last thing this world needs is another JavaScript Framework... ;)
 

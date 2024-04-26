@@ -18,8 +18,7 @@ Stands for `Document Object Model`. It's an object of the object `Window`.
 
 - Javascript can create new HTML events in a page
 
-
-# DOM Selectors
+## DOM Selectors
 
 ```shell
 document.write("Hello... World!")
@@ -40,10 +39,10 @@ document.getElementById("")
 ```
 
 id/class
+
 ```shell
 document.getElementsByClassName("")[0]
 ```
-
 
 ## Query Selectors
 
@@ -56,7 +55,6 @@ document.querySelector("h1")
 ```shell
 document.querySelectorAll("h1")
 ```
-
 
 ## Attributes
 
@@ -73,7 +71,6 @@ document.querySelector("li").getAttribute("userid");
 document.querySelector("li").setAttribute("userid", "33");
 ```
 
-
 ## Changing Styles
 
 - style.{property}
@@ -82,8 +79,7 @@ document.querySelector("li").setAttribute("userid", "33");
 h1.style.background = "black";
 ```
 
-Separation of concerns! 
-
+Separation of concerns!
 
 ## Class Name/List
 
@@ -107,13 +103,11 @@ h1.classList.remove("coolTitle");
 h1.classList.toggle("coolTitle");
 ```
 
-
 ## innerHTML
 
 ```shell
 h1.innerHTML = "<strong> Not Recommended !!! </strong>"
 ```
-
 
 ## parentElement / children
 
@@ -129,8 +123,7 @@ document.querySelectorAll("li")[1].parentElement.parentElement;
 document.querySelectorAll("li")[1].parentElement.parentElement.children;
 ```
 
-
-# [DOM Events](https://developer.mozilla.org/en-US/docs/Web/API/Document#events)
+## [DOM Events](https://developer.mozilla.org/en-US/docs/Web/API/Document#events)
 
 Visit `Introduction.js` and `index.html` for more info...
 
@@ -146,9 +139,6 @@ Visit `Introduction.js` and `index.html` for more info...
 
 - `createTextNode()`
 
-
-
-
 ## Until next time...
 
-# ;)
+## ;)
