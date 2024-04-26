@@ -8,4 +8,42 @@ In the example below, we see how an dog can inherit properties from the animal o
 
 */
 
+// animal object
+const animal = {
+    dna: 'ACGT',
+    origin: 'Planet-Earth',
+    sleep: () => {
+        console.log('...ZZZzzzZZZzzz...')
+    }
+}
 
+// dog object
+const dog = new Object(
+    {
+        name: 'dwag',
+        face: '🐺'
+    }
+);
+
+
+// initially, the dog object has no prototype...
+console.log(animal.__proto__);       // [Object: null prototype] {}
+console.log(dog.__proto__);
+
+
+// Inherit properties from animal object
+Object.setPrototypeOf(dog, animal);
+
+// now, the dog object has a prototype...
+console.log(dog.__proto__);         // { dna: 'ACGT', origin: 'Planet-Earth', sleep: [Function: sleep] }
+
+console.log(dog.name)        // dwag
+console.log(dog.dna)        // ACGT
+console.log(dog.sleep())        // ...ZZZzzzZZZzzz...
+
+
+console.log(dog)
+console.log(animal)
+
+console.log(Object.getPrototypeOf(dog))
+console.log(Object.getPrototypeOf(dog) === animal)      // true
