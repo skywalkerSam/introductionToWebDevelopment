@@ -21,3 +21,7 @@ Except for primitives, everything in JavaScript is an Object.
 - DRY code
 
 - Destructuring assignment
+
+## [...Spread Operator](https://fireship.io/courses/js/102-spread/)
+
+- `...`
