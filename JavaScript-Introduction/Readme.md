@@ -6,15 +6,17 @@
 
 ## [JavaScript Data Types & Data Structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
 
-### Data Types
+### Data Types ( Primitive )
 
-1. Number
-2. String
-3. Boolean
-4. Undefined
-5. Null
-6. Object
-7. Symbol (new in ECMAScript 6)
+Everything that's not a primitive datatype, is an `Object` in ...JavaScript!
+
+1. string
+2. number
+3. bigint
+4. boolean
+5. undefined
+6. symbol
+7. null
 
 ### [Data Structures](https://www.freecodecamp.org/news/data-structures-in-javascript-with-examples/)
 
