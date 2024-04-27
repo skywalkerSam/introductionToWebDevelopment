@@ -35,3 +35,5 @@ Except for primitives, everything in JavaScript is an Object.
 Basically, error handling while calling/assigning an object's property that doesn't exist yet...
 
 - `const starboy = homoSapien?.name;`
+
+## [🦺Nullish Coalescing](https://fireship.io/courses/js/102-nullish-coalescing/)
