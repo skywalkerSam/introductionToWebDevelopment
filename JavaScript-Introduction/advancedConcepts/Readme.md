@@ -29,3 +29,7 @@ Except for primitives, everything in JavaScript is an Object.
 - `const life = [...idk, ...fucked]`
 
 `Note:` where you import objects matter, it will overwrite the previous values!
+
+## [⛓ Optional Chaining](https://fireship.io/courses/js/102-optional-chaining/)
+
+- `const starboy = homoSapien?.name;`
