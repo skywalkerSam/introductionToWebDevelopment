@@ -32,4 +32,6 @@ Except for primitives, everything in JavaScript is an Object.
 
 ## [⛓ Optional Chaining](https://fireship.io/courses/js/102-optional-chaining/)
 
+Basically, error handling while calling/assigning an object's property that doesn't exist yet...
+
 - `const starboy = homoSapien?.name;`
