@@ -85,7 +85,7 @@ Use `Ctrl + Shift + P` for anything, and *literally* everything...
 
 - `Quokka.js` VScode Extension
 
-`Source:`[✨ VS Code Magic Tricks, Fireship.io](https://fireship.io/courses/vscode-tricks/)
+`Source:`[ ✨ VS Code Magic Tricks, Fireship.io](https://fireship.io/courses/vscode-tricks/)
 
 ## Until next time...
 
