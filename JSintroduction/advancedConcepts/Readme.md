@@ -44,5 +44,8 @@ Basically, **error handling* while calling/assigning an object's property that m
 
 `Note:` While using `??`, only `null` and `undefined` are considered as **falsy**!
 
-## [🔱 Higher Order Functions](https://fireship.io/courses/js/102-higher-order-functions/)
+## [🔱 Higher Order Functions (`HOF`)](https://fireship.io/courses/js/102-higher-order-functions/)
 
+A higher order function is a function that takes a function as an argument, or returns a function. They are commonly used in functional programming, and are a powerful tool for abstracting away complexity.
+
+- 
