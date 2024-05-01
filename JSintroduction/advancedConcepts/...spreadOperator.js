@@ -7,25 +7,25 @@ The spread syntax ... is a relatively new operator that was introduced in ES2018
 
 // combine two objects
 const crushes = {
-    one: 'ashley',
-    two: 'karol',
-    three: 'rosalia',
-    four: 'elizabeth',
-    five: 'olivia',
-    six: 'miley',
-    seven: 'taylor',
-    eight: 'dua',
-    nine: 'billie',
+    one: 'Ashley',
+    two: 'Karol',
+    three: 'Rosalía',
+    four: 'Elizabeth',
+    five: 'Olivia',
+    six: 'Miley',
+    seven: 'Taylor',
+    eight: 'Dua',
+    nine: 'Billie',
 }
 
 const newCrushes = {
     ...crushes,    // combine crushes object
-    a: 'tris',
-    b: 'anya',
-    c: 'lyliana',
-    d: 'hayley',
-    e: 'abigail',
-    f: 'sophie',
+    a: 'Tris',
+    b: 'Anya',
+    c: 'Lyliana',
+    d: 'Hayley',
+    e: 'Abigail',
+    f: 'Sophie',
     // ...crushes,    // where you import matters, it overwrites the existing values!
 }
 
