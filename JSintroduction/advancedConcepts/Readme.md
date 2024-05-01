@@ -48,4 +48,10 @@ Basically, **error handling* while calling/assigning an object's property that m
 
 A higher order function is a function that takes a function as an argument, or returns a function. They are commonly used in functional programming, and are a powerful tool for abstracting away complexity.
 
-- 
+```javascript
+// a function that takes a function as an argument...
+function hofExample(x, y, func) {
+    return func(x, y);
+}
+```
+
