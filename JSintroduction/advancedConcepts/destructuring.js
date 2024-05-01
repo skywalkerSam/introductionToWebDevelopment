@@ -37,7 +37,7 @@ console.log(symbol)
 console.log(dna)
 console.log(origin)
 console.log(activate())
-// looks minimal n' dryed, don't it?
+// looks minimal n' DRYed, don't it?
 
 
 // Object destructuring with alias
@@ -63,4 +63,4 @@ console.log('first:', first)
 console.log('second:', second)
 console.log('third:', third)
 console.log('\n' + first, second, third)
-// neat, innit?
+// neat, init?
