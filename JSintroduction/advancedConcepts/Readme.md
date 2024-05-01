@@ -44,6 +44,5 @@ Basically, **error handling* while calling/assigning an object's property that m
 
 `Note:` While using `??`, only `null` and `undefined` are considered as **falsy**!
 
-```javascript
+## [🔱 Higher Order Functions](https://fireship.io/courses/js/102-higher-order-functions/)
 
-```
