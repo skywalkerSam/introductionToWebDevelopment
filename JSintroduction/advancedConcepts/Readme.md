@@ -1,12 +1,14 @@
 # Advanced JavaScript Concepts with [Fireship.io](https://fireship.io)
 
+- 102
+
 ## [🔗 Prototype Chain](https://fireship.io/courses/js/102-prototype-chain/)
 
 Except for primitives, everything in JavaScript is an Object.
 
 - Inheritance between JavaScript Objects
 
-- { }
+- `{ }`
 
 - `new Object()`
 
@@ -20,21 +22,28 @@ Except for primitives, everything in JavaScript is an Object.
 
 - DRY code
 
-- Destructuring assignment
+```javascript
+const { name, dna, origin, activate } = starboyObject;
+```
+
 
 ## [👫 ...Spread Operator](https://fireship.io/courses/js/102-spread/)
 
 - `...`
 
-- `const life = [...idk, ...fucked]`
+```javascript
+const life = [...idk, ...fucked]
+```
 
 `Note:` where you import objects matter, it will overwrite the previous values!
 
 ## [⛓ Optional Chaining](https://fireship.io/courses/js/102-optional-chaining/)
 
-Basically, **error handling* while calling/assigning an object's property that may or may not exist yet...
+**error handling* while calling/assigning an object's property that may or may not exist yet...
 
-- `const starboy = homoSapien?.name;`
+```javascript
+const starboy = homoSapien?.name;
+```
 
 ## [🦺 Nullish Coalescing (`??`)](https://fireship.io/courses/js/102-nullish-coalescing/)
 
@@ -45,7 +54,6 @@ Basically, **error handling* while calling/assigning an object's property that m
 ```javascript
 let reasonsToLive = moments ?? 'None';
 ```
-
 
 `Note:` While using `??`, only `null` and `undefined` are considered as **falsy**!
 
@@ -115,7 +123,7 @@ const subtract = (x, y) => {
 
 A **higher order function** is a function that takes a function as an argument, or *returns a function*. They are commonly used in functional programming, and are a powerful tool for abstracting away complexity.
 
-- *Callback*s
+- **Callback***s*
 
 ```javascript
 // a function that takes a function as an argument...
@@ -127,3 +135,5 @@ function hofExample(x, y, func) {
 `Note:` It's damn simple, but the way it's used in *different ways* throughout the language is just... ***brain-fuck!**
 
 `Personal Note:` *JavaScript* is fucked, and i love it ;)
+
+## [🥡 Closures ( notThatOne! )](https://fireship.io/courses/js/102-closures/)
