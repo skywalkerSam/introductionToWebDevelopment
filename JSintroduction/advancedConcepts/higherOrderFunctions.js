@@ -1,16 +1,27 @@
 /** 🔱 Higher Order Functions
- 
+ * 
     * A higher order function is a function that takes a function as an argument, or returns a function. They are commonly used in functional programming, and are a powerful tool for abstracting away complexity.
+    * 
+    * A function() is just an object in JavaScript, so we can pass functions around like any other object.
 
  */
 
-
-//add
+// Function Declaration
 function add(x, y) {
     return x + y;
 }
 
-//subtract
+// Function Expression
+const addFunc = function sum(x, y) {    // named
+    return x + y;
+}
+
+// Anonymous Function Expression
+const anon = arr.map(function (value) {
+    return value * 2;
+})
+
+// Arrow Function
 const subtract = (x, y) => {
     return x - y;
 }
