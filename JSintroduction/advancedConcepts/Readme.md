@@ -37,7 +37,7 @@ const life = [...idk, ...fucked]
 
 `Note:` where you import objects matter, it will overwrite the previous values!
 
-## [⛓ Optional Chaining](https://fireship.io/courses/js/102-optional-chaining/)
+## [⛓ Optional Chaining (`?`)](https://fireship.io/courses/js/102-optional-chaining/)
 
 **error handling* while calling/assigning an object's property that may or may not exist yet...
 
