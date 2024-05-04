@@ -32,7 +32,7 @@ const { name, dna, origin, activate } = starboyObject;
 - `...`
 
 ```javascript
-const life = [...idk, ...fucked]
+const life = [...idk, ...fml]
 ```
 
 `Note:` where you import objects matter, it will overwrite the previous values!
@@ -137,3 +137,5 @@ function hofExample(x, y, func) {
 `Personal Note:` *JavaScript* is fucked, and i love it ;)
 
 ## [🥡 Closures ( notThatOne! )](https://fireship.io/courses/js/102-closures/)
+
+
