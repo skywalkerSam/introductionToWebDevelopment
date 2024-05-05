@@ -10,23 +10,32 @@ function pureFun() {
 }
 
 function x1(value) {
-    return value + 'x1';
+    return value + ' x1\n';
 }
 
 function x3(value) {
-    return value + 'x3';
+    return value + ' x3\n';
 }
+
+console.log(pureFun())
+//hof
+console.log(x1(pureFun()))
+console.log(x3(pureFun()))
+
 
 // Open Expression/Closure
-function closure() {
-    let openEx = 'FML';
-    function movedOn() {
-        openEx = openEx * 3
+function closure(moments) {
+    let theState = 'fucked';
+    // console.log(theState)
+    function innerClosure() {
+        theState = moments ?? 'fuckedAF...';
+        // console.log(theState)
+        return theState;
     }
-    return movedOn;
+    return innerClosure;    // you can make the function anonymous n' return directly... 
 }
 
-
-let fuck = closure();
-console.log(fuck)
+console.log(closure())
+// console.log(closure()())
+console.log(closure('theMomentsWeLiveBy...')())
 

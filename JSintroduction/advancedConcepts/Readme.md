@@ -142,8 +142,6 @@ A **closure** is a `function + outer states/data` that has access to the **paren
 
 - **Open Expression**, Everything that depends on a *parent to send/receive data*, needs to be closed off in a box (**closure**) before *JIT* compilation.
 
-  - Data Encapsulation
-
   - Free Variables (*Parent Scope*)
 
   - Heap Memory (***Long-lived**)
@@ -151,12 +149,40 @@ A **closure** is a `function + outer states/data` that has access to the **paren
 
   - *More memory, more computation...
 
+    - **Data Encapsulation**
+
+```javascript
+// Open Expression/Closure
+function closure(moments) {
+    let theState = 'fucked';
+    // console.log(theState)
+    function innerClosure() {
+        theState = moments ?? 'fuckedAF...';
+        // console.log(theState)
+        return theState;
+    }
+    return innerClosure;    // you can make the function anonymous n' return directly... 
+}
+```
+
+`Note:` use **closure()()** to call the *function()*
+
 - **Closed Expression**, NO external transactions, *no closure!*   (**self-contained**)
 
-  - Pure *function()*
+  - **NO Closure**
+
+  - Pure *function()* (**Self-contained**)
 
   - Stack Memory, Call Stack n' *gone!* (***Short-lived**)
 
 wtf??
+
+```javascript
+
+// Closed Expression/noExternalState/pureFunction()
+function pureFun() {
+    return 'selfContainedPureFunction';
+}
+```
 
 
