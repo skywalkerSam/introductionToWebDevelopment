@@ -4,7 +4,7 @@
 
 ## [🔗 Prototype Chain](https://fireship.io/courses/js/102-prototype-chain/)
 
-Except for primitives, everything in JavaScript is an Object.
+Except for the *primitives*, everything in JavaScript is just an **Object**.
 
 - Inheritance between JavaScript Objects
 
@@ -18,18 +18,62 @@ Except for primitives, everything in JavaScript is an Object.
 
 - `Object.getPrototypeOf()`
 
-## [🍳 Object destructuring](https://fireship.io/courses/js/102-destructuring/)
+![*everyMfinThingIsAnObject](./Resources/memes/everyMfinThingIsAnObject.webp)
+
+```javascript
+
+// animal object
+const animal = {
+    dna: 'ACGT',
+    origin: 'Planet-Earth',
+    sleep: () => {
+        console.log('...ZZZzzzZZZzzz...')
+    }
+}
+
+// dog object
+const dog = new Object(
+    {
+        name: 'dwag',
+        face: '🐺'
+    }
+);
+
+// initially, the dog object has no prototype...
+console.log(animal.__proto__);       // [Object: null prototype] {}
+console.log(dog.__proto__);
+
+// Inherit properties from animal object, yeah! ik...
+Object.setPrototypeOf(dog, animal);
+
+
+// now, the dog object has a prototype...
+console.log(dog.__proto__);         // { dna: 'ACGT', origin: 'Planet-Earth', sleep: [Function: sleep] }
+
+
+console.log(dog.name)        // dwag
+console.log(dog.dna)        // ACGT
+console.log(dog.sleep())        // ...ZZZzzzZZZzzz...
+
+```
+
+## [🍳 Object {destructuring}](https://fireship.io/courses/js/102-destructuring/)
 
 - DRY code
+
+![*moreExperienceNeeded](./Resources/memes/moreExperienceNeeded.webp)
 
 ```javascript
 const { name, dna, origin, activate } = starboyObject;
 ```
 
+`Note:` ***Do Not Repeat Yourself** (*DRY*)
 
 ## [👫 ...Spread Operator](https://fireship.io/courses/js/102-spread/)
 
 - `...`
+
+![*jsDevsInANutshell](./Resources/memes/jsDevs.webp)
 
 ```javascript
 const life = [...idk, ...fml]
@@ -39,7 +83,9 @@ const life = [...idk, ...fml]
 
 ## [⛓ Optional Chaining (`?`)](https://fireship.io/courses/js/102-optional-chaining/)
 
-**error handling* while calling/assigning an object's property that may or may not exist yet...
+**Error handling* while calling/assigning an object's property that may or may not exist yet!
+
+![*handleThis...](./Resources/memes/handleThis.webp)
 
 ```javascript
 const starboy = homoSapien?.name;
@@ -47,9 +93,13 @@ const starboy = homoSapien?.name;
 
 ## [🦺 Nullish Coalescing (`??`)](https://fireship.io/courses/js/102-nullish-coalescing/)
 
-- JS is a weakly typed language, so `types` behave a little different than in other languages...
+*JS* is a weakly typed language, so `types` behave a little different than in other languages!
 
 - **Type Coercion**
+
+- `0` is *falsy* by design in the world of *JS*...
+
+![*welcomeToTheWorldOfJS](./Resources/memes/welcomeToTheWorldOfJS.webp)
 
 ```javascript
 let reasonsToLive = moments ?? 'None';
@@ -67,11 +117,15 @@ let reasonsToLive = moments ?? 'None';
 
 - *Global Scope* (*Convention)
 
+![*callTheMfinFunction](./Resources/memes/callTheMfinFunction.webp)
+
 ```javascript
 function add(x, y) {
     return x + y;
 }
 ```
+
+`Note:` **Call** the *function()*
 
 ### Function Expression
 
@@ -150,6 +204,8 @@ A **closure** is a `function + outer states/data` that has access to the **paren
   - *More memory, more computation...
 
     - **Data Encapsulation**
+
+![*Closures](./Resources/memes/closures.webp)
 
 ```javascript
 // Open Expression/Closure
