@@ -136,6 +136,27 @@ function hofExample(x, y, func) {
 
 `Personal Note:` *JavaScript* is fucked, and i love it ;)
 
-## [🥡 Closures ( notThatOne! )](https://fireship.io/courses/js/102-closures/)
+## [🫂 Closures ( notThatOne ;) ...this🥡or📦!](https://fireship.io/courses/js/102-closures/)
+
+A **closure** is a `function + outer states/data` that has access to the **parent scope**, even after the parent function has closed. JS will automatically store the state of a *closure* in the **heap memory**, even after the parent function has returned. This behavior makes them useful for *encapsulating private variables*.
+
+- **Open Expression**, Everything that depends on a *parent to send/receive data*, needs to be closed off in a box (**closure**) before *JIT* compilation.
+
+  - Data Encapsulation
+
+  - Free Variables (*Parent Scope*)
+
+  - Heap Memory (***Long-lived**)
+    - Garbage Collector
+
+  - *More memory, more computation...
+
+- **Closed Expression**, NO external transactions, *no closure!*   (**self-contained**)
+
+  - Pure *function()*
+
+  - Stack Memory, Call Stack n' *gone!* (***Short-lived**)
+
+wtf??
 
 
