@@ -185,4 +185,4 @@ function pureFun() {
 }
 ```
 
-
+## [🍟 Array Tricks](https://fireship.io/courses/js/102-array-tricks/)
