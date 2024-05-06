@@ -73,13 +73,11 @@ const { name, dna, origin, activate } = starboyObject;
 
 - `...`
 
-![*jsDevsInANutshell](./Resources/memes/jsDevs.webp)
-
 ```javascript
 const life = [...idk, ...fml]
 ```
 
-`Note:` where you import objects matter, it will overwrite the previous values!
+`Note:` where you import *objects* matter, it will **overwrite** the previous values!
 
 ## [⛓ Optional Chaining (`?`)](https://fireship.io/courses/js/102-optional-chaining/)
 
@@ -220,6 +218,8 @@ function closure(moments) {
     return innerClosure;    // you can make the function anonymous n' return directly... 
 }
 ```
+
+![*callTheFunction()()](./Resources/memes/againCallTheFunction.jpg)
 
 `Note:` use **closure()()** to call the *function()*
 
