@@ -298,7 +298,9 @@ console.log(anotherRangedArray);
 - `Set()` is a collection of *unique* values.
 
 ```javascript
-
+// Set(), remove duplicates.
+let uniqueArray = [...new Set(someArray)];   // convert it back to an array
+console.log(uniqueArray);
 ```
 
 
