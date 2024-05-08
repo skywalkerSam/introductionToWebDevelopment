@@ -73,6 +73,8 @@ const { name, dna, origin, activate } = starboyObject;
 
 - `...`
 
+- ...returns a **new** *array[]* or *object{}*
+
 ```javascript
 const life = [...idk, ...fml]
 ```
@@ -221,7 +223,7 @@ function closure(moments) {
 
 ![*callTheFunction()()](./Resources/memes/againCallTheFunction.jpg)
 
-`Note:` use **closure()()** to call the *function()*
+### `Note:` use **closure()()** to call the *function()*
 
 - **Closed Expression**, NO external transactions, *no closure!*   (**self-contained**)
 
@@ -242,3 +244,60 @@ function pureFun() {
 ```
 
 ## [🍟 Array Tricks](https://fireship.io/courses/js/102-array-tricks/)
+
+Arrays are used to store multiple values in a single variable. Arrays are a special type of *objects*.
+
+- using *let* instead of **const**
+
+```javascript
+// array
+let someArray = [3, 6, 9, 33, 66, 99, 36, 69, 96];
+console.log(someArray);
+
+console.log(typeof (someArray))  // object
+```
+
+### Array with a hundred items
+
+```javascript
+// array with a hundred items
+let anotherArray = Array(100).fill('STUFF');
+console.log(anotherArray);
+
+console.log(typeof (Array))     // function
+```
+
+### Range ( 1 - 100 )
+
+```javascript
+// range ( 1 - 100 )
+let rangedArray = Array(100).fill(0).map((_, i) => ++i)
+console.log(rangedArray);
+```
+
+`.map()` executing a function for each items in the array, then replacing the value with the returned value from the *function()*
+
+`_` is a convention used when the parameter is not going to be used in the function.
+
+### Range ( 0 - 99 )
+
+- converting an *iterator* to an *array* using the **...spread** syntax.
+
+- Doesn't provide the values, but the *index* of the values.
+
+```javascript
+// range ( 0 - 99 )
+let anotherRangedArray = [...Array(100).keys()];
+console.log(anotherRangedArray);
+```
+
+`[...Array(100).keys()]:` The `...` is the spread operator, which takes the iterator returned by `Array(100).keys()` and spreads its values into **A new Array()**.
+
+### Set(), remove duplicates
+
+- `Set()` is a collection of *unique* values.
+
+```javascript
+
+```
+
