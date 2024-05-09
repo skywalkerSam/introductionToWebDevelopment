@@ -275,9 +275,7 @@ let rangedArray = Array(100).fill(0).map((_, i) => ++i)
 console.log(rangedArray);
 ```
 
-`.map()` executing a function for each items in the array, then replacing the value with the returned value from the *function()*
-
-`_` is a convention used when the parameter is not going to be used in the function.
+`Note:` `_` is a convention used when the parameter is not going to be used in the function.
 
 ### Range ( 0 - 99 )
 
@@ -303,9 +301,98 @@ let uniqueArray = [...new Set(someArray)];   // convert it back to an array
 console.log(uniqueArray);
 ```
 
+## *Imperative Code *Paradigm*
 
+This paradigm is about how to achieve the goal. It involves writing code that describes in **exact steps** what the program must do to achieve a certain *goal*. It's like a detailed recipe. In the given code, a `for of` loop would be an example of imperative programming.
 
+## *Declarative Code *Paradigm*
 
+This paradigm is about what to do, and it lets the language's internals handle how to do it. It involves writing code that describes what you want to achieve, but not necessarily how to achieve it. In the given code, `.forEach()` is an example of declarative programming.
+
+`Note:` *JavaScript* is a **multi-paradigm** language, so you can use both *imperative* and *declarative* programming styles in the same codebase... lol *js*Eh?
+
+### `for of` loop ( *imperative* )
+
+```javascript
+// imperative way... ( for of )
+for (let i of someArray) {
+    console.log(i);
+}
+```
+
+#### index and values
+
+```javascript
+// for of with index and values ( .entries() )
+for (let [i, val] of someArray.entries()) {
+    console.log(i, val);
+}
+```
+
+### `for in` loop ( **NOT** *recommended!* )
+
+- **NOT** recommended for *iterating* over an *array[]*.
+  - it does not guarantee the *order of properties!*
+
+- It's generally *Iterates* over the *enumerable properties* of an *object{}*.
+
+```javascript
+// for in ( NOT recommended for arrays!! ), Objects only!
+let person = { firstName: 'Sam', lastName: 'Skywalker', age: 21 };
+
+for (let key in person) {
+    // it does not guarantee the order of properties
+    console.log(key, person[key]);
+}
+```
+
+### `.forEach()` loop ( *declarative* )
+
+```javascript
+// declarative way... ( .forEach() )
+someArray.forEach((val) => { console.log(val) });
+```
+
+### `.map()`
+
+```javascript
+// .map(), creates a new array!
+let mappedArray = someArray.map((val) => { return (val * val) });
+console.log(someArray);    // the original array is unchanged
+console.log(mappedArray);
+```
+
+`Note:` **.map()** executes a function for each items in the array, then replaces the values with the *returned values* from the *function()* executed.
+
+### `.filter()`
+
+```javascript
+// .filter()
+let oddNumbers = someArray.filter((val) => { return (val % 2 !== 0) });
+console.log(oddNumbers);
+```
+
+`Note:` **.filter()** creates a new array with all the elements that pass the test implemented by the provided function.
+
+### `.find()`
+
+- If nothing's found, it returns `undefined`.
+
+```javascript
+// .find()
+let firstOddNumber = someArray.find((val) => { return ( val % 2 !== 0) });
+console.log(firstOddNumber);
+```
+
+`Note:` **.find()** returns the *first* element in the array that satisfies the provided testing function.
+
+### `.findIndex()`
+
+- if no values satisfy the testing function, `-1` is returned.
+
+```javascript
+
+```
 
 
 ## ...untilNextTime!👋

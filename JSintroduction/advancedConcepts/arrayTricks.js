@@ -51,27 +51,52 @@ someArray.push(3, 6, 9);        // add to the end of the array
 
 // Set(), remove duplicates.
 let uniqueArray = [...new Set(someArray)];      // convert it back to an array
-console.log(uniqueArray);
-
-// imperative way...
-// for of
+// console.log(uniqueArray);
 
 
-// for in, DON'T use it!
+// imperative way... ( for of )
+for (let i of someArray) {
+    // console.log(i);
+}
+
+// for of with index and values ( .entries() )
+for (let [i, val] of someArray.entries()) {
+    console.log(i, val);
+}
 
 
-// declarative functional way...
-// .forEach()
+// for in ( NOT recommended for arrays!! ), Objects only!
+let person = { firstName: 'Sam', lastName: 'Skywalker', age: 21 };
+
+for (let key in person) {
+    // it does not guarantee the order of properties
+    console.log(key, person[key]);
+}
 
 
-// .map()
+// declarative way... ( .forEach() )
+someArray.forEach((val) => { console.log(val) });
 
+// index and values
+// someArray.forEach((val, i) => {console.log(val, i)});
+// the values are in opposite order of the for of loop for some reason...
+
+
+// .map(), creates a new array!
+let mappedArray = someArray.map((val) => { return (val * val) });
+console.log(someArray);    // the original array is unchanged
+console.log(mappedArray);
 
 // .filter()
-
+let oddNumbers = someArray.filter((val) => { return (val % 2 !== 0) });
+console.log(oddNumbers);
 
 // .find()
+let firstOddNumber = someArray.find((val) => { return ( val % 2 !== 0) });
+console.log(firstOddNumber);
 
+let firstEvenNumber = someArray.find((val) => {return (val % 2 === 0)});
+console.log(firstEvenNumber)
 
 // .findIndex()
 
