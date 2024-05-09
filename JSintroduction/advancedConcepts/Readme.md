@@ -426,7 +426,33 @@ console.log(randomShit);
 
 `Math.random()` returns a *random* number between 0 (inclusive), and 1 (exclusive).
 
-![goodbyes]()
+## [👴 History of JavaScript](https://fireship.io/courses/js/102-history-of-js/)
+
+[The Weird History of *JavaScript*](https://dev.to/codediodeio/the-weird-history-of-javascript-2bnb)
+
+- **Brendan Eich** (*1995*)
+
+- **Mocha**
+
+- **Netscape Navigator**
+
+- **ECMAScript**
+
+- **V8 Engine** (*Google Chrome*)
+
+![goodbyeIE](./Resources/memes/goodbyeIE.webp)
+
+- **Node.js**
+
+- **J Query**
+
+- **Angular**
+
+- **React**
+
+- **ES6** (*2015*)
+
+- **TypeScript**
 
 ## ...untilNextTime!👋
 
