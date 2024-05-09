@@ -99,10 +99,15 @@ let firstEvenNumber = someArray.find((val) => {return (val % 2 === 0)});
 console.log(firstEvenNumber)
 
 // .findIndex()
-
+let firstOddNumberIndex = someArray.findIndex((val) => { return ( val % 2 !== 0) });
+console.log(firstOddNumberIndex);
 
 // .reduce()
+let summed = someArray.reduce(( accumulator, currentValue) => { return accumulator + currentValue}, 0);
+console.log(summed);
 
+let product = someArray.reduce(( acc, val) => { return acc * val}, 1)
+console.log(product);
 
 
 

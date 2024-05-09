@@ -336,6 +336,8 @@ for (let [i, val] of someArray.entries()) {
 
 - It's generally *Iterates* over the *enumerable properties* of an *object{}*.
 
+![I'm in...](./Resources/memes/imIn.webp)
+
 ```javascript
 // for in ( NOT recommended for arrays!! ), Objects only!
 let person = { firstName: 'Sam', lastName: 'Skywalker', age: 21 };
@@ -391,9 +393,22 @@ console.log(firstOddNumber);
 - if no values satisfy the testing function, `-1` is returned.
 
 ```javascript
-
+// .findIndex()
+let firstOddNumberIndex = someArray.findIndex((val) => { return ( val % 2 !== 0) });
+console.log(firstOddNumberIndex);
 ```
 
+`Note:` **.findIndex()** returns the *index* of the *first* element in the array that satisfies the provided testing function.
+
+### `.reduce()`
+
+```javascript
+// .reduce()
+let summed = someArray.reduce(( accumulator, currentValue) => { return accumulator + currentValue}, 0);
+console.log(summed);
+```
+
+`Note:` **.reduce()** executes a *reducer* function on each element of the array, resulting in a single output value.
 
 ## ...untilNextTime!👋
 
