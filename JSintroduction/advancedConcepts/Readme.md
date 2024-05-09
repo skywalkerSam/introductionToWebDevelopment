@@ -428,7 +428,7 @@ console.log(randomShit);
 
 ## [👴 History of JavaScript](https://fireship.io/courses/js/102-history-of-js/)
 
-[The Weird History of *JavaScript*](https://dev.to/codediodeio/the-weird-history-of-javascript-2bnb)
+[The Weird History of *JavaScript*, Jeff, DEV.to](https://dev.to/codediodeio/the-weird-history-of-javascript-2bnb)
 
 - Tim Berners-Lee, [WorldWideWeb (*Nexus*)](https://worldwideweb.cern.ch/browser/), Switzerland (*1989*)
 
@@ -438,11 +438,12 @@ console.log(randomShit);
 
 - **Netscape Navigator**
 
-- **Brendan Eich** (*1995*)
+- *10 Days... **Brendan Eich** (*1995*)
 
-- **Mocha**
+- **Mocha**, **LiveScript**, **JavaScript** (*1995*)
 
-- Microsoft, Internet Explorer, *JScript* (*1996*) lol.)
+- Microsoft, Internet Explorer (*1996*)
+  - *JScript* was just a *Microsoft* implementation of *JavaScript*, lol ;)
 
 - TC-39, ECMA International, **ECMAScript** (*1997*)
 
