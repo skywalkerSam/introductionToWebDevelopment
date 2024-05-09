@@ -430,32 +430,56 @@ console.log(randomShit);
 
 [The Weird History of *JavaScript*](https://dev.to/codediodeio/the-weird-history-of-javascript-2bnb)
 
+- Tim Berners-Lee, [WorldWideWeb (*Nexus*)](https://worldwideweb.cern.ch/browser/), Switzerland (*1989*)
+
+- Mosaic Web Browser, Marc Andreessen (*1993*)
+
+- Let there be *JavaScript*...
+
+- **Netscape Navigator**
+
 - **Brendan Eich** (*1995*)
 
 - **Mocha**
 
-- **Netscape Navigator**
+- Microsoft, Internet Explorer, *JScript* (*1996*) lol.)
 
-- **ECMAScript**
+- TC-39, ECMA International, **ECMAScript** (*1997*)
 
-- **V8 Engine** (*Google Chrome*)
+- **ES3** (*1999*)
+
+- The *Dark Ages* (*2000-2008*)
+
+- John Resig, **JQuery** (*2006*)
+
+- **V8 Engine**, *Google Chrome* (*2008*)
 
 ![goodbyeIE](./Resources/memes/goodbyeIE.webp)
 
-- **Node.js**
+- Ryan Dahl, **Node.js** (*2009*)
+  - *V8 Engine* on the server-side.
+  - *JavaScript* Everywhere!
 
-- **J Query**
+- **ES5** (*2009*)
+  - *JSON*
 
-- **Angular**
+- **AngularJS** and **Backbone.js** (*2010*)
 
-- **React**
+- **ReactJS**, Meta (fma *Facebook*) (*2013*)
 
-- **ES6** (*2015*)
+- Modern Times... **ES6** (*2015*)
 
 - **TypeScript**
+
+Where does JavaScript go from here? Will WASM replace JS? Will microfrontends make React obsolete? Will the new tech bubble burst?
+
+Only time will tell, stay tuned for Part II in 2045! ;)
+
 
 ## ...untilNextTime!👋
 
 ## ;)
 
 - [X] Done
+
+A special thanks to [Jeff](https://twitter.com/fireship_dev) for an amazing learning experience! 🙏
