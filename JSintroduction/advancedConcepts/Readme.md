@@ -320,7 +320,7 @@ for (let i of someArray) {
 }
 ```
 
-#### index and values
+### Loop over a *Key-Value* Pair
 
 ```javascript
 // for of with index and values ( .entries() )
@@ -408,7 +408,25 @@ let summed = someArray.reduce(( accumulator, currentValue) => { return accumulat
 console.log(summed);
 ```
 
+`A reducer function` is called for each element in the array, and its return value becomes the accumulator for the next call.
+
 `Note:` **.reduce()** executes a *reducer* function on each element of the array, resulting in a single output value.
+
+### Get a *Random* Element
+
+- Using the `Math` module.
+
+```javascript
+// Get a Random Element
+let randomShit = someArray[Math.floor(Math.random() * someArray.length)];
+console.log(randomShit);
+```
+
+`Math.floor()` rounds a number *down* to the nearest integer.
+
+`Math.random()` returns a *random* number between 0 (inclusive), and 1 (exclusive).
+
+![goodbyes]()
 
 ## ...untilNextTime!👋
 

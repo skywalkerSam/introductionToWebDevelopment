@@ -1,20 +1,4 @@
-/** Arrays
- * 
- * Arrays are used to store multiple values in a single variable.
- * 
- * Arrays are a special type of objects. The `typeof` operator in JavaScript returns "object" for arrays.
- * 
- * 
- * `_` is a convention used when the parameter is not going to be used in the function.
- * 
- * 
- * [...Array(100).keys()]: The `...` is the spread operator, which takes the iterator returned by `Array(100).keys()` and spreads its values into **a new array**.
- * 
- * 
- * using `new` before Set() bc it's a constructor function, and we need to create a new instance of it.
- * 
- */
-
+// arrayTricks.js
 
 // undefined
 let undefArray = Array(100);
@@ -59,7 +43,7 @@ for (let i of someArray) {
     // console.log(i);
 }
 
-// for of with index and values ( .entries() )
+// for of, Loop over a Key-Value Pair
 for (let [i, val] of someArray.entries()) {
     console.log(i, val);
 }
@@ -110,5 +94,9 @@ let product = someArray.reduce(( acc, val) => { return acc * val}, 1)
 console.log(product);
 
 
+// Get a Random Element
+let randomShit = someArray[Math.floor(Math.random() * someArray.length)];
+console.log(randomShit);
 
+console.log(Math.random() * 9)      // it just works.
 
