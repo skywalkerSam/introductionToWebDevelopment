@@ -2,6 +2,8 @@
 
 - 102
 
+![*theEvolution](./Resources/memes/jsEvolution.jpg)
+
 ## [🔗 Prototype Chain](https://fireship.io/courses/js/102-prototype-chain/)
 
 Except for the *primitives*, everything in JavaScript is just an **Object**.
@@ -476,6 +478,7 @@ Where does JavaScript go from here? Will WASM replace JS? Will microfrontends ma
 
 Only time will tell, stay tuned for Part II in 2045! ;)
 
+![*theSingularity](./Resources/memes/weMessedUpLOL.webp)
 
 ## ...untilNextTime!👋
 
