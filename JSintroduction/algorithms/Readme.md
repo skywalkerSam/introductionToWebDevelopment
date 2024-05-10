@@ -56,4 +56,14 @@ console.log(cummedSum(theArray))
 
 ## [🔪 Binary Search](https://fireship.io/courses/js/algo-binary-search/)
 
+*Binary search* is a faster way to find an item in a sorted array with **O(log n)** time complexity, compared to a regular loop with **O(n)** time complexity.
 
+- An ***efficient** way to find an *item* in a sorted array
+
+- **Divide and Conquer** approach
+
+- **Time Complexity** of **O(log n)**
+
+```javascript
+
+```
