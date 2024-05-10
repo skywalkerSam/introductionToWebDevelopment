@@ -2,6 +2,8 @@
 
 Solving basic algorithms with plain JavaScript...
 
+<img alt='*theTest' src='./Resources/memes/theTest.webp' width=300 />
+
 ## [🥣 Cumulative Sum](https://fireship.io/courses/js/algo-sum/)
 
 - Using **reducer**
@@ -36,5 +38,22 @@ function cumSummed(arr) {
 console.log(cumSummed(theArray))
 ```
 
+- Using **forEach**
+
+```javascript
+// forEach
+function cummedSum(arr) {
+    let summed = 0;
+    arr.forEach((v) => {summed += v})
+    // console.log(summed)      // debugging101 lol ;)
+    return summed;
+}
+
+console.log(cummedSum(theArray))
+```
+
 <img alt='*timeDilation' src='./Resources/memes/timeDilation.jpg' width=300 />
+
+## [🔪 Binary Search](https://fireship.io/courses/js/algo-binary-search/)
+
 

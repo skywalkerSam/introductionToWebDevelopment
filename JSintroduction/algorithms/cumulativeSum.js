@@ -1,4 +1,4 @@
-// Cumulative Sum
+// sum algorithm
 
 
 let theArray = [3, 6, 9, 33, 66, 99, 36, 69, 96]
@@ -27,3 +27,12 @@ console.log(cumSummed(theArray))
 
 
 
+// forEach
+function cummedSum(arr) {
+    let summed = 0;
+    arr.forEach((v) => {summed += v})
+    // console.log(summed)      // debugging101 lol ;)
+    return summed;
+}
+
+console.log(cummedSum(theArray))
