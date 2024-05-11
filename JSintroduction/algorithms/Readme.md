@@ -62,7 +62,36 @@ console.log(cummedSum(theArray))
 
 - **Divide and Conquer** approach
 
-- **Time Complexity** of **O(log n)**
+- **Time Complexity** of `O(log n)`, **Logarithmic**
+
+<img alt='bigOcomplexityChart' src='./Resources/memes/bigOcomplexityChart.jpg' width=600 />
+
+- `O(1)` **Constant**, **theBest*
+- `O(n)` **Linear**, *Good*
+- `O(n log n)` **Logarithmic**, *Fair* Trade
+- `O(n^2)` **Quadratic**, *Bad*
+- `O(2^n)` **Exponential**, *Horrible*
+- `O(n!)` **Factorial**, *Worst*
+
+<img alt='comparisonComputationalComplexity' src='./Resources/memes/comparisonComputationalComplexity.svg' width=600 />
+
+### *normalSearch, `O(n!)`
+
+```javascript
+
+// normal search, O(n!)
+function search(arr, target) {
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i] === target) {
+            return i;
+        }
+    }
+    return -1
+}
+
+```
+
+### *binarySearch, `O(log n)`
 
 ```javascript
 

@@ -5,10 +5,25 @@
 
 let theArray = [3, 6, 9, 33, 66, 99, 36, 69, 96].sort()
 
-
-function binarySearchAlgorithm(arr, target){
-
+// normal search, O(n!)
+function search(arr, target) {
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i] === target) {
+            return i;
+        }
+    }
+    return -1
 }
 
 
-console.log(theArray)
+
+// binary search algorithm, O(log n)
+function binarySearch(arr, target){
+    
+}
+
+
+
+// console.log(theArray)
+// console.log(search(theArray, 99))
+console.log(binarySearch(theArray, 99))
