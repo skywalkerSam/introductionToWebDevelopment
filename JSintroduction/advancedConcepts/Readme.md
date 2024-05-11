@@ -2,7 +2,9 @@
 
 - 102
 
-![*theEvolution](./Resources/memes/jsEvolution.jpg)
+<!-- ![*theEvolution](./Resources/memes/jsEvolution.jpg) -->
+
+<img alt='*theEvolution' src='./Resources/memes/jsEvolution.jpg' width=360 />
 
 ## [🔗 Prototype Chain](https://fireship.io/courses/js/102-prototype-chain/)
 
@@ -20,7 +22,9 @@ Except for the *primitives*, everything in JavaScript is just an **Object**.
 
 - `Object.getPrototypeOf()`
 
-![*everyMfinThingIsAnObject](./Resources/memes/everyMfinThingIsAnObject.webp)
+<!-- ![*everyMfinThingIsAnObject](./Resources/memes/everyMfinThingIsAnObject.webp) -->
+
+<img alt='*everyMfinThingIsAnObject' src='./Resources/memes/everyMfinThingIsAnObject.webp' width=390 />
 
 ```javascript
 
@@ -63,7 +67,7 @@ console.log(dog.sleep())        // ...ZZZzzzZZZzzz...
 
 - DRY code
 
-![*moreExperienceNeeded](./Resources/memes/moreExperienceNeeded.webp)
+<!-- ![*moreExperienceNeeded](./Resources/memes/moreExperienceNeeded.webp) -->
 
 ```javascript
 const { name, dna, origin, activate } = starboyObject;
@@ -87,7 +91,9 @@ const life = [...idk, ...fml]
 
 **Error handling* while calling/assigning an object's property that may or may not exist yet!
 
-![*handleThis...](./Resources/memes/handleThis.webp)
+<!-- ![*handleThis...](./Resources/memes/handleThis.webp) -->
+
+<img alt='*handleThis...' src='./Resources/memes/handleThis.webp' width=330 />
 
 ```javascript
 const starboy = homoSapien?.name;
@@ -101,7 +107,13 @@ const starboy = homoSapien?.name;
 
 - `0` is *falsy* by design in the world of *JS*...
 
-![*welcomeToTheWorldOfJS](./Resources/memes/welcomeToTheWorldOfJS.webp)
+<!-- ![*welcomeToTheWorldOfJS](./Resources/memes/welcomeToTheWorldOfJS.webp) -->
+
+<img alt='*welcomeToTheWorldOfJS' src='./Resources/memes/welcomeToTheWorldOfJS.webp' width=390 />
+
+- `21 == '21'`   //true
+
+- `21 === '21'`   //false
 
 ```javascript
 let reasonsToLive = moments ?? 'None';
@@ -119,7 +131,9 @@ let reasonsToLive = moments ?? 'None';
 
 - *Global Scope* (*Convention)
 
-![*callTheMfinFunction](./Resources/memes/callTheMfinFunction.webp)
+<!-- ![*callTheMfinFunction](./Resources/memes/callTheMfinFunction.webp) -->
+
+<img alt='*callTheMfinFunction' src='./Resources/memes/callTheMfinFunction.webp' width=330 />
 
 ```javascript
 function add(x, y) {
@@ -207,7 +221,9 @@ A **closure** is a `function + outer states/data` that has access to the **paren
 
     - **Data Encapsulation**
 
-![*Closures](./Resources/memes/closures.webp)
+<!-- ![*Closures](./Resources/memes/closures.webp) -->
+
+<img alt='*Closures' src='./Resources/memes/closures.webp' width=300 />
 
 ```javascript
 // Open Expression/Closure
@@ -223,7 +239,9 @@ function closure(moments) {
 }
 ```
 
-![*callTheFunction()()](./Resources/memes/againCallTheFunction.jpg)
+<!-- ![*callTheFunction()()](./Resources/memes/againCallTheFunction.jpg) -->
+
+<img alt='*callTheFunction()()' src='./Resources/memes/againCallTheFunction.jpg' width=390 />
 
 ### `Note:` use **closure()()** to call the *function()*
 
@@ -338,7 +356,9 @@ for (let [i, val] of someArray.entries()) {
 
 - It's generally *Iterates* over the *enumerable properties* of an *object{}*.
 
-![I'm in...](./Resources/memes/imIn.webp)
+<!-- ![I'm in...](./Resources/memes/imIn.webp) -->
+
+<img alt='im in...' src='./Resources/memes/imIn.webp' width=330 />
 
 ```javascript
 // for in ( NOT recommended for arrays!! ), Objects only!
@@ -428,6 +448,8 @@ console.log(randomShit);
 
 `Math.random()` returns a *random* number between 0 (inclusive), and 1 (exclusive).
 
+<img alt='*moreExperienceNeeded' src='./Resources/memes/moreExperienceNeeded.webp' width=330 />
+
 ## [👴 History of JavaScript](https://fireship.io/courses/js/102-history-of-js/)
 
 [The Weird History of *JavaScript*, Jeff, DEV.to](https://dev.to/codediodeio/the-weird-history-of-javascript-2bnb)
@@ -457,7 +479,9 @@ console.log(randomShit);
 
 - **V8 Engine**, *Google Chrome* (*2008*)
 
-![goodbyeIE](./Resources/memes/goodbyeIE.webp)
+<!-- ![goodbyeIE](./Resources/memes/goodbyeIE.webp) -->
+
+<img alt='goodbyeIE' src='./Resources/memes/goodbyeIE.webp' width=390 />
 
 - Ryan Dahl, **Node.js** (*2009*)
   - *V8 Engine* on the server-side.
@@ -478,7 +502,9 @@ Where does JavaScript go from here? Will WASM replace JS? Will microfrontends ma
 
 Only time will tell, stay tuned for Part II in 2045! ;)
 
-![*theSingularity](./Resources/memes/weMessedUpLOL.webp)
+<!-- ![*theSingularity](./Resources/memes/weMessedUpLOL.webp) -->
+
+<img alt='*theSingularity' src='./Resources/memes/weMessedUpLOL.webp' width=690 />
 
 ## ...untilNextTime!👋
 
