@@ -62,7 +62,7 @@ console.log(cummedSum(theArray))
 
 - **Divide and Conquer** approach
 
-- **Time Complexity** of `O(log n)`, **Logarithmic**
+- [**Time Complexity**](https://en.wikipedia.org/wiki/Time_complexity) of `O(log n)`, **Logarithmic**
 
 <img alt='bigOcomplexityChart' src='./Resources/memes/bigOcomplexityChart.jpg' width=600 />
 
@@ -78,7 +78,6 @@ console.log(cummedSum(theArray))
 ### *normalSearch, `O(n!)`
 
 ```javascript
-
 // normal search, O(n!)
 function search(arr, target) {
     for (let i = 0; i < arr.length; i++) {
@@ -86,9 +85,8 @@ function search(arr, target) {
             return i;
         }
     }
-    return -1
+    return -1;
 }
-
 ```
 
 ### *binarySearch, `O(log n)`
