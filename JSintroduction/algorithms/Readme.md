@@ -89,6 +89,8 @@ function search(arr, target) {
 }
 ```
 
+<img alt='*binarySearch' src='./Resources/memes/binarySearch.webp' width=300 />
+
 ### *binarySearch, `O(log n)`
 
 ```javascript
