@@ -1,4 +1,4 @@
-# ALGORITHMS
+# [ALGORITHMS](https://en.wikipedia.org/wiki/Algorithm)
 
 Solving basic algorithms with plain JavaScript...
 
@@ -75,7 +75,7 @@ console.log(cummedSum(theArray))
 
 <img alt='comparisonComputationalComplexity' src='./Resources/memes/comparisonComputationalComplexity.svg' width=600 />
 
-### *normalSearch, `O(n!)`
+### Linear Search, `O(n!)`
 
 ```javascript
 // normal search, O(n!)
@@ -91,7 +91,7 @@ function search(arr, target) {
 
 <img alt='*binarySearch' src='./Resources/memes/binarySearch.webp' width=300 />
 
-### *binarySearch, `O(log n)`
+### [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm), `O(log n)`
 
 ```javascript
 // lowerCased + sorted
