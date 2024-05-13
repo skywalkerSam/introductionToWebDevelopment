@@ -1,65 +1,49 @@
-// binary search algorithm
-
-// Create a function that takes a sorted array and a target value. Return the index of the target value in the array. If the target value is not in the array, return -1.
+// binarySearch
 
 
-let theArray = [3, 6, 9, 33, 66, 99, 36, 69, 96]    // no need to sort
+let theAnotherArray = ['Sam', 'Starboy', 'Trish', 'Stargirl', 'Life', 'Universe', '&', 'Whatever', 'tf', 'lies', 'beyond...', 'wtf, right?', 'Origins', 'Eternity', 'The Beginning of the end', 'Singularity', 'FML', 'Fuck', 'Just', 'Fuckin\'', 'Die', 'Already', '...']
 
-let theAnotherArray = ['Sam', 'Starboy', 'Trish', 'Stargirl', 'Life', 'Universe', '&', 'Whatever', 'tf', 'lies', 'beyond...', 'wtf, right?', 'Origins', 'Eternity', 'The Beginning of the end', 'Singularity', 'FML'].sort()
-
-// normal search, O(n!)
-function search(arr, target) {
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === target) {
-            return i;
-        }
-    }
-    return -1;
-}
+// lowerCased + sorted
+theArray = theAnotherArray.map((value) => value.toLowerCase()).sort()
 
 
-
-// binary search algorithm, O(log n)
 function binarySearch(arr, target, start = 0, end = arr.length - 1) {
 
-    // dry
-    let pointerIndex = Math.floor((start + end) / 2)
-    let currentIndexValue = arr[pointerIndex]
-    console.log(start, end, pointerIndex, currentIndexValue)
+    let pointerIndex = Math.floor((start + end) / 2);
+    let indexValue = arr[pointerIndex]
+    console.log(start, end, pointerIndex, indexValue)
 
-    // not found!
+    // failed
     if (start > end) {
-        console.log('\nTarget Not Found!')
+        console.log('\nNot Found!!')
         return -1;
     }
 
-    // found :)
-    if (currentIndexValue === target) {
-        console.log(`Target ${target} found at the index of ${pointerIndex} :)`)
+    // found
+    if (indexValue === target) {
+        console.log(`${target} found at ${pointerIndex} :)`)
         return pointerIndex;
     }
 
-    // over, recursive🔁
-    if (currentIndexValue > target) {
+    // overshoot
+    if (indexValue > target) {
         return binarySearch(arr, target, start, pointerIndex - 1)
     }
 
-    // under, recursive🔁
-    if (currentIndexValue < target) {
+    // undershoot
+    if (indexValue < target) {
         return binarySearch(arr, target, pointerIndex + 1, end)
     }
-
 }
 
 
-
-// console.log(search(theArray, 99))
-
-// console.log(binarySearch(theArray, 69))
+console.log(binarySearch(theArray, 'fml'))
 // console.log(theArray)
 
-// console.log(theAnotherArray)
-console.log(binarySearch(theAnotherArray, ''))
 
 
-// idk, something just doesn't feel right...
+// the point of self-destruction.
+
+// i don't even believe half the things i see.
+
+// life...
