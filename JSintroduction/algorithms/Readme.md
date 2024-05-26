@@ -1,10 +1,10 @@
-# [ALGORITHMS](https://en.wikipedia.org/wiki/Algorithm)
+# [🥣 ALGORITHMS](https://en.wikipedia.org/wiki/Algorithm)
 
 Solving basic algorithms with plain JavaScript...
 
 <img alt='*theTest' src='./Resources/memes/theTest.webp' width=300 />
 
-## [🥣 Cumulative Sum](https://fireship.io/courses/js/algo-sum/)
+## [➕ Cumulative Sum](https://fireship.io/courses/js/algo-sum/)
 
 - Using **reducer**
 
@@ -64,7 +64,7 @@ console.log(cummedSum(theArray))
 
 - [**Time Complexity**](https://en.wikipedia.org/wiki/Time_complexity) of `O(log n)`, **Logarithmic**
 
-<img alt='bigOcomplexityChart' src='./Resources/memes/bigOcomplexityChart.jpg' width=600 />
+<img alt='bigOcomplexityChart' src='./Resources/memes/bigOcomplexityChart.jpg' width=540 />
 
 - `O(1)` **Constant**, **theBest*
 - `O(n)` **Linear**, *Good*
@@ -73,7 +73,7 @@ console.log(cummedSum(theArray))
 - `O(2^n)` **Exponential**, *Horrible*
 - `O(n!)` **Factorial**, *Worst*
 
-<img alt='comparisonComputationalComplexity' src='./Resources/memes/comparisonComputationalComplexity.svg' width=600 />
+<img alt='comparisonComputationalComplexity' src='./Resources/memes/comparisonComputationalComplexity.svg' width=450 />
 
 ### Linear Search, `O(n!)`
 
@@ -131,6 +131,69 @@ console.log(binarySearch(theArray, 'fml'))
 ```
 
 <img alt='*itCanGetRoughSometimes' src='./Resources/memes/itCanGetRoughSometimes.jpg' width=330 />
+
+`Note:` It's a lifelong journey...
+
+## [🧺 Least Recently Used (LRU) Cache](https://fireship.io/courses/js/algo-lru/)
+
+Frequently used in the real world for cache n' stuff...
+
+```javascript
+class LRU {
+    constructor(maxCap) {
+        this.maxCap = maxCap;
+        this.cache = new Map();     // ordered keys
+
+    }
+
+    getItem(key) {
+        let item = this.cache.get(key)
+
+        if (item) {
+            this.cache.delete(key)
+            this.cache.set(key, item)
+        }
+
+        return item;
+    }
+
+    putItem(key, item) {
+        if (this.cache.has(key)) {
+            this.cache.delete(key);
+        }
+
+        if (this.cache.size == this.maxCap) {
+            this.cache.delete(this.oldestItem)
+        }
+
+        this.cache.set(key, item)
+    }
+
+    get oldestItem() {
+        return this.cache.keys().next().value;
+    }
+
+    debug() {
+        // console.log(this.maxCap)
+        console.log(this.cache)
+
+        return this.maxCap;
+    }
+
+}
+
+
+cache = new LRU(9);
+
+cache.putItem('Starboy', 3)
+console.log(cache.getItem('Starboy'))
+```
+
+`Note:` It ain't that tough, you just gotta focus like this...
+
+<!-- <img alt='*FocusedAF' src='./Resources/memes/FocusedAF.png' width=450> -->
+
+## Test Driven Development (`TDD`) with `Vitest`
 
 
 
