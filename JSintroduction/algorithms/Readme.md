@@ -140,14 +140,13 @@ Frequently used in the real world for cache n' stuff...
 
 ```javascript
 class LRU {
-    constructor(maxCap) {
-        this.maxCap = maxCap;
+    constructor(max) {
+        this.max = max;
         this.cache = new Map();     // ordered keys
-
     }
 
     getItem(key) {
-        let item = this.cache.get(key)
+        let item = this.cache.get(key)      //Map()
 
         if (item) {
             this.cache.delete(key)
@@ -162,22 +161,23 @@ class LRU {
             this.cache.delete(key);
         }
 
-        if (this.cache.size == this.maxCap) {
-            this.cache.delete(this.oldestItem)
+        if (this.cache.size == this.max) {
+            this.cache.delete(this.oldestItem)      //no `()`
         }
 
         this.cache.set(key, item)
     }
 
+    // `getter` so you don't have todo `()` when calling.
     get oldestItem() {
-        return this.cache.keys().next().value;
+        return this.cache.keys().next().value;      //Map()
     }
 
     debug() {
-        // console.log(this.maxCap)
+        // console.log(this.max)
         console.log(this.cache)
 
-        return this.maxCap;
+        return this.max;
     }
 
 }
@@ -187,13 +187,18 @@ cache = new LRU(9);
 
 cache.putItem('Starboy', 3)
 console.log(cache.getItem('Starboy'))
+
+// console.log(cache.debug())
 ```
 
 `Note:` It ain't that tough, you just gotta focus like this...
 
 <!-- <img alt='*FocusedAF' src='./Resources/memes/FocusedAF.png' width=450> -->
 
-## Test Driven Development (`TDD`) with `Vitest`
+## [🧪 `TDD` with `Vitest`](https://fireship.io/courses/js/algo-vitest/)
+
+Test Driven Development
+
 
 
 
