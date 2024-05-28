@@ -202,6 +202,9 @@ Test Driven Development
 
 - better confidence with testing
 
+- better debugging with enhanced error details
+
+- better.
 
 
 
@@ -213,4 +216,4 @@ Test Driven Development
 - [X] Cumulative Sum
 - [X] Binary Search
 - [X] LRU Cache
-- [ ] TDD
+- [X] TDD
