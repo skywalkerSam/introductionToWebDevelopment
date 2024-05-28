@@ -194,7 +194,7 @@ console.log(cache.getItem('Starboy'))
 
 `Note:` It ain't that tough, you just gotta focus like this...
 
-<!-- <img alt='*FocusedAF' src='./Resources/memes/FocusedAF.png' width=450> -->
+<img alt='*FocusedAF' src='./Resources/memes/FocusedAF.png' width=450>
 
 ## [🧪 `TDD` with `Vitest`](https://fireship.io/courses/js/algo-vitest/)
 
