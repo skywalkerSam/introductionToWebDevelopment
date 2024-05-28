@@ -129,6 +129,7 @@ function binarySearch(arr, target, start = 0, end = arr.length - 1) {
 
 console.log(binarySearch(theArray, 'fml'))
 ```
+`Note:` returns the index on the `sorted` array...
 
 <img alt='*itCanGetRoughSometimes' src='./Resources/memes/itCanGetRoughSometimes.jpg' width=330 />
 
@@ -199,6 +200,9 @@ console.log(cache.getItem('Starboy'))
 
 Test Driven Development
 
+- better confidence with testing
+
+
 
 
 
@@ -206,5 +210,7 @@ Test Driven Development
 
 ## ;)
 
-- [X] cumulativeSum
-- [X] binarySearch
+- [X] Cumulative Sum
+- [X] Binary Search
+- [X] LRU Cache
+- [ ] TDD

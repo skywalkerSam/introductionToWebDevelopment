@@ -1,13 +1,19 @@
-// binarySearch, returns the index on the `sorted` array...
+// binarySearch, returns the index on the `actual` array...
 
+let theArray = ['Sam', 'Starboy', 'Trish', 'Stargirl', 'Life', 'Universe', '&', 'Whatever', 'tf', 'lies', 'beyond...', 'wtf, right?', 'Origins', 'Eternity', 'The Beginning of the end', 'Singularity', 'FML', 'Fuck', 'Just', 'Fuckin\'', 'Die', 'Already', '...']
 
-let theAnotherArray = ['Sam', 'Starboy', 'Trish', 'Stargirl', 'Life', 'Universe', '&', 'Whatever', 'tf', 'lies', 'beyond...', 'wtf, right?', 'Origins', 'Eternity', 'The Beginning of the end', 'Singularity', 'FML', 'Fuck', 'Just', 'Fuckin\'', 'Die', 'Already', '...']
+// sort
+let sortedArray = theArray.map((value) => value.toLowerCase()).sort();
 
-// lowerCased + sorted
-theArray = theAnotherArray.map((value) => value.toLowerCase()).sort()
+// for testing
+export function sortThis(arr) {
+    return arr.map((value) => value.toLowerCase()).sort();
+    
+}
 
+export function binarySearch(arr, target, start = 0, end = arr.length - 1) {
 
-function binarySearch(arr, target, start = 0, end = arr.length - 1) {
+    sortThis(arr);      //for testing
 
     let pointerIndex = Math.floor((start + end) / 2);
     let indexValue = arr[pointerIndex]
@@ -40,10 +46,3 @@ function binarySearch(arr, target, start = 0, end = arr.length - 1) {
 console.log(binarySearch(theArray, 'fml'))
 // console.log(theArray)
 
-
-
-// the point of self-destruction.
-
-// i don't even believe half the things i see.
-
-// life...
