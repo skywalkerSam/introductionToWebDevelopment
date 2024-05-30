@@ -206,7 +206,7 @@ Test Driven Development
 
 - better.
 
-
+`Note:` **export** the function, `"type": "module"` in *package.json* before importing for *testing*
 
 
 ## untilNextTime...
