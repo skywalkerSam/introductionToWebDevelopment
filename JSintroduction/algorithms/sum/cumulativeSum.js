@@ -30,7 +30,7 @@ console.log(cumSummed(theArray))
 // forEach
 export function cummedSum(arr) {
     let summed = 0;
-    arr.forEach((v) => {summed += v})
+    arr.forEach((v) => { summed += v })
     // console.log(summed)      // debugging101 lol ;)
     return summed;
 }

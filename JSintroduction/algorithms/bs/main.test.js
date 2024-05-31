@@ -20,3 +20,4 @@ import { binarySearch } from './binarySearch';
 test('Another BS', () => {
     expect(binarySearch(theArray, 'Universe')).toBe(5)
 })
+

@@ -8,7 +8,7 @@ let sortedArray = theArray.map((value) => value.toLowerCase()).sort();
 // for testing
 export function sortThis(arr) {
     return arr.map((value) => value.toLowerCase()).sort();
-    
+
 }
 
 export function binarySearch(arr, target, start = 0, end = arr.length - 1) {

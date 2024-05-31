@@ -25,3 +25,4 @@ test('LRU Cache Max', () => {
     expect(cache.getItem('Starboy')).toBe(undefined)
     expect(cache.getItem('Dua')).toBe(11)
 })
+
