@@ -1,10 +1,10 @@
-# [ALGORITHMS](https://en.wikipedia.org/wiki/Algorithm)
+# [🥣 ALGORITHMS](https://en.wikipedia.org/wiki/Algorithm)
 
 Solving basic algorithms with plain JavaScript...
 
 <img alt='*theTest' src='./Resources/memes/theTest.webp' width=300 />
 
-## [🥣 Cumulative Sum](https://fireship.io/courses/js/algo-sum/)
+## [➕ Cumulative Sum](https://fireship.io/courses/js/algo-sum/)
 
 - Using **reducer**
 
@@ -64,7 +64,7 @@ console.log(cummedSum(theArray))
 
 - [**Time Complexity**](https://en.wikipedia.org/wiki/Time_complexity) of `O(log n)`, **Logarithmic**
 
-<img alt='bigOcomplexityChart' src='./Resources/memes/bigOcomplexityChart.jpg' width=600 />
+<img alt='bigOcomplexityChart' src='./Resources/memes/bigOcomplexityChart.jpg' width=540 />
 
 - `O(1)` **Constant**, **theBest*
 - `O(n)` **Linear**, *Good*
@@ -73,7 +73,7 @@ console.log(cummedSum(theArray))
 - `O(2^n)` **Exponential**, *Horrible*
 - `O(n!)` **Factorial**, *Worst*
 
-<img alt='comparisonComputationalComplexity' src='./Resources/memes/comparisonComputationalComplexity.svg' width=600 />
+<img alt='comparisonComputationalComplexity' src='./Resources/memes/comparisonComputationalComplexity.svg' width=450 />
 
 ### Linear Search, `O(n!)`
 
@@ -129,14 +129,99 @@ function binarySearch(arr, target, start = 0, end = arr.length - 1) {
 
 console.log(binarySearch(theArray, 'fml'))
 ```
+`Note:` returns the index on the `sorted` array...
 
 <img alt='*itCanGetRoughSometimes' src='./Resources/memes/itCanGetRoughSometimes.jpg' width=330 />
 
+`Note:` It's a lifelong journey...
+
+## [🧺 Least Recently Used (LRU) Cache](https://fireship.io/courses/js/algo-lru/)
+
+Frequently used in the real world for cache n' stuff...
+
+```javascript
+class LRU {
+    constructor(max) {
+        this.max = max;
+        this.cache = new Map();     // ordered keys
+    }
+
+    getItem(key) {
+        let item = this.cache.get(key)      //Map()
+
+        if (item) {
+            this.cache.delete(key)
+            this.cache.set(key, item)
+        }
+
+        return item;
+    }
+
+    putItem(key, item) {
+        if (this.cache.has(key)) {
+            this.cache.delete(key);
+        }
+
+        if (this.cache.size == this.max) {
+            this.cache.delete(this.oldestItem)      //no `()`
+        }
+
+        this.cache.set(key, item)
+    }
+
+    // `getter` so you don't have todo `()` when calling.
+    get oldestItem() {
+        return this.cache.keys().next().value;      //Map()
+    }
+
+    debug() {
+        // console.log(this.max)
+        console.log(this.cache)
+
+        return this.max;
+    }
+
+}
+
+
+cache = new LRU(9);
+
+cache.putItem('Starboy', 3)
+console.log(cache.getItem('Starboy'))
+
+// console.log(cache.debug())
+```
+
+## Prototypal Inheritance
+
+**Prototype-based programming** is a style of *object-oriented programming* in which behavior reuse (known as *inheritance*) is performed via a process of reusing existing objects that serve as *prototypes*. This model can also be known as prototypal, prototype-oriented, classless, or *instance-based programming*.
+
+- In JavaScript **classes** are an extension of *prototypal inheritance*... 
+
+<img alt= 'prototypeInheritance' src='./Resources/memes/prototypeInheritance.png' width='600'>
+
+`Note:` It ain't that tough, you just gotta focus like this...
+
+<img alt='*FocusedAF' src='./Resources/memes/FocusedAF.png' width=450>
+
+## [🧪 `TDD` with `Vitest`](https://fireship.io/courses/js/algo-vitest/)
+
+Test Driven Development
+
+- better confidence with testing
+
+- better debugging with enhanced error details
+
+- better.
+
+`Note:` **export** the function, `"type": "module"` in *package.json* before importing for *testing*
 
 
 ## untilNextTime...
 
 ## ;)
 
-- [X] cumulativeSum
-- [X] binarySearch
+- [X] Cumulative Sum
+- [X] Binary Search
+- [X] LRU Cache
+- [X] TDD
