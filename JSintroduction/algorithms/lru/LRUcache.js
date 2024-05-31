@@ -12,7 +12,7 @@
  
  */
 
-class LRU {
+export class LRU {
     constructor(max) {
         this.max = max;
         this.cache = new Map();     // ordered keys
@@ -35,6 +35,7 @@ class LRU {
         }
 
         if (this.cache.size == this.max) {
+            //undefined
             this.cache.delete(this.oldestItem)      //no `()`
         }
 
@@ -56,7 +57,7 @@ class LRU {
 }
 
 
-cache = new LRU(9);
+let cache = new LRU(9);
 
 cache.putItem('Starboy', 3)
 console.log(cache.getItem('Starboy'))
