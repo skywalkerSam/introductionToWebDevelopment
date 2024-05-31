@@ -192,6 +192,14 @@ console.log(cache.getItem('Starboy'))
 // console.log(cache.debug())
 ```
 
+## Prototypal Inheritance
+
+**Prototype-based programming** is a style of *object-oriented programming* in which behavior reuse (known as *inheritance*) is performed via a process of reusing existing objects that serve as *prototypes*. This model can also be known as prototypal, prototype-oriented, classless, or *instance-based programming*.
+
+- In JavaScript **classes** are an extension of *prototypal inheritance*... 
+
+<img alt= 'prototypeInheritance' src='./Resources/memes/prototypeInheritance.png' width='600'>
+
 `Note:` It ain't that tough, you just gotta focus like this...
 
 <img alt='*FocusedAF' src='./Resources/memes/FocusedAF.png' width=450>
