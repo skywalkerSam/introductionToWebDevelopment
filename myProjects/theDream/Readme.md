@@ -36,5 +36,4 @@ Node.js, Express, and OpenAI
 
 - Store the API key in a file named `.env` (*.gitignore*)
 
-2
 
