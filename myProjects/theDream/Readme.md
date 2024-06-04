@@ -32,8 +32,30 @@ The HTTP *request-response* cycle.
 
 ## 🤖 Text-to-Image Server
 
-Node.js, Express, and OpenAI
+Using Node.js, Express, and OpenAI to create a **text-to-image** *API*
 
-- Store the API key in a file named `.env` (*.gitignore*)
+<img src="./Resources/memes/theWitcher.webp" alt="Don't push .env to GitHub" width=540>
+
+`Note:` Store the *API* key in a file named `.env` at the *root* of the project, and *add* it to the **.gitignore** to be ignored by *git*.
+
+## 💻 Rest Client ( API Testing )
+
+Test your API with a REST client.
+
+- Better debugging
+
+- Easier to test requests
+
+- Workflow automation
+
+Some popular API testing clients include:
+
+- Thunder Client, a VScode extension
+
+- Postman
+
+- Insomnia
+
+
 
 
