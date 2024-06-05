@@ -1,10 +1,10 @@
-# theDreamProject
+# [theDreamProject](https://github.com/skywalkerSam/introductionToWebDevelopment/tree/theDream/myProjects/theDream)
 
 A simple *fullstack* image generation application with OpenAI's DALL.E
 
 <img src='./Resources/memes/fullStackInAnutshell.webp' alt='Fullstack in a nutshell' width=390>
 
-## 🧙‍♂️ Initial Setup
+## [🧙‍♂️ Initial Setup](https://fireship.io/courses/js/app-setup/)
 
 Scaffold the project
 
@@ -14,7 +14,7 @@ npm create @vite-pwa/pwa@latest
 
 `Note:` Using *vite* instead of *vanilla*!
 
-## 💤 RESTful APIs
+## [💤 RESTful APIs](https://fireship.io/courses/js/app-rest/)
 
 The HTTP *request-response* cycle.
 
@@ -30,7 +30,7 @@ The HTTP *request-response* cycle.
 
 <img src='./Resources/info/serverResponses.png' alt='Server responses' width='360'>
 
-## 🤖 Text-to-Image Server
+## [🤖 Text-to-Image Server](https://fireship.io/courses/js/app-server/)
 
 Using Node.js, Express, and OpenAI to create a **text-to-image** *API*
 
@@ -38,7 +38,7 @@ Using Node.js, Express, and OpenAI to create a **text-to-image** *API*
 
 `Note:` Store the *API* key in a file named `.env` at the *root* of the project, and *add* it to the **.gitignore** to be ignored by *git*.
 
-## 💻 Rest Client ( API Testing )
+## [💻 Rest Client ( API Testing )](https://fireship.io/courses/js/app-rest-client/)
 
 Test your API with a REST client.
 
@@ -55,6 +55,24 @@ Some popular API testing clients include:
 - Postman
 
 - Insomnia
+
+`Note:` *NO*, not the sleeping kind!
+
+<img src="./Resources/memes/theProgrammer.jpg" alt="*theProgrammer" width=450>
+
+### The output `{"prompt":"a starboy"}`
+
+<img src="./Resources/info/dalle3res-aStarboy.png" alt="aStarboy" width=540>
+
+## [🍦 Text-to-Image Frontend UI](https://fireship.io/courses/js/app-frontend/)
+
+The UI for the `Text-to-Image` generation Web Application.
+
+<img src="./Resources/memes/theCSS.jpg" alt="CSS makes a big difference!" width=450>
+
+- The CSS makes a huge difference!
+
+🎵 Lame niggas can't tell the difference, one time for a nigga who knows...
 
 
 

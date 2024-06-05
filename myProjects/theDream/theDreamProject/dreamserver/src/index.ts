@@ -31,3 +31,6 @@ app.post('/image', async (req, res) => {
 app.listen(process.env.PORT, () => {
   console.log(`\n\nServer running on http://localhost:${process.env.PORT}/image/\n`)
 })
+
+// .env
+// PORT, OPENAI
