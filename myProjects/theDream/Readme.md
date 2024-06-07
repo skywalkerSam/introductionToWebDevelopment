@@ -1,6 +1,6 @@
 # [theDreamProject](https://github.com/skywalkerSam/introductionToWebDevelopment/tree/theDream/myProjects/theDream)
 
-A simple *fullstack* image generation application with OpenAI's DALL.E
+A simple *fullstack* image generation application with OpenAI's DALL.E 3
 
 <img src='./Resources/memes/fullStackInAnutshell.webp' alt='Fullstack in a nutshell' width=390>
 
