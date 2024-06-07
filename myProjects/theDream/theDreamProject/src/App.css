@@ -6,6 +6,7 @@
 }
 
 .logo {
+  display: flex flex-start;
   width: 11em;
   /* height: 6em; */
   padding: 1.5em;

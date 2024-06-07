@@ -5,9 +5,34 @@ import starboyLogo from '/starboyLogo.png'
 import PWABadge from './PWABadge.tsx'
 import './App.css'
 import 'tachyons'
+import InputBox from './components/InputBox/InputBox.tsx' 
+import { useState } from 'react'
+
+
+const SERVER = 'http://localhost:8080/image'
 
 
 export default function App() {
+  const [prompt, setPrompt] = useState('')
+  const [imageUrl, setImageUrl] = useState('')
+
+  function onChange(event){
+    // console.log(event.target.value)
+    setPrompt(event.target.value)
+    // console.log(prompt)
+  }
+
+  async function onSubmit(){
+    await fetch(SERVER), {
+      method: 'post',
+      Headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({
+        prompt: prompt
+      })
+
+    }
+  }
+
   return (
     <>
       <div>
@@ -16,12 +41,14 @@ export default function App() {
         </a>
       </div>
       <header>
-        <h1 className='f1 red'>Image Generator</h1>
+        <div>
+          <h1 className='f1 red'>Image Generator</h1>
+          <p className='tc'><em>with OPENAI's</em> <strong>Dall-E 3</strong></p>
+        </div>
       </header>
 
-      <div>
-        <input type="text" />
-      </div>
+      <InputBox onChange={onChange} onSubmit={onSubmit}></InputBox>
+      
 
       
       
