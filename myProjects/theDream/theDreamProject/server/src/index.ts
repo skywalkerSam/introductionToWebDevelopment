@@ -14,12 +14,24 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
+app.get('/', (req, res) => {
+  res.send('Welcome to the Image Generation API...')
+})
+
+app.post('/test', (req, res) => {
+  const prompt = req.body.prompt;
+  const imageUrl = "https://cdna.artstation.com/p/assets/images/images/076/708/342/4k/luis-omar-jinxrender-0010.jpg?1717601087"
+  
+  console.log("Incoming Request: ", prompt)
+  res.send({imageUrl})
+})
+
 app.post('/image', async (req, res) => {
     const prompt = req.body.prompt;
 
     const response = await openai.images.generate({
         model: "dall-e-3",
-        prompt: prompt ?? "a white siamese cat",
+        prompt: prompt ?? "a starboy",
         n: 1,
         size: "1024x1024",
       });
@@ -29,8 +41,10 @@ app.post('/image', async (req, res) => {
 })
 
 app.listen(process.env.PORT, () => {
-  console.log(`\n\nServer running on http://localhost:${process.env.PORT}/image/\n`)
+  console.log(`\n\nServer running on http://localhost:${process.env.PORT}/\n`)
 })
 
 // .env
 // PORT, OPENAI
+
+// npm run build ; node .

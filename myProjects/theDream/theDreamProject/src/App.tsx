@@ -7,9 +7,10 @@ import './App.css'
 import 'tachyons'
 import InputBox from './components/InputBox/InputBox.tsx' 
 import { useState } from 'react'
+import ImageDisplay from './components/ImageDisplay/ImageDisplay.tsx'
 
 
-const SERVER = 'http://localhost:8080/image'
+const SERVER = 'http://localhost:8080/test'
 
 
 export default function App() {
@@ -17,20 +18,24 @@ export default function App() {
   const [imageUrl, setImageUrl] = useState('')
 
   function onChange(event){
-    // console.log(event.target.value)
+    console.log(event.target.value)
     setPrompt(event.target.value)
-    // console.log(prompt)
   }
 
   async function onSubmit(){
-    await fetch(SERVER), {
+    await fetch(SERVER, {
       method: 'post',
-      Headers: {'Content-Type':'application/json'},
+      headers: {'Content-Type':'application/json'},
       body: JSON.stringify({
         prompt: prompt
       })
-
-    }
+    })
+      .then(res => res.json())
+      // .then(resp => console.log(resp))
+      .then(response => setImageUrl(response))
+      .catch(err => console.log(err))
+      console.log(imageUrl)
+      // console.log(typeof(imageUrl))
   }
 
   return (
@@ -48,6 +53,7 @@ export default function App() {
       </header>
 
       <InputBox onChange={onChange} onSubmit={onSubmit}></InputBox>
+      <ImageDisplay imageUrl={imageUrl}></ImageDisplay>
       
 
       
