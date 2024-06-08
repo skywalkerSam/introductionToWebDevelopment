@@ -4,7 +4,7 @@ TypeScript is a strict superset of **JavaScript**.
 
 [TypeScript Docs](https://www.typescriptlang.org/docs/)
 
-<img src="./Resources/memes/TypeScript-in-a-nutshell.webp" alt="Typescript is better!?" width=450>
+<img src="./Resources/info/TypeScript-in-a-nutshell.webp" alt="Typescript is better!?" width=450>
 
 <!-- ![TypeScript In a Nutshell](./Resources/Memes/TypeScript-in-a-nutshell.webp) -->
 
@@ -16,7 +16,7 @@ TypeScript is a strict superset of **JavaScript**.
 
 ## Learning Resources
 
-- [Type Casting, *logrocket*]("https://blog.logrocket.com/how-to-perform-type-casting-typescript/")
+- [Type Casting - logrocket]("https://blog.logrocket.com/how-to-perform-type-casting-typescript/")
 
 ## Install TypeScript
 
