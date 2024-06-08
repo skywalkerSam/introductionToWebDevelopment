@@ -70,10 +70,22 @@ The UI for the `Text-to-Image` generation Web Application.
 
 <img src="./Resources/memes/theCSS.jpg" alt="CSS makes a big difference!" width=450>
 
-- The CSS makes a huge difference!
+`Note:` CSS makes a huge difference!
 
 🎵 Lame niggas can't tell the difference, one time for a nigga who knows...
 
+### Always be ready for the unexpected...
 
+<img src="./Resources/memes/theUnicorn.webp" alt="theUnexpected" width=450>
 
+## Goodbyes.)
 
+<img src="./Resources/memes/realProgrammerLOL.jpg" alt="realProgrammerLOL" width=450>
+
+<img src="./Resources/memes/timeDialation.jpg" alt="timeDialation" width=450>
+
+<img src="./Resources/memes/aBreakdownPointAvoided.jpg" alt="aBreakdownPointAvoided">
+
+## Until next time...
+
+## ;)

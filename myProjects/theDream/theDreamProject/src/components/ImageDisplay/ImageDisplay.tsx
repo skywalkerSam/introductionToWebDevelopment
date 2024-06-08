@@ -1,13 +1,12 @@
-import './ImageDisplay.css'
+import "./ImageDisplay.css";
 
 export default function ImageDisplay({ imageUrl }) {
-    return(
-        <>
-            <div>
-                <img src={imageUrl.imageUrl} alt="Image" width="auto"/>
-                {/* {console.log(imageUrl)} */}
-            </div>
-        </>
-    )
+  return (
+    <>
+      <div className="mt3">
+        <img src={imageUrl.imageUrl} alt="Image" width="auto" />
+        {/* {console.log(imageUrl)} */}
+      </div>
+    </>
+  );
 }
-

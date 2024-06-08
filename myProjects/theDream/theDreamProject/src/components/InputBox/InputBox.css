@@ -5,27 +5,27 @@
   background-color: transparent;
 }
 
-.custom-input{
+.custom-input {
   border: 2px solid red;
   color: greenyellow;
 }
 
-.custom-input:hover{
+.custom-input:hover {
   color: red;
 }
 
-.custom-submit{
+.custom-submit {
   border: 2px solid greenyellow;
 }
 
-.custom-submit:hover{
+.custom-submit:hover {
   outline: none;
   color: greenyellow;
   border: 2px solid red;
   transition: 0.3s;
 }
 
-textarea:focus{
+textarea:focus {
   outline: none;
   border: 2px solid greenyellow;
   background-size: 100% 2px, 100% 1px;
