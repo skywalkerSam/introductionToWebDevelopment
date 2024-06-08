@@ -16,7 +16,7 @@ TypeScript is a strict superset of **JavaScript**.
 
 ## Learning Resources
 
-- [Type Casting, *logrocket*](https://blog.logrocket.com/how-to-perform-type-casting-typescript/)
+- [Type Casting, *LogRocket*](https://blog.logrocket.com/how-to-perform-type-casting-typescript/)
 
 ## Install TypeScript
 
