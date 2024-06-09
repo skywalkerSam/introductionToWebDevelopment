@@ -24,7 +24,7 @@ The HTTP *request-response* cycle.
 
 ### Some *other* methods
 
-<img src='./Resources/info/Methods.png' alt='Other methods'>
+<img src='./Resources/info/Methods.png' alt='Other methods' width='510'>
 
 ### Server responses
 
