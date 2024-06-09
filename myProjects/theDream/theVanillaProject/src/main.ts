@@ -1,25 +1,35 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import appLogo from '/favicon.svg'
-import { setupCounter } from './counter.ts'
-import { initPWA } from './pwa.ts'
+import "./style.css";
+// import typescriptLogo from "./typescript.svg";
+import appLogo from "/logo.png";
+// import { setupCounter } from "./counter.ts";
+import { initPWA } from "./pwa.ts";
 
-const app = document.querySelector<HTMLDivElement>('#app')!
+const SERVER = "http://localhost:8080/test";
+
+const app = document.querySelector<HTMLDivElement>("#app")!;
 app.innerHTML = `
   <div>
-    <a href="https://vitejs.dev" target="_blank">
+    <a href="https://github.com/skywalkerSam" target="_blank">
       <img src="${appLogo}" class="logo" alt="App logo" />
     </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>theVanillaProject</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
+      <header>
+        <h1>Image Generator</h1>
+      </header>
+
+      <div>
+        <form>
+          <!-- <label for="prompt">Prompt</label> -->
+          <!-- maxlength="160" -->
+          <textarea name="prompt" placeholder="Image Prompt..."></textarea>
+          <button type="submit">Generate!</button>
+
+        </form>
+      </div>
+
+      <div id="result">
+        <!-- Generated Image -->
+      </div>
+
   </div>
   <div
     id="pwa-toast"
@@ -38,8 +48,31 @@ app.innerHTML = `
         </button>
     </div>
   </div>
-`
+`;
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+// setupCounter(document.querySelector<HTMLButtonElement>("#counter")!);
 
-initPWA(app)
+const form = document.querySelector("form");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const data = new FormData(form);
+
+  const response = await fetch(SERVER, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      prompt: data.get("prompt"),
+    }),
+  });
+
+  const image = await response.json();
+  console.log(image);
+  const result = document.querySelector("#result");
+  result.innerHTML = `<img src="${image.imageUrl}" width="1024" />`;
+});
+
+initPWA(app);

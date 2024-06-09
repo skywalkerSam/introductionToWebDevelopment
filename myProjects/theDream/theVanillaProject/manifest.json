@@ -1,6 +1,6 @@
 {
-  "short_name": "theDream",
-  "name": "theDreamProject",
+  "short_name": "theVanilla",
+  "name": "theVanillaProject",
   "icons": [
     {
       "src": "./public/logo.png",
