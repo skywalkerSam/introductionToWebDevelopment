@@ -84,7 +84,7 @@ The UI for the `Text-to-Image` generation Web Application.
 
 <img src="./Resources/memes/timeDialation.jpg" alt="timeDialation" width=475>
 
-<img src="./Resources/memes/aBreakdownPointAvoided.jpg" alt="aBreakdownPointAvoided" width=490>
+<img src="./Resources/memes/aBreakdownPointAvoided.jpg" alt="aBreakdownPointAvoided">
 
 <img src="./Resources/memes/theFullstack.webp" alt="theFullstack" >
 
