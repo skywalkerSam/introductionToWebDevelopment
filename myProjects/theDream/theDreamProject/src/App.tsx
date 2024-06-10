@@ -16,7 +16,7 @@ export default function App() {
   const [imageUrl, setImageUrl] = useState("");
 
   function onChange(event) {
-    console.log(event.target.value);22
+    console.log(event.target.value);
     setPrompt(event.target.value);
   }
 
