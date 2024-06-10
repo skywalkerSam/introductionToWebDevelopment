@@ -1,6 +1,6 @@
 import "./InputBox.css";
 
-export default function InputBox({ onChange, onSubmit }) {
+export default function InputBox({ onChange, onSubmit, loading }) {
   return (
     <>
       <div className="center">
@@ -14,7 +14,7 @@ export default function InputBox({ onChange, onSubmit }) {
             className="w-30 grow f4 link ph3 pv2 dib b--green bg-transparent red br4 ba ml3 mt2 custom-submit"
             onClick={onSubmit}
           >
-            Generate!
+            {loading ? <span className="spinner">⭕</span> : "Generate!"}
           </button>
           <br />
         </div>

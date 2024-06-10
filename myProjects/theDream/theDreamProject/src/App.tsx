@@ -14,6 +14,7 @@ const SERVER = "http://localhost:8080/test";
 export default function App() {
   const [prompt, setPrompt] = useState("");
   const [imageUrl, setImageUrl] = useState("");
+  const [loading, setLoading] = useState(false);
 
   function onChange(event) {
     console.log(event.target.value);
@@ -21,6 +22,7 @@ export default function App() {
   }
 
   async function onSubmit() {
+    setLoading(true);
     await fetch(SERVER, {
       method: "post",
       headers: { "Content-Type": "application/json" },
@@ -33,6 +35,7 @@ export default function App() {
       .then((response) => setImageUrl(response))
       .catch((err) => console.log(err));
     console.log(imageUrl);
+    setLoading(false);
     // console.log(typeof(imageUrl))
   }
 
@@ -56,7 +59,11 @@ export default function App() {
         </div>
       </header>
 
-      <InputBox onChange={onChange} onSubmit={onSubmit}></InputBox>
+      <InputBox
+        onChange={onChange}
+        onSubmit={onSubmit}
+        loading={loading}
+      ></InputBox>
 
       <ImageDisplay imageUrl={imageUrl}></ImageDisplay>
 
