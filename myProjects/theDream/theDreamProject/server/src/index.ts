@@ -24,7 +24,19 @@ app.post("/test", (req, res) => {
     "https://cdna.artstation.com/p/assets/images/images/076/708/342/4k/luis-omar-jinxrender-0010.jpg?1717601087";
 
   console.log("\n...Incoming Request: ", prompt);
-  res.send({ imageUrl });
+
+  // mimic API response: add delay
+  function sleep(time, callback) {
+    const stop = new Date().getTime();
+    while (new Date().getTime() < stop + time) {
+      console.log("Intentional delay...\n");
+    }
+    callback();
+  }
+
+  sleep(5000, function () {
+    res.send({ imageUrl });
+  });
 });
 
 app.post("/image", async (req, res) => {
