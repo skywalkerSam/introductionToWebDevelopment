@@ -75,4 +75,16 @@ form.addEventListener("submit", async (e) => {
   result.innerHTML = `<img src="${image.imageUrl}" width="1024" />`;
 });
 
+function showSpinner() {
+  const button = document.querySelector('button');
+  button.disabled = true;
+  button.innerHTML = 'Dreaming... <span class="spinner">🧠</span>';
+}
+
+function hideSpinner() {
+  const button = document.querySelector('button');
+  button.disabled = false;
+  button.innerHTML = 'Dream';
+}
+
 initPWA(app);
