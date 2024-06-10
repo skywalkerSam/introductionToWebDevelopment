@@ -9,14 +9,14 @@ import InputBox from "./components/InputBox/InputBox.tsx";
 import { useState } from "react";
 import ImageDisplay from "./components/ImageDisplay/ImageDisplay.tsx";
 
-const SERVER = "http://localhost:8080/image";
+const SERVER = "http://localhost:8080/test";
 
 export default function App() {
   const [prompt, setPrompt] = useState("");
   const [imageUrl, setImageUrl] = useState("");
 
   function onChange(event) {
-    console.log(event.target.value);
+    console.log(event.target.value);22
     setPrompt(event.target.value);
   }
 
@@ -56,13 +56,9 @@ export default function App() {
         </div>
       </header>
 
-      <div>
-        <InputBox onChange={onChange} onSubmit={onSubmit}></InputBox>
-      </div>
+      <InputBox onChange={onChange} onSubmit={onSubmit}></InputBox>
 
-      <div>
-        <ImageDisplay imageUrl={imageUrl}></ImageDisplay>
-      </div>
+      <ImageDisplay imageUrl={imageUrl}></ImageDisplay>
 
       <PWABadge />
     </>
