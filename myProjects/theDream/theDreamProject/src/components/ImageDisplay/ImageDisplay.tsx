@@ -4,7 +4,7 @@ export default function ImageDisplay({ imageUrl }) {
   return (
     <>
       <div className="mt3">
-        <img src={imageUrl.imageUrl} alt="Image" width="auto" />
+        <img src={imageUrl} alt="Image" width="auto" />
         {/* {console.log(imageUrl)} */}
       </div>
     </>

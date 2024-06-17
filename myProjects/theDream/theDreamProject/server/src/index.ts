@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 function sleep(time, callback) {
   const stop = new Date().getTime();
   while (new Date().getTime() < stop + time) {
-    console.log("Intentional delay...\n");
+    // console.log("Intentional delay...\n");
   }
   callback();
 }
@@ -36,17 +36,12 @@ app.post("/test", (req, res) => {
 
     // mimic API response: add delay
     sleep(5000, function () {
+      console.log(imageUrl);
       res.send({ imageUrl });
     });
   } catch (error) {
-    if (error.response) {
-      res.send(error.response.status);
-      console.log(error.response.status);
-      console.log(error.response.data);
-    } else {
-      res.send(error.message);
-      console.log(error.message);
-    }
+    res.status(500).send(error || "Something unexpected happened!");
+    console.log(error);
   }
 });
 
@@ -64,14 +59,34 @@ app.post("/image", async (req, res) => {
     console.log(imageUrl);
     res.send({ imageUrl });
   } catch (error) {
-    if (error.response) {
-      res.send(error.response.status);
-      console.log(error.response.status);
-      console.log(error.response.data);
-    } else {
-      res.send(error.message);
-      console.log(error.message);
+    const errorInfo = {
+      statusCode: 400,
+      message: error.message,
+      details: {
+        param: 'paramName',
+        value: 'invalidValue'
+      }
     }
+    console.log(errorInfo.message)
+    res.status(errorInfo.statusCode).json(errorInfo);
+
+    // if (error.response) {
+    //   // console.log(error.response.status);
+    //   console.log(error.response.data);
+    //   // res.send(error.response.data);
+    //   res.status(errorInfo.statusCode).json(errorInfo);
+
+    // } else {
+    //   // console.log(error)
+    //   console.log(errorInfo.message);
+    //   // res.send(error.message);
+    //   res.status(errorInfo.statusCode).json(errorInfo);
+    // }
+
+    // console.error(error);
+    // res
+    //   .status(500)
+    //   .send(error?.response.data.error.message || "Something went wrong");
   }
 });
 
