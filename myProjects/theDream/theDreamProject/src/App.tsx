@@ -8,8 +8,9 @@ import "tachyons";
 import InputBox from "./components/InputBox/InputBox.tsx";
 import { useState } from "react";
 import ImageDisplay from "./components/ImageDisplay/ImageDisplay.tsx";
+import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary.tsx";
 
-const SERVER = "http://localhost:8080/test";
+const SERVER = "http://localhost:8080/image";
 
 export default function App() {
   const [prompt, setPrompt] = useState("");
@@ -23,51 +24,101 @@ export default function App() {
 
   async function onSubmit() {
     setLoading(true);
-    await fetch(SERVER, {
-      method: "post",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        prompt: prompt,
-      }),
-    })
-      .then((res) => res.json())
-      // .then(resp => console.log(resp))
-      .then((response) => setImageUrl(response))
-      .catch((err) => console.log(err));
-    console.log(imageUrl);
-    setLoading(false);
-    // console.log(typeof(imageUrl))
+    try {
+      const response = await fetch(SERVER, {
+        method: "post",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          prompt: prompt,
+        }),
+      });
+
+      // error
+      // if (!response.ok) {
+      //   throw new Error(`HTTP error! status: ${response.status}`);
+      // }
+
+      // response
+      // console.log(response);
+      // console.log(response.headers);
+      const data = await response.json();
+
+      // error alert
+      if (data.message) {
+        console.log(data.message);
+        alert(data.message);
+      }
+
+      // imageUrl
+      if (data.imageUrl) {
+        setImageUrl(data.imageUrl);
+      }
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
   }
+
+  // async function onSubmit() {
+  //   setLoading(true);
+  //   try {
+  //     await fetch(SERVER, {
+  //       method: "post",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify({
+  //         prompt: prompt,
+  //       }),
+  //     })
+  //       .then((response) => response.json())
+  //       .then((response) => console.log(response));
+  //     // .then((response) => setImageUrl(response))
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  //   // if (response.ok){
+  //   //   setImageUrl(response)
+  //   //   console.log(response)
+  //   //   console.log(imageUrl)
+  //   // } else {
+  //   //   const error = await response.text();
+  //   //   console.error(error)
+  //   //   alert(error)
+  //   // }
+  //   setLoading(false);
+  // }
 
   return (
     <>
-      <div>
-        <a
-          href="https://github.com/skywalkersam"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={starboyLogo} alt="Starboy Logo" className="logo" />
-        </a>
-      </div>
-      <header>
+      <ErrorBoundary>
         <div>
-          <h1 className="f1 red">Image Generator</h1>
-          <p className="tc">
-            <em>with OPENAI's</em> <strong>Dall-E 3</strong>
-          </p>
+          <a
+            href="https://github.com/skywalkersam"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={starboyLogo} alt="Starboy Logo" className="logo" />
+          </a>
         </div>
-      </header>
+        <header>
+          <div>
+            <h1 className="f1 red">Image Generator</h1>
+            <p className="tc">
+              <em>with OPENAI's</em> <strong>Dall.E 3</strong>
+            </p>
+          </div>
+        </header>
 
-      <InputBox
-        onChange={onChange}
-        onSubmit={onSubmit}
-        loading={loading}
-      ></InputBox>
+        <InputBox
+          onChange={onChange}
+          onSubmit={onSubmit}
+          loading={loading}
+        ></InputBox>
 
-      <ImageDisplay imageUrl={imageUrl}></ImageDisplay>
+        <ImageDisplay imageUrl={imageUrl}></ImageDisplay>
 
-      <PWABadge />
+        <PWABadge />
+      </ErrorBoundary>
     </>
   );
 }
