@@ -1,6 +1,6 @@
 import { expect, test } from 'vitest';
 
-import { LRU } from './LRUcache';
+import { LRU } from './lruCache';
 let cache = new LRU(9);
 cache.putItem('Starboy', 3)
 
