@@ -1,0 +1,14 @@
+{
+  "name": "27removeelement",
+  "version": "1.0.0",
+  "description": "27. Remove Element",
+  "main": "removeElement.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "author": "skywalkersam",
+  "license": "ISC",
+  "dependencies": {
+    "vitest": "^1.6.0"
+  }
+}
