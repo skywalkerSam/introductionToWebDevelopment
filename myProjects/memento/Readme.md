@@ -2,7 +2,7 @@
 
 I feel like it's the first ever **"real"** project ever done by me... lol ;)
 
-[Application URL with Firebase](https://memento-34c4f.web.app)
+[Application hosted with Firebase](https://memento-34c4f.web.app)
 
 ```shell
 npx create-react-app memento --template cra-template-pwa

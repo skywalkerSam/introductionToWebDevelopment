@@ -86,7 +86,7 @@ h3 {
 button {
   color: var(--buttonColor);
   background: var(--card);
-  border: 1px solid var(--buttonBorder);
+  border: 2px solid var(--buttonBorder);
   /* outline: var(--buttonShadow); */
   padding: 0.6rem;
   border-radius: 6px;

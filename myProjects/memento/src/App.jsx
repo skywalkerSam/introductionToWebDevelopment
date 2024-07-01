@@ -100,7 +100,7 @@ export default function App() {
       handleTurn()
       setBadge()
       setCards(shuffle)
-      console.log('Wins:', wins)
+      console.log('WINS:', wins)
       // console.log('cards length:', cards.length)
       // console.log('verifyWin:', verifyWin.length)
       // console.log('cards:', cards)
@@ -134,5 +134,9 @@ export default function App() {
     </div>
   );
 }
+
+
+// NOTE: `CSS` defined on `index.css` for some reason...
+
 
 // P.S. I like using traditional js function expressions, but I also like the arrow function syntax. idk...

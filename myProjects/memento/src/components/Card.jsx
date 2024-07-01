@@ -18,10 +18,13 @@ export default function Card(props) {
                 <img
                     src="/assets/logo.png"
                     alt="Card Back"
-                    className="card-back" 
-                    onClick={props.onClick}/>
+                    className="card-back"
+                    onClick={props.onClick} />
             </div>
 
         </div>
     )
 }
+
+
+// NOTE: `CSS` defined on `index.css` for some reason...
