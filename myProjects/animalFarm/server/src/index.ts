@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import Chance from "chance";
 
-const PORT = 8080;
+const PORT: number = 8080;
 
 // Initialize the express app
 const app = express();
@@ -21,6 +21,10 @@ const animals = [...Array(250).keys()].map((id) => {
     name: chance.name(),
   };
 });
+
+app.get('/', (req, res) => {
+  res.send("Welcome to Starboy Farms Inc.")
+})
 
 // GET endpoint to search for animals
 app.get('/animals', (req, res) => {

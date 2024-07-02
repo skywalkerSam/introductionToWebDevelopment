@@ -1,7 +1,15 @@
 import "./App.css";
 import "tachyons";
 import { useState, useEffect, useDebugValue } from "react";
-import Animal from "./components/Animals";
+import Animal from "./components/Animal";
+
+
+type AnimalProps = {
+  id: number;
+  type: string;
+  name: string;
+  age: number;
+};
 
 // Custom hook: useAnimalSearch
 function useAnimalSearch() {
@@ -27,18 +35,19 @@ function useAnimalSearch() {
     localStorage.setItem("lastQuery", q.toLowerCase().trim());
   };
 
-  useDebugValue(animals ?? "Loading...")
+  useDebugValue(animals ?? "Loading...");
 
   return { animals, search };
 }
 
-function App() {
+const App: React.FC = () => {
   const { animals, search } = useAnimalSearch();
-  
+
   return (
-    <div>
+    <>
       <div>
-        <h1 className="green-100">Animal Farm</h1>
+        <p className="">Starboy Farms Inc.</p>
+        <h1 className="red">ANIMAL SEARCH</h1>
       </div>
 
       <div>
@@ -52,15 +61,22 @@ function App() {
 
       <div>
         <ul>
-          {animals.map((animal) => (
+          {animals.map((animal: AnimalProps) => (
             // Spread operator to pass all properties of `animal` as props
             <Animal key={animal.id} {...animal}></Animal>
           ))}
 
-          {animals.length === 0 && "No animals found"}
+          {animals.length === 0 && "not found."}
         </ul>
       </div>
-    </div>
+
+      <footer className="white-80 mt5">
+        <img src="/vite.svg" alt="Vite Logo" className="logo" />
+        <img src="./src/assets/react.svg" alt="React Logo" className="logo ml2" />
+        <br />
+        <small>&copy; Copyright 2024, Starboy Farms Inc.</small>
+      </footer>
+    </>
   );
 }
 
