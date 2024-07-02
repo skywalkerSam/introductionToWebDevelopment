@@ -2,6 +2,8 @@ import "./App.css";
 import "tachyons";
 import { useState, useEffect, useDebugValue } from "react";
 import Animal from "./components/Animal";
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 
 
 type AnimalProps = {
@@ -71,8 +73,8 @@ const App: React.FC = () => {
       </div>
 
       <footer className="white-80 mt5">
-        <img src="/vite.svg" alt="Vite Logo" className="logo" />
-        <img src="./src/assets/react.svg" alt="React Logo" className="logo ml2" />
+        <img src={viteLogo} alt="Vite Logo" className="logo" />
+        <img src={reactLogo} alt="React Logo" className="logo ml2" />
         <br />
         <small>&copy; Copyright 2024, Starboy Farms Inc.</small>
       </footer>
