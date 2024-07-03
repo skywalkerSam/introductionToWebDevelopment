@@ -1,29 +1,30 @@
-# [Animal Farm Intro - Fireship.io](https://fireship.io/courses/react/1-intro/)
+# React + TypeScript + Vite
 
-[Deployed with Firebase](https://animalfarm-af.web.app/)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Man, deployment with TypeScript has been a whole new experience with this project. **Types**, had some issues but all good...
+Currently, two official plugins are available:
 
-- Learned a bit of TypeScript along the way.)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Sources
+## Expanding the ESLint configuration
 
-[React Hooks Explained](https://www.youtube.com/watch?v=TNhaISOUy6Q)
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-[Frontend search for Animal Farm](https://fireship.io/courses/react/1-react-search/)
+- Configure the top-level `parserOptions` property like this:
 
-## Musical Sources
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
+```
 
-[Animals - Maroon5](https://open.spotify.com/album/0KJe8iJqOpahl1CprfAThy?si=EScuMlffQgqA2Jb0**kCxfHQ**)
-
-[Un Dia](https://open.spotify.com/playlist/1z6i9BMeGQXBZn1fdoPJBB?si=134e4745d84f4a49)
-
-[thePeak...](https://open.spotify.com/playlist/24S7fUvojq6TPpicqihU8c?si=6ac3bfd5e86c43dd)
-
-[theViews...](https://open.spotify.com/playlist/2tOq3Wcxm9rzaDeqv0h0YN?si=996d30d9702c4f00)
-
-[Views - The Album](https://open.spotify.com/album/40GMAhriYJRO1rsY4YdrZb?si=jdV0atSHQ_yMXX9pm_FRwg)
-
-## Until next time...
-
-## ;)
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
