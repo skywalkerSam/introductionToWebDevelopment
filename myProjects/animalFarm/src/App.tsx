@@ -7,7 +7,8 @@ import "tachyons";
 import Animals from "./components/Animals.tsx";
 import NotFound from "./components/NotFound.tsx";
 
-const serverUrl: string = "https://animalfarm-server.onrender.com/";
+// const localhost: string = "http://localhost:8080/animals/";
+const serverUrl: string = "https://animalfarm-server.onrender.com/animals/";
 
 type AnimalProps = {
   id: number;
@@ -31,7 +32,7 @@ function useAnimalSearch() {
   const search = async (q: string) => {
     const response = await fetch(
       // `URLSearchParams` is a built-in JS class to help build query strings
-      serverUrl + new URLSearchParams({ q })
+      serverUrl + "?" + new URLSearchParams({ q })
     );
     const data = await response.json();
     setanimals(data);
