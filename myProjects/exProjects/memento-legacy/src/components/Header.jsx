@@ -10,9 +10,9 @@ export default function Header({ wins, handleReset }) {
 
     return (
         <header className="header">
-            <h3>WINS: ` {wins} `</h3>
+            <h3>WINS: {wins}</h3>
             <h2>MEMENTO</h2>
-            <button onClick={handleReset}>Reset Game!</button>
+            <button onClick={handleReset}>RESET</button>
         </header>
     )
 }
