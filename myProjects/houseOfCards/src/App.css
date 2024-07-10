@@ -75,7 +75,7 @@ warning in VSCode,change the css.lint.unknownAtRules setting to ignore. */
 
   /* --bg: linear-gradient(135deg, #fc2473, #f66936); */
   /* --bg: transparent; */
-  --bg: black;
+  --bg: transparent;
 
   --delay: 200ms;
   --rotate-0: rotateY(0deg);

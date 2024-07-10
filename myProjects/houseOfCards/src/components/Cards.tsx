@@ -1,6 +1,6 @@
 // component: Cards
 
-import starboyLogo from "../../public/logo.png";
+import starboyLogo from "/logo.png";
 import "../App.css";
 
 interface Props {
