@@ -4,6 +4,7 @@ import appLogo from "/favicon.svg";
 import PWABadge from "./PWABadge.tsx";
 import "./App.css";
 import "tachyons";
+import starboyLogo from "/logo.png";
 import Animals from "./components/Animals.tsx";
 import NotFound from "./components/NotFound.tsx";
 
@@ -51,6 +52,15 @@ const App: React.FC = () => {
 
   return (
     <>
+      <div>
+        <a
+          href="https://github.com/skywalkersam"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={starboyLogo} alt="Starboy Logo" className="starboyLogo" />
+        </a>
+      </div>
       <div>
         <p className="">Starboy Farms Inc.</p>
         <h1 className="title">ANIMAL SEARCH</h1>
