@@ -14,9 +14,9 @@ export default defineConfig({
     },
 
     manifest: {
-      name: 'MEMENTO (The House Of Cards)',
-      short_name: 'MEMENTO',
-      description: 'MEMENTO (The House Of Cards.) fr*',
+      name: 'Image Generator (DALL-E by OPENAI)',
+      short_name: 'Image Generator',
+      description: 'Generate images using DALL-E (aka chatGptWrapper.)',
       theme_color: '#000000',
     },
 

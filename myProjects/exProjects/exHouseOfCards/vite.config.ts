@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), VitePWA({
-    registerType: 'autoUpdate',
+    registerType: 'prompt',
     injectRegister: false,
 
     pwaAssets: {
@@ -14,10 +14,10 @@ export default defineConfig({
     },
 
     manifest: {
-      name: 'MEMENTO (The House Of Cards)',
+      name: 'MEMENTO: The House Of Cards',
       short_name: 'MEMENTO',
-      description: 'MEMENTO (The House Of Cards.) fr*',
-      theme_color: '#000000',
+      description: 'Memento: The memory game.',
+      theme_color: '#ffffff',
     },
 
     workbox: {
