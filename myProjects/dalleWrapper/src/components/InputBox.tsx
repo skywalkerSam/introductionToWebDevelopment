@@ -11,7 +11,7 @@ const InputBox: React.FC<Props> = ({ onChange, onSubmit, loading }) => {
   return (
     <>
       <div className="center">
-        <div className="center pa4 br3 shadow-5">
+        <div className="inputBox center pa4 br3 shadow-5">
           <textarea
             className="w-100 grow f4 pa2 center br4 ba b--red bg-transparent red mr3 custom-input"
             placeholder="Image Prompt..."

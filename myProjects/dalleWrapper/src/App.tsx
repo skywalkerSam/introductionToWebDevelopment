@@ -9,7 +9,7 @@ import ErrorBoundary from "./components/ErrorBoundary.tsx";
 import ImageDisplay from "./components/ImageDisplay.tsx";
 import InputBox from "./components/InputBox.tsx";
 
-const SERVER: string = "http://localhost:8080/image";
+const SERVER: string = "http://localhost:8080/test";
 
 const App = () => {
   const [prompt, setPrompt] = useState("");

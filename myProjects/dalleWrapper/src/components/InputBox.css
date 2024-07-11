@@ -1,3 +1,9 @@
+.inputBox {
+    /* border: 2px solid grey; */
+    border-radius: 21px;
+    background-color: black;
+}
+
 .form {
     width: 600px;
     /* background: rgb(146,245,238);
