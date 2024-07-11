@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), VitePWA({
-    registerType: 'prompt',
+    registerType: 'autoUpdate',
     injectRegister: false,
 
     pwaAssets: {
@@ -14,9 +14,9 @@ export default defineConfig({
     },
 
     manifest: {
-      name: 'animalFarm',
-      short_name: 'af',
-      description: 'Animal farm project by Starboy Farms Inc.',
+      name: 'Animal Search (Animal Farm)',
+      short_name: 'Animal Search',
+      description: 'Animal Search For Starboy Farms Inc.',
       theme_color: '#000000',
     },
 
