@@ -1,0 +1,19 @@
+{
+  "name": "debugging101",
+  "version": "1.0.0",
+  "description": "Debugging 101",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "vitest",
+    "build": "tsc",
+    "start": "npm run build && node ."
+  },
+  "author": "skywalkerSam",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^2.0.2"
+  },
+  "dependencies": {
+    "typescript": "^5.5.3"
+  }
+}
