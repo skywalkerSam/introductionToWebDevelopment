@@ -1,12 +1,12 @@
 import { expect, test } from "vitest";
 
-let array: string[] = ["hello", "world", "wtf", "fml", "idk"];
+let array: string[] = ["hello", "world"];
 
-let numArray: number[] = [1, 3, 3, 3, 6, 9, 9, 6, 3, 1];
+let numArray: number[] = [3, 6, 9];
 
-let someArray: number[] | string[] = ["hello", "world"];
+let someArray: number[] | string[] = ["hello", "world", "wtf", "fml", "idk"];
 
-let anotherArray: number[] | string[] = [3, 2, 1];
+let anotherArray: number[] | string[] = [1, 3, 3, 3, 6, 9, 9, 6, 3, 1];
 
 // EXAMPLE:
 
