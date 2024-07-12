@@ -1,7 +1,7 @@
 {
-  "name": "binarysearch",
+  "name": "lrucache",
   "version": "1.0.0",
-  "description": "Binary Search algorithm with TypeScript",
+  "description": "Least Recently Used (LRU) Cache Algorithm with TypeScript",
   "main": "dist/index.js",
   "scripts": {
     "test": "vitest"

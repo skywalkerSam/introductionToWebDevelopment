@@ -1,7 +1,7 @@
 {
-  "name": "binarysearch",
+  "name": "cumulativesum",
   "version": "1.0.0",
-  "description": "Binary Search algorithm with TypeScript",
+  "description": "Cumulative sum algorithms with TypeScript",
   "main": "dist/index.js",
   "scripts": {
     "test": "vitest"

@@ -1,8 +1,8 @@
 {
-  "name": "lru",
+  "name": "exbinarysearch",
   "version": "1.0.0",
-  "description": "Least recently used cache algorithm",
-  "main": "LRUcache.js",
+  "description": "Binary Search",
+  "main": "binarySearch.js",
   "type": "module",
   "scripts": {
     "test": "vitest"
