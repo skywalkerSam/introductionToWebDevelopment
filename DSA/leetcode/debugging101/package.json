@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Debugging 101",
   "main": "dist/index.js",
+  "type": "module",
   "scripts": {
     "test": "vitest",
     "build": "tsc",
