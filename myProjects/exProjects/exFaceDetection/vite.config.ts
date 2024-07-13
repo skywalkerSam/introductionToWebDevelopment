@@ -16,7 +16,7 @@ export default defineConfig({
     manifest: {
       name: 'Face Detection',
       short_name: 'Face Detection',
-      description: 'Face Detection with Clarifai with TypeScript.',
+      description: 'Face Detection with Clarifai.',
       theme_color: '#000000',
     },
 
