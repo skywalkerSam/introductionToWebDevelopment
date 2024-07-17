@@ -1,0 +1,14 @@
+{
+  "name": "binarysearch",
+  "version": "1.0.0",
+  "description": "Binary Search algorithm with TypeScript",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "author": "skywalkerSam",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^2.0.2"
+  }
+}
