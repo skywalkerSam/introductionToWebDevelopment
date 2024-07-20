@@ -1,37 +1,61 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import appLogo from '/favicon.svg'
-import PWABadge from './PWABadge.tsx'
-import './App.css'
+// import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import appLogo from "/favicon.svg";
+import PWABadge from "./PWABadge.tsx";
+import "./App.css";
+import "tachyons";
+import ErrorBoundary from "./components/ErrorBoundary.tsx";
+import starboyLogo from "/logo.png";
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={appLogo} className="logo" alt="Face Detection logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Face Detection</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      <PWABadge />
-    </>
-  )
+interface apiResponse {
+  image: object;
+  imageWidth: number;
+  imageHeight: number;
 }
 
-export default App
+const calculateFaceLocation = (data?: apiResponse) => {
+  // console.log('Clarifai Model Response:', data);
+  const clarifaiFaceDetect = data.data.regions[0].region_info.bounding_box;
+  const image = document.getElementById("inputimage");
+  const imageWidth = image?.width
+  const imageHeight = image?.height
+  // console.log(clarifaiFaceDetect, imageWidth, imageHeight)
+  return {
+    topRow: clarifaiFaceDetect.top_row * imageHeight,
+    leftCol: clarifaiFaceDetect.left_col * imageWidth,
+    rightCol: imageWidth - clarifaiFaceDetect.right_col * imageWidth,
+    bottomRow: imageHeight - clarifaiFaceDetect.bottom_row * imageHeight,
+  };
+};
+
+const App = () => {
+  return (
+    <>
+      <ErrorBoundary>
+        <div>
+          <a
+            href="https://github.com/skywalkersam"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={starboyLogo} alt="Starboy Logo" className="starboyLogo" />
+          </a>
+        </div>
+        <footer className="white-80 mt6">
+          <div>
+            <a href="https://vitejs.dev" target="_blank">
+              <img src={appLogo} className="logo" alt="animalFarm logo" />
+            </a>
+            <a href="https://react.dev" target="_blank">
+              <img src={reactLogo} className="logo react" alt="React logo" />
+            </a>
+          </div>
+          <small>&copy; Copyright 2024, Starboy Inc.</small>
+        </footer>
+        <PWABadge></PWABadge>
+      </ErrorBoundary>
+    </>
+  );
+};
+
+export default App;

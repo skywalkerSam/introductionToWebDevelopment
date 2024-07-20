@@ -1,17 +1,45 @@
-# [Node Express Server with TypeScript Intro](https://www.youtube.com/watch?v=H91aqUHn8sE)
+# Backend server for [face-detection](https://github.com/skywalkerSam/face-detection)
 
-[Express server Intro - Fireship.io](https://fireship.io/courses/react/1-express-server/)
+### To setup `postgresql` database for the project, [go to the database section...](https://github.com/skywalkerSam/Introduction-To-Web-Development/tree/main/Introduction-To-Databases)
+### Here's the link to the `deployment` of [face-detection-backend](https://github.com/skywalkerSam/face-detection-backend)
 
-## Run the build command before running the server
 
+## Some guidelines...
+- Edit database configurations under `server.js`
+- Enter your Clarifai PAT and username inside `controllers/image.js`
+- Using `gRPC` instead of REST
+
+
+## Server Specifications:
+- Express.js
+- bcrypt
+- postgreSQL
+- Knex.js
+
+
+## Tools:
+- DBeaver
+- Postman
+- VS Code
+
+
+## Install nodemon
 ```shell
-npm run build
+npm i nodemon
 ```
 
-## Run the server
+## Put this under `"scripts"` in `package.json` to use nodemon as default
 
-```shell
-node .
+```json
+"start": "nodemon server.js"
 ```
 
-`NOTE`: Don't forget to update directory paths!
+## Start the server
+```shell
+npm start
+```
+
+
+## Until next time...
+
+# ;)
