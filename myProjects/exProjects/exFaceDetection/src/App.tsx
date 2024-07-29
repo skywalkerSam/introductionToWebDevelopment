@@ -62,7 +62,7 @@ export default class App extends Component {
       rightCol: imageWidth - clarifaiFaceDetect.right_col * imageWidth,
       bottomRow: imageHeight - clarifaiFaceDetect.bottom_row * imageHeight,
     };
-  };
+  }; 
 
   displayFaceBox = (box) => {
     this.setState({ box: box });

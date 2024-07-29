@@ -8,6 +8,8 @@
 
 - [Animal Search (Animal Farm)](https://animalfarm-af.web.app/)
 
+- [Face Detection](https://facedetection-fr.web.app)
+
 <!-- -  -->
 
 ## exProjects
