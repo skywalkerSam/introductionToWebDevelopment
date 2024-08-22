@@ -1,4 +1,4 @@
-# Introduction to Python
+# Introduction to Python (Python 3)
 
 Getting started with Python, and beyond...
 
@@ -8,7 +8,8 @@ Getting started with Python, and beyond...
 
 Python in a nutshell
 
-![Programmers and Python lol](./Resources/memes/programmers-n-python.jpg)
+<!-- ![Programmers and Python lol](./Resources/memes/programmers-n-python.jpg) -->
+<img src="./Resources/memes/programmers-n-python.avif" alt="Python Intro" width=450>
 
 ## Setting up a Virtual Environment
 
