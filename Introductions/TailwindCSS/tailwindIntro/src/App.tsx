@@ -47,11 +47,7 @@ function App() {
       <footer>
         <div>
           <a href="https://vitejs.dev" target="_blank">
-            <img
-              src={appLogo}
-              className="logo inline-block"
-              alt="Vite logo"
-            />
+            <img src={appLogo} className="logo inline-block" alt="Vite logo" />
           </a>
           <a href="https://react.dev" target="_blank">
             <img
