@@ -25,7 +25,7 @@ app.post("/checkout", async (c) => {
       payment_method_types: ["card"],
       line_items: [
         {
-          price: "price_1Px59w2Nf0WcYpYNaUZDszeq",
+          price: process.env.PRICE_ID!,
           quantity: 1,
         },
       ],
@@ -54,9 +54,14 @@ serve({
  * STRIPE_PUBLISHABLE_KEY=
  * STRIPE_SECRET_KEY=
  * STRIPE_WEBHOOK_SECRET=
+ * PRICE_ID=
  */
 
 /** Example cards
  * https://docs.stripe.com/testing
  *
+ */
+
+/**
+ * bun run dev
  */
