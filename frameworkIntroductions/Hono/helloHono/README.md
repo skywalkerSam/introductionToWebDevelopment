@@ -1,5 +1,10 @@
+# [Hono](https://hono.dev/)
+
 ```
-npm install
+npm i
+```
+
+```
 npm run dev
 ```
 
