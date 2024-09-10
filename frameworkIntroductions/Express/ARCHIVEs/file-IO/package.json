@@ -1,7 +1,7 @@
 {
-  "name": "santa-helper",
+  "name": "file-io",
   "version": "1.0.0",
-  "description": "Santa helper exercise with node using the 'fs' module",
+  "description": "Node IO",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

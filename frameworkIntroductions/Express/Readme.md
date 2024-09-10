@@ -1,15 +1,15 @@
-// Express.JS is a framework for Node.JS
+# [Express](https://expressjs.com/)
 
-// Express Introduction
+Fast, unopinionated, minimalist web framework for Node.js
 
-// Building a web server with Express.JS
+    npm i express
 
-// Using Middlewares: a function that runs between the request and the response 
+## **REST***ful* API Development
 
-// RESTful APIs
+- Postman
 
-// Using Postman
+- Thunder Client (VS Code extension*)
 
-// Node File System Module
+- Insomnia (*not to be confused by the sleeping disorder.)
 
-
+`NOTE:` Middlewares run between the request and response.
