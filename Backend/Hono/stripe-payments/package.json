@@ -1,5 +1,5 @@
 {
-  "name": "helloHono",
+  "name": "stripe-payments",
   "scripts": {
     "dev": "tsx watch src/index.ts"
   },
