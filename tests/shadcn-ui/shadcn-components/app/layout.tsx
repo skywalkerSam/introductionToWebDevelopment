@@ -10,7 +10,10 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   NavigationMenuViewport,
+  navigationMenuTriggerStyle
 } from "@/components/ui/navigation-menu";
+import Link from "next/link";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -43,14 +46,17 @@ export default function RootLayout({
             <NavigationMenuItem>
               <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <NavigationMenuLink>project1</NavigationMenuLink>
+                <NavigationMenuLink>
+                  helloWorld
+                </NavigationMenuLink>
               </NavigationMenuContent>
-              <NavigationMenuContent>
-                <NavigationMenuLink>project2</NavigationMenuLink>
-              </NavigationMenuContent>
-              <NavigationMenuContent>
-                <NavigationMenuLink>project3</NavigationMenuLink>
-              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Link href="/about" legacyBehavior passHref>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  About
+                </NavigationMenuLink>
+              </Link>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
