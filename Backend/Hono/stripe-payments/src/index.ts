@@ -7,7 +7,7 @@ import { HTTPException } from "hono/http-exception";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 const app = new Hono();
 
-app.get("/", (c) => {
+app.get("/hello", (c) => {
   return c.text("Welcome to Starboy Payments API...");
 });
 
@@ -41,8 +41,43 @@ app.post("/checkout", async (c) => {
   }
 });
 
+// cheap SSR.)
+app.get("/", (c) => {
+  const html: any = `
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stripe Payments</title>
+        <script src="https://js.stripe.com/v3/"></script>
+      </head>
+      <body>
+        <h1>Checkout</h1>
+        <button id="checkoutButton">Checkout</button>
+
+        <script>
+          const checkoutButton = document.getElementById("checkoutButton");
+          checkoutButton.addEventListener("click", async () => {
+            const response = await fetch("/checkout", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+            });
+            const { id } = await response.json();
+            const stripe = Stripe("${process.env.STRIPE_PUBLISHABLE_KEY}");
+            await stripe.redirectToCheckout({ sessionId: id });
+          });
+        </script>
+      </body>
+    </html>
+  `;
+  return c.html(html);
+});
+
 const port: number = process.env.PORT ? Number(process.env.port) : 3000;
-console.log(`Server is running on port ${port}`);
+console.log(`\nServer is running on http://localhost:${port}`);
 
 serve({
   fetch: app.fetch,
