@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Initiated with *shadcn*
+
+```bash
+npx shadcn@latest init
+```
+
 ## Getting Started
 
 First, run the development server:
@@ -12,6 +18,8 @@ yarn dev
 pnpm dev
 # or
 bun dev
+#or
+next dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
