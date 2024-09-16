@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Getting Started with [dashboard-app](https://nextjs.org/learn/dashboard-app)
 
 First, run the development server:
 
@@ -12,6 +12,8 @@ yarn dev
 pnpm dev
 # or
 bun dev
+# or 
+next dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
