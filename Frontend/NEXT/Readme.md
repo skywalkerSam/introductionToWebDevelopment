@@ -1,6 +1,6 @@
 # [Introduction to NEXT.js](https://nextjs.org/)
 
-The React Framework for the Web
+The React Framework for the Web.
 
 - Search Engine Optimization (`SEO`)
 
@@ -20,14 +20,18 @@ Rendering the pages at build time
 
 Best of both worlds. Re-generate pages in the background dynamically on each request while serving the static page.
 
-## Start a NEXT Project
+## Start a NEXT.js project
 
 ```shell
-npx create-next-app
+npx create-next-app@latest
 ```
 
-#### Until next time
+## [shadcn-ui](https://ui.shadcn.com)
 
-## ;)
+```shell
+npx shadcn@latest init
+```
+
+## Until next time.)
 
 - [ ] Done
