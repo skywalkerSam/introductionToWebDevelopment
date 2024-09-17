@@ -1,10 +1,15 @@
 import Image from "next/image";
+import styles from "@/app/ui/home.module.css";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
+        {/* Tailwind CSS */}
+        {/* <div className="relative w-0 h-0 border-l-[15px] border-r-[15px] border-b-[26px] border-l-transparent border-r-transparent border-b-black" /> */}
+        {/* CSS Modules */}
+        <div className={styles.vercelLogo}></div>
+        {/* <Image
           className="dark:invert"
           src="https://nextjs.org/icons/next.svg"
           alt="Next.js logo"
@@ -47,10 +52,10 @@ export default function Home() {
           >
             Read our docs
           </a>
-        </div>
+        </div> */}
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
+        {/* <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
           target="_blank"
@@ -94,7 +99,28 @@ export default function Home() {
             height={16}
           />
           Go to nextjs.org →
-        </a>
+        </a> */}
+        <div>
+          <small className=" text-gray-600">Built with</small>
+          <a
+            href="https://nextjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              className="dark:invert"
+              src="https://nextjs.org/icons/next.svg"
+              alt="Next.js logo"
+              width={180}
+              height={38}
+              priority
+            />
+          </a>
+          <br />
+          <small className="text-gray-600 mb-6">
+            &copy; Copyright 12024, Starboy Inc.
+          </small>
+        </div>
       </footer>
     </div>
   );
