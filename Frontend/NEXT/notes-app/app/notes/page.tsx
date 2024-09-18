@@ -26,27 +26,30 @@ export default async function NotesPage() {
 
   return (
     <div>
-      <h1>Notes</h1>
+      <h1 className="font-semibold text-3xl m-3 text-gray-400">Notes...</h1>
       <div className={styles.grid}>
         {notes?.map((note) => {
           return <Note key={note.id} note={note} />;
         })}
       </div>
 
-      <CreateNote />
+      <button type="button" className="text-3xl float-end m-6">
+        +
+      </button>
+      {/* <CreateNote /> */}
     </div>
   );
 }
 
 function Note({ note }: any) {
-  const { id, title, content, created } = note || {};
+  const { id, title, content } = note || {}; //created
 
   return (
     <Link href={`/notes/${id}`}>
       <div className={styles.note}>
-        <h2>{title}</h2>
-        <h5>{content}</h5>
-        <p>{created}</p>
+        <h2 className="m-3 text-gray-500">{title}</h2>
+        <h5 className="m-3 text-gray-400">{content}</h5>
+        {/* <p>{created}</p> */}
       </div>
     </Link>
   );

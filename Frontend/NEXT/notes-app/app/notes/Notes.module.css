@@ -1,11 +1,11 @@
 .pageTitle {
     margin: 0;
     line-height: 1.15;
-    font-size: 4rem;
+    font-size: 6rem;
 }
 
 .grid {
-    margin-top: 2rem;
+    margin-top: 3rem;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -22,10 +22,10 @@
     height: auto;
     width: 200px;
     padding: 0.2rem 1rem;
-    margin: 0.5rem;
-    background: #ffff00;
-    box-shadow: 4px 4px 8px 1px #00000075;
-    border-radius: 2px;
+    margin: 0.9rem;
+    background: transparent;
+    box-shadow: 4px 4px 8px 1px gray;
+    border-radius: 6px;
 }
 
 .container {
@@ -58,6 +58,7 @@
 .created {
     font-size: 0.7rem;
     font-weight: lighter;
+    /* background: transparent; */
 }
 
 .action {

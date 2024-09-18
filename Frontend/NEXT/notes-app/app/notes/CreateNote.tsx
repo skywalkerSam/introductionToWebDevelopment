@@ -46,15 +46,19 @@ export default function CreateNote() {
     <form onSubmit={create}>
       <h3>New note</h3>
       <input
+      className="bg-slate-600"
         type="text"
         placeholder="Title"
         value={title}
-        onChange={(e) => setTitle(e.target.value)}
+        onChange={(e) => setTitle(e.target.value)
+        }
       />
       <textarea
-        placeholder="Content"
+      className="bg-slate-600"
+        placeholder="Take a note..."
         value={content}
-        onChange={(e) => setContent(e.target.value)}
+        onChange={(e) => setContent(e.target.value)
+        }
       />
       <button type="submit">Done</button>
     </form>
