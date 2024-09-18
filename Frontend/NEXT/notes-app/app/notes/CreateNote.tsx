@@ -14,6 +14,7 @@ import { useRouter } from "next/navigation";
 export default function CreateNote() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+  const [createNote, setCreateNote] = useState(false);
 
   const router = useRouter();
 
@@ -43,24 +44,43 @@ export default function CreateNote() {
   };
 
   return (
-    <form onSubmit={create}>
-      <h3>New note</h3>
-      <input
-      className="bg-slate-600"
-        type="text"
-        placeholder="Title"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)
-        }
-      />
-      <textarea
-      className="bg-slate-600"
-        placeholder="Take a note..."
-        value={content}
-        onChange={(e) => setContent(e.target.value)
-        }
-      />
-      <button type="submit">Done</button>
-    </form>
+    <div>
+      {createNote ? (
+        <form onSubmit={create}>
+          <h3>New note</h3>
+          <input
+            className="bg-slate-600"
+            type="text"
+            placeholder="Title"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+          />
+          <textarea
+            className="bg-slate-600"
+            placeholder="Take a note..."
+            value={content}
+            onChange={(e) => setContent(e.target.value)}
+          />
+          <button
+            type="submit"
+            onClick={() => {
+              setCreateNote(false);
+            }}
+          >
+            Done
+          </button>
+        </form>
+      ) : (
+        <button
+          type="button"
+          className="text-3xl float-end m-6"
+          onClick={() => {
+            setCreateNote(true);
+          }}
+        >
+          +
+        </button>
+      )}
+    </div>
   );
 }

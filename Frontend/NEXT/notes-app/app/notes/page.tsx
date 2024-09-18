@@ -33,10 +33,7 @@ export default async function NotesPage() {
         })}
       </div>
 
-      <button type="button" className="text-3xl float-end m-6">
-        +
-      </button>
-      {/* <CreateNote /> */}
+      <CreateNote />
     </div>
   );
 }
