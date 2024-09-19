@@ -20,12 +20,32 @@
 
 .note {
     height: auto;
-    width: 200px;
+    width: auto;
     padding: 0.2rem 1rem;
     margin: 0.9rem;
     background: transparent;
     box-shadow: 4px 4px 8px 1px gray;
-    border-radius: 6px;
+    border-radius: 12px;
+}
+
+.singleNote {
+    height: auto;
+    width: 600px;
+    padding: 1.5rem 2rem;
+    margin: 1rem;
+    background: transparent;
+    box-shadow: 4px 4px 8px 1px gray;
+    border-radius: 15px;
+}
+
+.createNote {
+    height: auto;
+    width: 600px;
+    padding: 1.5rem 2rem;
+    margin: 1rem;
+    background: transparent;
+    box-shadow: 4px 4px 8px 1px gray;
+    border-radius: 15px;
 }
 
 .container {
@@ -38,12 +58,12 @@
     font-size: 3rem;
 }
 
-.note {
+/* .note {
     height: auto;
     width: 200px;
     padding: 0.25rem;
     border-radius: 2px;
-}
+} */
 
 .title {
     padding: 0.1rem;

@@ -1,7 +1,7 @@
 // import PocketBase from 'pocketbase';
 import Link from "next/link";
 import styles from "./Notes.module.css";
-import CreateNote from "./CreateNote";
+import { GrayscaleSciFiButton } from "@/components/GrayscaleSciFiButton";
 
 // export const dynamic = 'auto',
 //   dynamicParams = true,
@@ -21,19 +21,26 @@ async function getNotes() {
   return data?.items as any[];
 }
 
-export default async function NotesPage() {
+export default async function AllNotes() {
   const notes = await getNotes();
 
   return (
     <div>
-      <h1 className="font-semibold text-3xl m-3 text-gray-400">Notes...</h1>
-      <div className={styles.grid}>
-        {notes?.map((note) => {
-          return <Note key={note.id} note={note} />;
-        })}
+      <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+        <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+          <h1 className="font-semibold text-3xl m-3 text-gray-400">Notes...</h1>
+          <div className={styles.grid}>
+            {notes?.map((note) => {
+              return <Note key={note.id} note={note} />;
+            })}
+          </div>
+          <div>
+            <Link href={"/notes/create"}>
+              <GrayscaleSciFiButton>➕</GrayscaleSciFiButton>
+            </Link>
+          </div>
+        </div>
       </div>
-
-      <CreateNote />
     </div>
   );
 }
@@ -44,8 +51,8 @@ function Note({ note }: any) {
   return (
     <Link href={`/notes/${id}`}>
       <div className={styles.note}>
-        <h2 className="m-3 text-gray-500">{title}</h2>
-        <h5 className="m-3 text-gray-400">{content}</h5>
+        <h2 className="m-3 text-gray-400">{title}</h2>
+        <h5 className="m-3 text-gray-500">{content}</h5>
         {/* <p>{created}</p> */}
       </div>
     </Link>
