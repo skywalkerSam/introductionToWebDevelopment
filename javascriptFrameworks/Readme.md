@@ -32,6 +32,6 @@
 
 <img src="./Resources/memes/timeFlies.jpg" alt="" width=500>
 
-`Note:` Time flies...
+`Note:` Time flies but, some things never change... 
 
 Until next time.)
