@@ -6,9 +6,15 @@
 
 <img src="./Resources/memes/jsDEVSinAnutshell.jpg" alt="" width=500>
 
+## Typical JS Devs...✌️
+
 <img src="./Resources/memes/jsOverflow.jpg" alt="" width=500>
 
 <img src="./Resources/memes/dontDoDrugsBTW.png" alt="" width=500>
+
+`P.S.` Don't do drugs btw...
+
+## Die hard JS Devs...🫡
 
 <img src="./Resources/memes/shouldn&apos;tHaveDoneThat.jpg" alt="" width=500>
 
