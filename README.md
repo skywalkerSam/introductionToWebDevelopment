@@ -96,7 +96,7 @@ It can get rough*
 
 ## Startup programmers.)
 
-<img src="./Resources/memes/hailTheVikings.png" alt="" width=500>
+<img src="./Resources/memes/hailTheVikings.png" alt="" width=600>
 
 <img src="./Resources/memes/imTheDanger.jpg" alt="" width=500>
 
