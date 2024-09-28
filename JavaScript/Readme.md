@@ -119,7 +119,7 @@ A function() must `return` something
 
 - `print()`: Print the webpage, not like python...!
 
-## The adventures await
+## The adventures await...
 
 <img src="./Resources/memes/theAdventuresAwait.jpg" alt="" width=500>
 
