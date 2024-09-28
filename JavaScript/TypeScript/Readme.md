@@ -1,12 +1,22 @@
 # [Introduction to TypeScript](https://www.youtube.com/watch?v=zQnBQ4tB3ZA)
 
+<img src="./Resources/memes/TypeScript-in-a-nutshell.webp" alt="Typescript is better!?" width=600>
+
 TypeScript is a strict superset of **JavaScript**.
 
 [TypeScript Docs](https://www.typescriptlang.org/docs/)
 
-<img src="./Resources/info/TypeScript-in-a-nutshell.webp" alt="Typescript is better!?" width=450>
-
 <!-- ![TypeScript In a Nutshell](./Resources/Memes/TypeScript-in-a-nutshell.webp) -->
+
+## TypeScript in a nutshell
+
+<img src="./Resources/memes/typescriptInAnutshell.png" alt="" width=500>
+
+<img src="./Resources/memes/notExactly.jpg" alt="" width=500>
+
+<img src="./Resources/memes/learnedJavaInstead.jpg" alt="" width=500>
+
+Oh, the irony.)
 
 ## Main Features
 
@@ -38,6 +48,12 @@ It **compiles** to plain **JavaScript**.
 tsc fileName.ts
 ```
 
-## Until next time...
+## How it started VS. how it's going.)
 
-## ;)
+<img src="./Resources/memes/howItsGoin.png" alt="" width=500>
+
+## TypeScript DEVS in a nutshell.)
+
+<img src="./Resources/memes/typicalTSdev.jpg" alt="" width=500>
+
+Until next time.)
