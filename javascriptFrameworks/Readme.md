@@ -18,13 +18,13 @@
 
 <img src="./Resources/memes/shouldn&apos;tHaveDoneThat.jpg" alt="" width=500>
 
-## The state of JavaScript Frameworks...
+## The state of JavaScript Frameworks
 
 <img src="./Resources/memes/phpIntro.jpg" alt="" width=500>
 
 `P.S.` What is php?
 
-## I'm not proud but,
+## I'm not proud but
 
 <img src="./Resources/memes/imNotProudBut_.jpg" alt="" width=500>
 
@@ -32,6 +32,8 @@
 
 <img src="./Resources/memes/timeFlies.jpg" alt="" width=500>
 
-`Note:` Time flies but, some things never change... 
+`Note:` Time flies but, some things never change...
+
+<img src="./Resources/memes/createYourOwnFramework.jpg" alt="" width=600>
 
 Until next time.)
