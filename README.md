@@ -1,6 +1,6 @@
 # [Introduction to Web Development](https://github.com/skywalkerSam/introductionToWebDevelopment)
 
-<img src="./Resources/memes/weDoTheseThingsBecause_.jpg" alt="Programmer's credo" width=600>
+<img src="./Resources/memes/weDoTheseThingsBecause_.jpg" alt="Programmer's credo" width=900>
 
 *Nothing on this planet has ever been "**easy**", and that's just how it is...
 
