@@ -34,6 +34,8 @@
 
 `Note:` Time flies but, some things never change...
 
-<img src="./Resources/memes/createYourOwnFramework.jpg" alt="" width=600>
+<img src="./Resources/memes/createYourOwnFramework.jpg" alt="" width=900>
+
+😅
 
 Until next time.)
