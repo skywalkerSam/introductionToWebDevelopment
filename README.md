@@ -20,7 +20,7 @@ Maybe just let it be...
 
 <img src="./Resources/memes/gameOfThronesChair.jpg" alt="" width=450>
 
-Hell yeah!
+Fuck yeah!
 
 ## Programming in a nutshell.)
 
@@ -42,15 +42,15 @@ Just in case...😅
 
 <img src="./Resources/memes/pythonWithExtraSteps.png" alt="" width=550>
 
-<img src="./Resources/memes/justReadTheDocumentation_.jpg" alt="Just read the docs" width=500>
-
-<img src="./Resources/memes/roundNroundWeGo.png" alt="" width=450>
+<img src="./Resources/memes/roundNroundWeGo.png" alt="" width=500>
 
 And 'round, and 'round, and 'round we go...
 
-<img src="./Resources/memes/thatDoesIt.png" alt="" width=400>
+<img src="./Resources/memes/thatDoesIt.png" alt="" width=450>
 
-<img src="./Resources/memes/newProgrammers.jpg" alt="" width=350>
+<img src="./Resources/memes/newProgrammers.jpg" alt="" width=400>
+
+*not really.)
 
 ## DEVS in a nutshell.)
 
@@ -69,6 +69,8 @@ And 'round, and 'round, and 'round we go...
 MR. ROBOT mode **ON**.)
 
 <img src="./Resources/memes/careerOptions.png" alt="" width=500>
+
+*Image not to scale.)
 
 ## The beef with time.)
 
@@ -205,9 +207,11 @@ You get it, right? 😅
 
 <img src="./Resources/memes/itsWokin.jpg" alt="" width=450>
 
-## The Readme
+## The Readme.)
 
 <img src="./Resources/memes/theReadme.png" alt="" width=600>
+
+<img src="./Resources/memes/justReadTheDocumentation_.jpg" alt="Just read the docs" width=550>
 
 `P.S.` Just read the damn Documentation!
 
