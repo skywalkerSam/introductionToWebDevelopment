@@ -16,6 +16,6 @@ A highly customizable, low-level CSS framework that gives you all of the buildin
 - No unnecessary overrides
 - Time saver, highly productive, customizable, and efficient.
 
-## Until next time...
+Until next time.)
 
-## ;)
+✌️
