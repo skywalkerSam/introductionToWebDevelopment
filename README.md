@@ -52,7 +52,13 @@ And 'round, and 'round, and 'round we go...
 
 *not really, but.)
 
+<img src="./Resources/memes/justGetStarted.jpg" alt="" width=350>
+
+Just get started, and everything will fall into place...
+
 ## DEVS in a nutshell.)
+
+<img src="./Resources/memes/nothingWorks.jpg" alt="" width=700>
 
 <img src="./Resources/memes/writingCode.jpg" alt="" width=650>
 
@@ -62,13 +68,19 @@ And 'round, and 'round, and 'round we go...
 
 <img src="./Resources/memes/typicalFriday.jpg" alt="" width=500>
 
-<img src="./Resources/memes/mysterySolved.jpg" alt="" width=450>
+## The instincts.)
 
-<img src="./Resources/memes/mrROBOTmodeON.jpg" alt="" width=400>
+<img src="./Resources/memes/mysterySolved.jpg" alt="" width=600>
 
-MR. ROBOT mode **ON**.)
+<img src="./Resources/memes/mrROBOTmodeON.jpg" alt="" width=550>
 
-<img src="./Resources/memes/careerOptions.png" alt="" width=500>
+MR. ROBOT mode **ON**
+
+## Always learning...✌️
+
+<img src="./Resources/memes/stillLearning.jpg" alt="" width=600>
+
+<img src="./Resources/memes/careerOptions.png" alt="" width=550>
 
 *Image not to scale.)
 
@@ -83,6 +95,12 @@ MR. ROBOT mode **ON**.)
 <img src="./Resources/memes/timeTravel.jpg" alt="" width=600>
 
 <img src="./Resources/memes/timeTravelAgain.jpg" alt="" width=550>
+
+## Dating issues.)
+
+<img src="./Resources/memes/theGuideToDating.jpg" alt="" width=600>
+
+😅
 
 ## DEVS at night
 
@@ -128,6 +146,18 @@ It can get rough*
 
 😅
 
+## The GPT era.)
+
+<img src="./Resources/memes/codingWithGPT.jpg" alt="" width=600>
+
+<img src="./Resources/memes/devinDead.jpg" alt="" width=550>
+
+<img src="./Resources/memes/survivedTheCalculator.jpg" alt="" width=500>
+
+<img src="./Resources/memes/gptHallucinations.jpg" alt="" width=450>
+
+<!-- <img src="./Resources/memes/devinInAnutshell.png" alt="" width=550> -->
+
 ## Startup programmers...🫡
 
 <img src="./Resources/memes/hailTheVikings.png" alt="" width=600>
@@ -135,6 +165,12 @@ It can get rough*
 <img src="./Resources/memes/imTheDanger.jpg" alt="" width=550>
 
 I am the danger*
+
+<img src="./Resources/memes/theMotivationYOLO.jpg" alt="" width=500>
+
+<img src="./Resources/memes/theTrickToLife.jpg" alt="" width=450>
+
+it is what it is, just keep going...
 
 <!-- [IBM Full Stack Software Developer Professional](https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer) -->
 <!-- 
@@ -192,6 +228,22 @@ Oh, my intellisense...
 <img src="./Resources/memes/404mathematics.jpg" alt="" width=500>
 
 You get it, right? 😅
+
+## The deal with coffee.)
+
+So basically,
+
+<img src="./Resources/memes/emc2.jpg" alt="" width=600>
+
+😅
+
+<img src="./Resources/memes/whyCoffee.jpg" alt="" width=550>
+
+<img src="./Resources/memes/noLunch.jpg" alt="" width=500>
+
+<img src="./Resources/memes/3coffeeNoSleep.jpg" alt="" width=450>
+
+<img src="./Resources/memes/mondayCoffee.png" alt="" width=400>
 
 ## The Bug/Feature.)
 
