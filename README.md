@@ -1,4 +1,4 @@
-# [Introduction to Web Development](https://github.com/skywalkerSam/introductionToWebDevelopment)
+# [Introduction to Web Development, fr*](https://github.com/skywalkerSam/introductionToWebDevelopment)
 
 <img src="./Resources/memes/weDoTheseThingsBecause_.jpg" alt="Programmer's credo" width=750>
 
@@ -50,7 +50,7 @@ And 'round, and 'round, and 'round we go...
 
 <img src="./Resources/memes/newProgrammers.jpg" alt="" width=400>
 
-*not really.)
+*not really, but.)
 
 ## DEVS in a nutshell.)
 
@@ -104,7 +104,7 @@ MR. ROBOT mode **ON**.)
 
 Typical friday*
 
-## The Interview.)
+## The Interview
 
 <img src="./Resources/memes/theAvgInterview.jpg" alt="" width=650>
 
@@ -146,7 +146,7 @@ I am the danger*
 
 <!-- ![Just read the documentation](./Resources/memes/justReadTheDocumentation_.jpg) -->
 
-## Struggles of a developer...✌️
+## Struggles of a developer
 
 <img src="./Resources/memes/strugglesOfAprogrammer.jpg" alt="" width=600>
 
@@ -156,7 +156,7 @@ I am the danger*
 
 <img src="./Resources/memes/regexIntro.jpg" alt="" width=450>
 
-## Life of a developer
+## Life of a developer...✌️
 
 <img src="./Resources/memes/expectationVSreality.jpg" alt="" width=600>
 
@@ -242,3 +242,5 @@ Yup, I'm trying to fit all the memes in one readme, lol.)
 <!-- <img src="./Resources/memes/talkedTooMuch.jpg" alt="" width=500> -->
 
 Until next time.)
+
+✌️
