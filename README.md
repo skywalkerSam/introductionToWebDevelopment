@@ -24,6 +24,8 @@ Fuck yeah!
 
 ## Programming in a nutshell.)
 
+<img src="./Resources/memes/programmingIS.png" alt="" width=650>
+
 <img src="./Resources/memes/actuallyCodingBeLike.jpg" alt="" width=600>
 
 <img src="./Resources/memes/justTiredOfItAll.jpg" alt="" width=550>
@@ -68,6 +70,8 @@ Just get started, and everything will fall into place...
 
 <img src="./Resources/memes/typicalFriday.jpg" alt="" width=500>
 
+<img src="./Resources/memes/index0.jpg" alt="" width=450>
+
 ## The instincts.)
 
 <img src="./Resources/memes/mysterySolved.jpg" alt="" width=600>
@@ -75,6 +79,8 @@ Just get started, and everything will fall into place...
 <img src="./Resources/memes/mrROBOTmodeON.jpg" alt="" width=550>
 
 MR. ROBOT mode **ON**
+
+<img src="./Resources/memes/theFragility.jpg" alt="" width=500>
 
 ## Always learning...✌️
 
@@ -100,6 +106,8 @@ MR. ROBOT mode **ON**
 
 <img src="./Resources/memes/theGuideToDating.jpg" alt="" width=600>
 
+<img src="./Resources/memes/true.jpg" alt="" width=550>
+
 😅
 
 ## DEVS at night
@@ -110,7 +118,9 @@ MR. ROBOT mode **ON**
 
 <img src="./Resources/memes/programmersAtNight.jpg" alt="" width=500>
 
-## DEVS on weekends.)
+<img src="./Resources/memes/4am.jpg" alt="" width=450>
+
+## DEVS Friday (patent pending*)
 
 <img src="./Resources/memes/theWeekndInAnutshell.jpg" alt="" width=600>
 
@@ -140,9 +150,13 @@ It can get rough*
 
 ## The "**AI**" hype train
 
-<img src="./Resources/memes/MLinAnutshell.jpg" alt="" width=600>
+<img src="./Resources/memes/MLinAnutshell.jpg" alt="" width=650>
 
-<img src="./Resources/memes/ml.png" alt="" width=550>
+<img src="./Resources/memes/sexyML.jpg" alt="" width=600>
+
+<img src="./Resources/memes/notSexyML.jpg" alt="" width=550>
+
+<img src="./Resources/memes/ml.png" alt="" width=500>
 
 😅
 
@@ -184,13 +198,15 @@ it is what it is, just keep going...
 
 ## Struggles of a developer
 
+<img src="./Resources/memes/fixMyComputer.jpg" alt="" width=650>
+
 <img src="./Resources/memes/strugglesOfAprogrammer.jpg" alt="" width=600>
 
 <img src="./Resources/memes/wtfAmI.jpg" alt="" width=550>
 
-<img src="./Resources/memes/theStruggleIsReal.jpg" alt="" width=500>
+<img src="./Resources/memes/regexIntro.jpg" alt="" width=500>
 
-<img src="./Resources/memes/regexIntro.jpg" alt="" width=450>
+<img src="./Resources/memes/theStruggleIsReal.jpg" alt="" width=450>
 
 ## Life of a developer...✌️
 
@@ -211,6 +227,16 @@ Oh, my intellisense...
 <img src="./Resources/memes/programmingExperts.jpg" alt="" width=500>
 
 <img src="./Resources/memes/programmersInAnutshell.png" alt="" width=450>
+
+## Programmers VS. 
+
+<img src="./Resources/memes/loveNhate.jpg" alt="" width=650>
+
+developer, developers, developers
+
+<img src="./Resources/memes/programmersVSmathematiciansNOT.jpg" alt="" width=600>
+
+<img src="./Resources/memes/programmersVSmathematiciansFR.jpg" alt="" width=550>
 
 <!-- 
 ## Additional Sources (Legacy)
@@ -269,15 +295,19 @@ So basically,
 
 ## "**Real**" Programmer.)
 
-<img src="./Resources/memes/realProgrammerRoadmap.jpg" alt="" width=600>
+<img src="./Resources/memes/iCanTho.jpg" alt="" width=650>
 
-<img src="./Resources/memes/fixThePrinterForYa.jpg" alt="" width=550>
+<img src="./Resources/memes/fixThePrinterForYa.jpg" alt="" width=600>
 
-<img src="./Resources/memes/butItDoesRun.jpg" alt="" width=500>
+<img src="./Resources/memes/butItDoesRun.jpg" alt="" width=550>
+
+*it does...
+
+<img src="./Resources/memes/realProgrammerRoadmap.jpg" alt="" width=500>
 
 Yup, I'm trying to fit all the memes in one readme, lol.)
 
-### me rn*
+## me rn*
 
 <img src="./Resources/memes/myAbilityToCode.jpg" alt="" width=650>
 
@@ -287,9 +317,13 @@ Yup, I'm trying to fit all the memes in one readme, lol.)
 
 <img src="./Resources/memes/meRN.jpg" alt="" width=500>
 
-<img src="./Resources/memes/lookWho.jpg" alt="" width=450>
+## The closure.)
 
-<img src="./Resources/memes/theLaugh.png" alt="" width=400>
+<img src="./Resources/memes/watchingMemes.jpg" alt="" width=600>
+
+<img src="./Resources/memes/lookWho.jpg" alt="" width=550>
+
+<img src="./Resources/memes/theLaugh.png" alt="" width=500>
 
 <!-- <img src="./Resources/memes/talkedTooMuch.jpg" alt="" width=500> -->
 
