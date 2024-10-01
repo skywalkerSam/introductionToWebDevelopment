@@ -226,6 +226,8 @@ Oh, my intellisense...
 
 ## The composure.)
 
+<img src="./Resources/memes/yes....png" alt="" width=650>
+
 <img src="./Resources/memes/iHaveNoIdea.jpg" alt="" width=600>
 
 <img src="./Resources/memes/choices.jpg" alt="" width=550>
