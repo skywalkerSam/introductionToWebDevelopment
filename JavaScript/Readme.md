@@ -1,8 +1,12 @@
-# [Introduction to JavaScript](https://fireship.io/courses/js/101-js-in-100-seconds/)
+# [Introduction to JavaScript](https://www.youtube.com/watch?v=DHjqpvDnNGE)
 
-`NEVER` write Vanilla JavaScript, or you'll end up creating your own little JS Framework, and the last thing this world needs is another JavaScript Framework... ;)
+Everything that can be written in JavaScript, will be written in JavaScript.)
 
-![JS Devs](./Resources/memes/js-devs.jpg)
+<img src="./Resources/memes/*if.jpg" alt="" width=600>
+
+`P.S.` You'll get it soon enough...
+
+<!-- ![JS Devs](./Resources/memes/js-devs.jpg) -->
 
 ## [JavaScript Data Types & Data Structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
 
@@ -115,6 +119,10 @@ A function() must `return` something
 
 - `print()`: Print the webpage, not like python...!
 
+## The adventures await...
+
+<img src="./Resources/memes/theAdventuresAwait.jpg" alt="" width=500>
+
 ## Calculations with Numbers & Strings
 
 ### 3 + "6"
@@ -209,11 +217,11 @@ A function() must `return` something
 
 - `false`
 
-`NOTE`: Don't stress much about it, It's just how JavaScript works...!
+<!-- `NOTE`: Don't stress much about it, It's just how JavaScript works...! -->
 
-![JavaScript in a nutshell](./Resources/memes/jsInANutshell.png)
+<!-- ![JavaScript in a nutshell](./Resources/memes/jsInANutshell.png) -->
 
-Just for meme purposes... lol ;)
+<!-- Just for meme purposes... lol ;) -->
 
 ## Make a String
 
@@ -222,6 +230,18 @@ Just for meme purposes... lol ;)
 - "Hi There! " + "It\'s \"sunny\" out"
 
 Or, just use the `'`/`"` interchangeably...
+
+## JavaScript in a nutshell
+
+<img src="./Resources/memes/jsInANutshell.png" alt="" width=500>
+
+<img src="./Resources/memes/thatDoesIt.jpg" alt="" width=500>
+
+<img src="./Resources/memes/typicalJS.jpg" alt="" width=500>
+
+<img src="./Resources/memes/thanksForInventingJS.jpg" alt="" width=500>
+
+<img src="./Resources/memes/pov.jpg" alt="" width=500>
 
 ## Special Keywords
 
@@ -259,6 +279,22 @@ Or, just use the `'`/`"` interchangeably...
 - with
 - yield
 
-## Until next time...
+## At last, Please don't confuse JavaScript with Java.)
 
-## ;)
+<img src="./Resources/memes/pleaseDon&apos;tConfuseItWithJava.jpg" alt="" width=500>
+
+`P.S` Get it?
+
+## Introduction to Vanilla "JavaScript".)
+
+<img src="./Resources/memes/neverWriteVanilla-please_.jpg" alt="" width=500>
+
+`NOTE:` Try to just *NEVER* write Vanilla, or you'll end up creating your own little JS Framework, and the last thing this world needs is another JavaScript Framework.)
+
+## JavaScript starter pack.)
+
+<img src="./Resources/memes/jsStarterKit-getIt_.jpg" alt="" width=500>
+
+`P.S.` You'll get this soon enough too.)
+
+Until next time.)

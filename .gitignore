@@ -295,7 +295,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+# lib/
 lib64/
 parts/
 sdist/
@@ -408,3 +408,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# pocketbase
+pb_data
