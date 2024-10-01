@@ -72,6 +72,12 @@ Just get started, and everything will fall into place...
 
 <img src="./Resources/memes/index0.jpg" alt="" width=450>
 
+<img src="./Resources/memes/ij.jpg" alt="" width=450>
+
+<img src="./Resources/memes/rulesAreRules.jpg" alt="" width=450>
+
+Rules are rules. 😅
+
 ## The instincts.)
 
 <img src="./Resources/memes/mysterySolved.jpg" alt="" width=600>
@@ -228,7 +234,7 @@ Oh, my intellisense...
 
 <img src="./Resources/memes/programmersInAnutshell.png" alt="" width=450>
 
-## Programmers VS. 
+## Programmers VS
 
 <img src="./Resources/memes/loveNhate.jpg" alt="" width=650>
 
@@ -273,6 +279,8 @@ So basically,
 
 ## The Bug/Feature.)
 
+<img src="./Resources/memes/lifeGoesOn.jpg" alt="" width=650>
+
 <img src="./Resources/memes/aNewFeature.jpg" alt="" width=600>
 
 <img src="./Resources/memes/theBug.png" alt="" width=550>
@@ -285,11 +293,15 @@ So basically,
 
 <img src="./Resources/memes/itsWokin.jpg" alt="" width=450>
 
+<img src="./Resources/memes/allGoodNow.jpg" alt="" width=400>
+
 ## The Readme.)
 
-<img src="./Resources/memes/theReadme.png" alt="" width=600>
+<img src="./Resources/memes/theReadme.png" alt="" width=650>
 
-<img src="./Resources/memes/justReadTheDocumentation_.jpg" alt="Just read the docs" width=550>
+<img src="./Resources/memes/justReadTheDocumentation_.jpg" alt="Just read the docs" width=600>
+
+<img src="./Resources/memes/readTheDocs.jpg" alt="" width=550>
 
 `P.S.` Just read the damn Documentation!
 
