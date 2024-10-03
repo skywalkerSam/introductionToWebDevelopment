@@ -2,7 +2,7 @@
 
 Everything that can be written in JavaScript, will be written in JavaScript.)
 
-<img src="./Resources/memes/*if.jpg" alt="" width=600>
+<img src="./Resources/memes/if.jpg" alt="" width=600>
 
 `P.S.` You'll get it soon enough...
 
