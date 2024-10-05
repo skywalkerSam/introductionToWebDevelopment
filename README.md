@@ -1,6 +1,6 @@
 # [Introduction to Web Development, fr*](https://github.com/skywalkerSam/introductionToWebDevelopment)
 
-<img src="./Resources/memes/createTheThingsYouWish.jpg" alt="Create the things you wish existed...">
+<img src="./Resources/memes/createTheThingsYouWish.jpg" alt="Create the things you wish existed..." width=750>
 
 <img src="./Resources/memes/weDoTheseThingsBecause_.jpg" alt="Programmer's credo" width=700>
 
