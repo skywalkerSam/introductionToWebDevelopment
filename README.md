@@ -188,6 +188,8 @@ It can get rough*
 
 ## chatGPT Programmers.)
 
+<img src="./Resources/memes/linuxUser.jpg" alt="" width=700>
+
 <img src="./Resources/memes/newProgrammers.jpg" alt="" width=650>
 
 <img src="./Resources/memes/devin.png" alt="" width=600>
