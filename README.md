@@ -24,7 +24,7 @@ Maybe just let it be...
 
 <img src="./Resources/memes/gameOfThronesChair.jpg" alt="" width=450>
 
-Fuck yeah!
+Fuck, yeah!
 
 ## Programming in a nutshell
 
@@ -88,7 +88,7 @@ Rules are rules. 😅
 
 <img src="./Resources/memes/choices.jpg" alt="" width=550>
 
-😅
+But, are you even good enough to have imposter syndrome... 😅
 
 ## The instincts.)
 
@@ -96,7 +96,7 @@ Rules are rules. 😅
 
 <img src="./Resources/memes/mrROBOTmodeON.jpg" alt="" width=550>
 
-MR. ROBOT mode **ON**
+**MR. ROBOT** MODE *ON*
 
 <img src="./Resources/memes/theFragility.jpg" alt="" width=500>
 
@@ -112,7 +112,7 @@ MR. ROBOT mode **ON**
 
 ## Time
 
-The concept of time is a bit different for a DEV than to a physicist or, a philosopher.)
+The concept of time is a bit different to a DEV than to a physicist or, a philosopher.)
 
 <img src="./Resources/memes/devsNtime_.jpg" alt="" width=600>
 
@@ -148,7 +148,7 @@ I prefer **Stardate** btw...✌️
 
 <img src="./Resources/memes/4am.jpg" alt="" width=450>
 
-The nights are just bliss... soo quiet, soo peaceful, soo strange, just...
+The nights are just bliss... soo quiet, soo peaceful, soo strange, like just...
 
 ## DEVS Friday (patent pending*)
 
