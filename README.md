@@ -2,6 +2,8 @@
 
 <img src="./Resources/memes/createTheThingsYouWish.jpg" alt="Create the things you wish existed..." width=750>
 
+Oh, the things we wish to create...
+
 <img src="./Resources/memes/weDoTheseThingsBecause_.jpg" alt="Programmer's credo" width=700>
 
 *Nothing on this planet has ever been "**easy**", and that's just how it is...
