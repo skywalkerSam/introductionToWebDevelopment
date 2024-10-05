@@ -138,7 +138,7 @@ I prefer **Stardate** btw...✌️
 
 😅
 
-## DEVS of the nights.)
+## DEVS of the night.)
 
 <img src="./Resources/memes/timeToCode.png" alt="" width=600>
 
