@@ -1,6 +1,8 @@
 # [Introduction to Web Development, fr*](https://github.com/skywalkerSam/introductionToWebDevelopment)
 
-<img src="./Resources/memes/weDoTheseThingsBecause_.jpg" alt="Programmer's credo" width=750>
+<img src="./Resources/memes/createTheThingsYouWish.jpg" alt="Create the things you wish existed..." width=750>
+
+<img src="./Resources/memes/weDoTheseThingsBecause_.jpg" alt="Programmer's credo" width=700>
 
 *Nothing on this planet has ever been "**easy**", and that's just how it is...
 
@@ -50,10 +52,6 @@ And 'round, and 'round, and 'round we go...
 
 <img src="./Resources/memes/thatDoesIt.png" alt="" width=450>
 
-<img src="./Resources/memes/newProgrammers.jpg" alt="" width=400>
-
-*not really, but.)
-
 <img src="./Resources/memes/justGetStarted.jpg" alt="" width=350>
 
 Just get started, and everything will fall into place...
@@ -77,6 +75,12 @@ Just get started, and everything will fall into place...
 <img src="./Resources/memes/rulesAreRules.jpg" alt="" width=450>
 
 Rules are rules. 😅
+
+## The Imposter Syndrome.)
+
+<img src="./Resources/memes/imposterSyndrome.jpg" alt="Imposter Syndrome" width=600>
+
+<img src="./Resources/memes/choices.jpg" alt="" width=550>
 
 ## The instincts.)
 
@@ -156,6 +160,8 @@ It can get rough*
 
 ## The "**AI**" hype train
 
+<img src="./Resources/memes/aiFix.png" alt="" width=700>
+
 <img src="./Resources/memes/MLinAnutshell.jpg" alt="" width=650>
 
 <img src="./Resources/memes/sexyML.jpg" alt="" width=600>
@@ -163,6 +169,8 @@ It can get rough*
 <img src="./Resources/memes/notSexyML.jpg" alt="" width=550>
 
 <img src="./Resources/memes/ml.png" alt="" width=500>
+
+<img src="./Resources/memes/poweredByAI.jpg" alt="" width=450>
 
 😅
 
@@ -178,7 +186,21 @@ It can get rough*
 
 <!-- <img src="./Resources/memes/devinInAnutshell.png" alt="" width=550> -->
 
-## Startup programmers...🫡
+## chatGPT Programmers.)
+
+<img src="./Resources/memes/newProgrammers.jpg" alt="" width=650>
+
+<img src="./Resources/memes/devin.png" alt="" width=600>
+
+*not really, but.)
+
+<img src="./Resources/memes/hmm.jpg" alt="" width=550>
+
+<img src="./Resources/memes/introToWebDevelopment.jpg" alt="" width=500>
+
+😅
+
+## Startup Programmers...🫡
 
 <img src="./Resources/memes/hailTheVikings.png" alt="" width=600>
 
@@ -230,11 +252,9 @@ Oh, my intellisense...
 
 <img src="./Resources/memes/iHaveNoIdea.jpg" alt="" width=600>
 
-<img src="./Resources/memes/choices.jpg" alt="" width=550>
+<img src="./Resources/memes/programmingExperts.jpg" alt="" width=550>
 
-<img src="./Resources/memes/programmingExperts.jpg" alt="" width=500>
-
-<img src="./Resources/memes/programmersInAnutshell.png" alt="" width=450>
+<img src="./Resources/memes/programmersInAnutshell.png" alt="" width=500>
 
 ## Programmers VS
 
@@ -279,6 +299,12 @@ So basically,
 
 <img src="./Resources/memes/mondayCoffee.png" alt="" width=400>
 
+## Error handling 101
+
+<img src="./Resources/memes/errorHandling.jpg" alt="" width=600>
+
+<img src="./Resources/memes/errorHandling101.jpg" alt="" width=550>
+
 ## The Bug/Feature.)
 
 <img src="./Resources/memes/lifeGoesOn.jpg" alt="" width=650>
@@ -299,11 +325,15 @@ So basically,
 
 ## The Readme.)
 
-<img src="./Resources/memes/theReadme.png" alt="" width=650>
+<img src="./Resources/memes/theDocumentationTheory.jpg" alt="" width=700>
 
-<img src="./Resources/memes/justReadTheDocumentation_.jpg" alt="Just read the docs" width=600>
+<img src="./Resources/memes/iveSeenEnough.jpg" alt="" width=650>
 
-<img src="./Resources/memes/readTheDocs.jpg" alt="" width=550>
+<img src="./Resources/memes/theReadme.png" alt="" width=600>
+
+<img src="./Resources/memes/justReadTheDocumentation_.jpg" alt="Just read the docs" width=550>
+
+<img src="./Resources/memes/readTheDocs.jpg" alt="" width=500>
 
 `P.S.` Just read the damn Documentation!
 
