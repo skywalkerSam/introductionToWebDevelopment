@@ -188,13 +188,15 @@ It can get rough*
 
 ## chatGPT Programmers.)
 
-<img src="./Resources/memes/newProgrammers.jpg" alt="" width=600>
+<img src="./Resources/memes/newProgrammers.jpg" alt="" width=650>
 
-<img src="./Resources/memes/devin.png" alt="" width=550>
+<img src="./Resources/memes/devin.png" alt="" width=600>
 
 *not really, but.)
 
-<img src="./Resources/memes/hmm.jpg" alt="" width=500>
+<img src="./Resources/memes/hmm.jpg" alt="" width=550>
+
+<img src="./Resources/memes/introToWebDevelopment.jpg" alt="" width=500>
 
 😅
 
@@ -296,6 +298,12 @@ So basically,
 <img src="./Resources/memes/3coffeeNoSleep.jpg" alt="" width=450>
 
 <img src="./Resources/memes/mondayCoffee.png" alt="" width=400>
+
+## Error handling 101
+
+<img src="./Resources/memes/errorHandling.jpg" alt="" width=600>
+
+<img src="./Resources/memes/errorHandling101.jpg" alt="" width=550>
 
 ## The Bug/Feature.)
 
