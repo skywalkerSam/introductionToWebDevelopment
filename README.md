@@ -1,6 +1,8 @@
 # [Introduction to Web Development, fr*](https://github.com/skywalkerSam/introductionToWebDevelopment)
 
-<img src="./Resources/memes/weDoTheseThingsBecause_.jpg" alt="Programmer's credo" width=750>
+<img src="./Resources/memes/createTheThingsYouWish.jpg" alt="Create the things you wish existed...">
+
+<img src="./Resources/memes/weDoTheseThingsBecause_.jpg" alt="Programmer's credo" width=700>
 
 *Nothing on this planet has ever been "**easy**", and that's just how it is...
 
@@ -77,6 +79,12 @@ Just get started, and everything will fall into place...
 <img src="./Resources/memes/rulesAreRules.jpg" alt="" width=450>
 
 Rules are rules. 😅
+
+## The Imposter Syndrome.)
+
+<img src="./Resources/memes/imposterSyndrome.jpg" alt="Imposter Syndrome" width=600>
+
+<img src="./Resources/memes/choices.jpg" alt="" width=550>
 
 ## The instincts.)
 
@@ -230,11 +238,9 @@ Oh, my intellisense...
 
 <img src="./Resources/memes/iHaveNoIdea.jpg" alt="" width=600>
 
-<img src="./Resources/memes/choices.jpg" alt="" width=550>
+<img src="./Resources/memes/programmingExperts.jpg" alt="" width=550>
 
-<img src="./Resources/memes/programmingExperts.jpg" alt="" width=500>
-
-<img src="./Resources/memes/programmersInAnutshell.png" alt="" width=450>
+<img src="./Resources/memes/programmersInAnutshell.png" alt="" width=500>
 
 ## Programmers VS
 
