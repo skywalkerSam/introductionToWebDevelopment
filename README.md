@@ -52,10 +52,6 @@ And 'round, and 'round, and 'round we go...
 
 <img src="./Resources/memes/thatDoesIt.png" alt="" width=450>
 
-<img src="./Resources/memes/newProgrammers.jpg" alt="" width=400>
-
-*not really, but.)
-
 <img src="./Resources/memes/justGetStarted.jpg" alt="" width=350>
 
 Just get started, and everything will fall into place...
@@ -164,6 +160,8 @@ It can get rough*
 
 ## The "**AI**" hype train
 
+<img src="./Resources/memes/aiFix.png" alt="" width=700>
+
 <img src="./Resources/memes/MLinAnutshell.jpg" alt="" width=650>
 
 <img src="./Resources/memes/sexyML.jpg" alt="" width=600>
@@ -171,6 +169,8 @@ It can get rough*
 <img src="./Resources/memes/notSexyML.jpg" alt="" width=550>
 
 <img src="./Resources/memes/ml.png" alt="" width=500>
+
+<img src="./Resources/memes/poweredByAI.jpg" alt="" width=450>
 
 😅
 
@@ -186,7 +186,19 @@ It can get rough*
 
 <!-- <img src="./Resources/memes/devinInAnutshell.png" alt="" width=550> -->
 
-## Startup programmers...🫡
+## chatGPT Programmers.)
+
+<img src="./Resources/memes/newProgrammers.jpg" alt="" width=600>
+
+<img src="./Resources/memes/devin.png" alt="" width=550>
+
+*not really, but.)
+
+<img src="./Resources/memes/hmm.jpg" alt="" width=500>
+
+😅
+
+## Startup Programmers...🫡
 
 <img src="./Resources/memes/hailTheVikings.png" alt="" width=600>
 
@@ -305,11 +317,15 @@ So basically,
 
 ## The Readme.)
 
-<img src="./Resources/memes/theReadme.png" alt="" width=650>
+<img src="./Resources/memes/theDocumentationTheory.jpg" alt="" width=700>
 
-<img src="./Resources/memes/justReadTheDocumentation_.jpg" alt="Just read the docs" width=600>
+<img src="./Resources/memes/iveSeenEnough.jpg" alt="" width=650>
 
-<img src="./Resources/memes/readTheDocs.jpg" alt="" width=550>
+<img src="./Resources/memes/theReadme.png" alt="" width=600>
+
+<img src="./Resources/memes/justReadTheDocumentation_.jpg" alt="Just read the docs" width=550>
+
+<img src="./Resources/memes/readTheDocs.jpg" alt="" width=500>
 
 `P.S.` Just read the damn Documentation!
 
