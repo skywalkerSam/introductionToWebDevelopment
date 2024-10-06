@@ -2,15 +2,17 @@
 
 <img src="./Resources/memes/createTheThingsYouWish.jpg" alt="Create the things you wish existed..." width=750>
 
+Oh, the things we wish to create...
+
 <img src="./Resources/memes/weDoTheseThingsBecause_.jpg" alt="Programmer's credo" width=700>
 
-*Nothing on this planet has ever been "**easy**", and that's just how it is...
+Nothing on the history of this planet has ever been "*easy*", and that's just the way it is in this world... but,
 
 <img src="./Resources/memes/tryAgain.jpg" alt="We'll try again..." width=700>
 
-<!-- ![We do these things because...](./Resources/memes/weDoTheseThingsBecause_.jpg) -->
+Shit happens, and life goes on...
 
-## Here's a collection of memes for ya, enjoy.)
+## Anyway, here's a collection of memes for ya... Enjoy.)
 
 <img src="./Resources/memes/theInternet.jpg" alt="" width=600>
 
@@ -22,9 +24,9 @@ Maybe just let it be...
 
 <img src="./Resources/memes/gameOfThronesChair.jpg" alt="" width=450>
 
-Fuck yeah!
+Fuck, yeah!
 
-## Programming in a nutshell.)
+## Programming in a nutshell
 
 <img src="./Resources/memes/programmingIS.png" alt="" width=650>
 
@@ -58,6 +60,10 @@ Just get started, and everything will fall into place...
 
 ## DEVS in a nutshell.)
 
+<img src="./Resources/memes/youKnowWhenYouSeeOne.jpg" alt="Ya know when you see one.)" width=750>
+
+*Doesn't represent the real nature of the individuals, image for representational purposes only.)
+
 <img src="./Resources/memes/nothingWorks.jpg" alt="" width=700>
 
 <img src="./Resources/memes/writingCode.jpg" alt="" width=650>
@@ -82,15 +88,19 @@ Rules are rules. 😅
 
 <img src="./Resources/memes/choices.jpg" alt="" width=550>
 
+But, are you even good enough to have imposter syndrome... 😅
+
 ## The instincts.)
 
 <img src="./Resources/memes/mysterySolved.jpg" alt="" width=600>
 
 <img src="./Resources/memes/mrROBOTmodeON.jpg" alt="" width=550>
 
-MR. ROBOT mode **ON**
+**MR. ROBOT** MODE *ON*
 
 <img src="./Resources/memes/theFragility.jpg" alt="" width=500>
+
+👍
 
 ## Always learning...✌️
 
@@ -100,11 +110,17 @@ MR. ROBOT mode **ON**
 
 *Image not to scale.)
 
-## The beef with time.)
+## Time
+
+The concept of time is a bit different to a DEV than to a physicist or, a philosopher.)
 
 <img src="./Resources/memes/devsNtime_.jpg" alt="" width=600>
 
+The dating conventions has their own issues.)
+
 <img src="./Resources/memes/dateFormats.jpg" alt="" width=550>
+
+I prefer **Stardate** btw...✌️
 
 ## "**Time Travel**"
 
@@ -112,7 +128,9 @@ MR. ROBOT mode **ON**
 
 <img src="./Resources/memes/timeTravelAgain.jpg" alt="" width=550>
 
-## Dating issues.)
+😅
+
+## Dating.)
 
 <img src="./Resources/memes/theGuideToDating.jpg" alt="" width=600>
 
@@ -120,7 +138,7 @@ MR. ROBOT mode **ON**
 
 😅
 
-## DEVS at night
+## DEVS of the night.)
 
 <img src="./Resources/memes/timeToCode.png" alt="" width=600>
 
@@ -129,6 +147,8 @@ MR. ROBOT mode **ON**
 <img src="./Resources/memes/programmersAtNight.jpg" alt="" width=500>
 
 <img src="./Resources/memes/4am.jpg" alt="" width=450>
+
+The nights are just bliss... soo quiet, soo peaceful, soo strange, like just...
 
 ## DEVS Friday (patent pending*)
 
@@ -142,23 +162,27 @@ MR. ROBOT mode **ON**
 
 Typical friday*
 
-## The Interview
+## The Interview.)
+
+Oh, the interview...
 
 <img src="./Resources/memes/theAvgInterview.jpg" alt="" width=650>
 
 <img src="./Resources/memes/theResume.jpg" alt="" width=600>
 
-.)
+😅
 
 <img src="./Resources/memes/youBetcha.jpg" alt="" width=550>
+
+*Optional, no bloodshed required.)
 
 <img src="./Resources/memes/typicalTechnicalInterview.png" alt="" width=500>
 
 <img src="./Resources/memes/itCanGetRough.jpg" alt="" width=450>
 
-It can get rough*
+It gets rough*
 
-## The "**AI**" hype train
+## The "**AI**" hype train.)
 
 <img src="./Resources/memes/aiFix.png" alt="" width=700>
 
@@ -172,9 +196,9 @@ It can get rough*
 
 <img src="./Resources/memes/poweredByAI.jpg" alt="" width=450>
 
-😅
+Just one more time...😅
 
-## The GPT era.)
+## The GPT Era.)
 
 <img src="./Resources/memes/codingWithGPT.jpg" alt="" width=600>
 
@@ -182,11 +206,19 @@ It can get rough*
 
 <img src="./Resources/memes/survivedTheCalculator.jpg" alt="" width=500>
 
+*They really did.)
+
 <img src="./Resources/memes/gptHallucinations.jpg" alt="" width=450>
+
+`NOTE:` **LLM**s are awesome but, not without their limitations!
+
+In other words, use the right **tools** for the **job**, and **NOT** the right **job** for the **tools**...
 
 <!-- <img src="./Resources/memes/devinInAnutshell.png" alt="" width=550> -->
 
-## chatGPT Programmers.)
+## **chatGPT** programmers in a nutshell.)
+
+<img src="./Resources/memes/linuxUser.jpg" alt="" width=700>
 
 <img src="./Resources/memes/newProgrammers.jpg" alt="" width=650>
 
@@ -200,7 +232,7 @@ It can get rough*
 
 😅
 
-## Startup Programmers...🫡
+## **Startup Programmers**...🫡
 
 <img src="./Resources/memes/hailTheVikings.png" alt="" width=600>
 
@@ -209,6 +241,8 @@ It can get rough*
 I am the danger*
 
 <img src="./Resources/memes/theMotivationYOLO.jpg" alt="" width=500>
+
+For money, let's fuckin' go... YOLO*
 
 <img src="./Resources/memes/theTrickToLife.jpg" alt="" width=450>
 
@@ -224,7 +258,7 @@ it is what it is, just keep going...
 
 <!-- ![Just read the documentation](./Resources/memes/justReadTheDocumentation_.jpg) -->
 
-## Struggles of a developer
+## Struggles of a developer.)
 
 <img src="./Resources/memes/fixMyComputer.jpg" alt="" width=650>
 
@@ -256,11 +290,11 @@ Oh, my intellisense...
 
 <img src="./Resources/memes/programmersInAnutshell.png" alt="" width=500>
 
-## Programmers VS
+## Programmers **VS.**
 
 <img src="./Resources/memes/loveNhate.jpg" alt="" width=650>
 
-developer, developers, developers
+developer, developers, developers!
 
 <img src="./Resources/memes/programmersVSmathematiciansNOT.jpg" alt="" width=600>
 
@@ -283,7 +317,7 @@ developer, developers, developers
 
 You get it, right? 😅
 
-## The deal with coffee.)
+## DEVS & Coffee.)
 
 So basically,
 
@@ -293,11 +327,15 @@ So basically,
 
 <img src="./Resources/memes/whyCoffee.jpg" alt="" width=550>
 
+*literally and figuratively.)
+
 <img src="./Resources/memes/noLunch.jpg" alt="" width=500>
 
 <img src="./Resources/memes/3coffeeNoSleep.jpg" alt="" width=450>
 
 <img src="./Resources/memes/mondayCoffee.png" alt="" width=400>
+
+May the force be with you, always...
 
 ## Error handling 101
 
@@ -323,13 +361,17 @@ So basically,
 
 <img src="./Resources/memes/allGoodNow.jpg" alt="" width=400>
 
-## The Readme.)
+## The **Readme**.)
 
 <img src="./Resources/memes/theDocumentationTheory.jpg" alt="" width=700>
 
 <img src="./Resources/memes/iveSeenEnough.jpg" alt="" width=650>
 
+*I have seen enough, now i shall die in peace.)
+
 <img src="./Resources/memes/theReadme.png" alt="" width=600>
+
+*me.)
 
 <img src="./Resources/memes/justReadTheDocumentation_.jpg" alt="Just read the docs" width=550>
 
@@ -345,7 +387,7 @@ So basically,
 
 <img src="./Resources/memes/butItDoesRun.jpg" alt="" width=550>
 
-*it does...
+Well, it does*
 
 <img src="./Resources/memes/realProgrammerRoadmap.jpg" alt="" width=500>
 
@@ -361,7 +403,7 @@ Yup, I'm trying to fit all the memes in one readme, lol.)
 
 <img src="./Resources/memes/meRN.jpg" alt="" width=500>
 
-## The closure.)
+## The *closure*.)
 
 <img src="./Resources/memes/watchingMemes.jpg" alt="" width=600>
 
