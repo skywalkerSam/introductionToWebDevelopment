@@ -73,6 +73,8 @@ deno test
 
 ## Compile (*yeah, really.)
 
+The executable's file sizes are huge at first glance, idk...
+
 ```bash
 deno compile main.ts
 ```
