@@ -11,6 +11,24 @@ Deno is the open-source JavaScript runtime for the modern web.
 
 [Docs](https://docs.deno.com/runtime/)
 
+## Deno 2.0 Features
+
+- A modern JavaScript runtime
+
+- Performance
+
+- Secure by default
+
+- Native TypeScript support
+
+- No *node_modules*, no package installations, it's magic...🪄
+
+- JSR package manager
+
+- Jupyter Notebook Kernel
+
+- Legacy support
+
 ## Getting started
 
 ```bash
@@ -39,6 +57,18 @@ deno run main.ts
 
 ```bash
 deno add
+```
+
+## Remove packages
+
+```bash
+deno remove
+```
+
+## Task
+
+```bash
+deno task
 ```
 
 ## Format
