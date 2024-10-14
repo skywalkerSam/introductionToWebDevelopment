@@ -77,6 +77,14 @@ deno test
 deno compile main.ts
 ```
 
+### Cross-compile
+
+```bash
+deno compile --target=x86_64-unknown-linux-gnu hello.ts
+```
+
+`Tip:` **--target** for compile options.
+
 ## Upgrade
 
 ```bash
