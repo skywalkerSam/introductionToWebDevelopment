@@ -19,7 +19,7 @@ Deno is the open-source JavaScript runtime for the modern web.
 
 - Secure by default
 
-- Native TypeScript support
+- Native TypeScript Support
 
 - No *node_modules*, no package installations, it's magic...🪄
 
@@ -27,7 +27,7 @@ Deno is the open-source JavaScript runtime for the modern web.
 
 - Jupyter Notebook Kernel
 
-- Legacy support
+- Legacy support (backward compatible.)
 
 ## Getting started
 
@@ -103,7 +103,7 @@ deno test
 
 ## Compile (*yeah, really.)
 
-The executable file sizes are huge at first glance, idk...
+The executable file sizes are huge* because it comes with the minified deno runtime because, JavaScript is a "dynamic language". And If the difference between KB and MB matters to you, you shouldn't be using JavaScript in the first place.)
 
 ```bash
 deno compile main.ts
