@@ -1,4 +1,4 @@
-# My Projects (PWAs)
+# React Projects (PWAs)
 
 - [skywalkersam.dev](https://skywalkersam.dev)
 
