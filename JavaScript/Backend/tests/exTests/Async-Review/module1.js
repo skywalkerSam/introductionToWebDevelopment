@@ -1,1 +1,0 @@
-export const theNumber = 4096;

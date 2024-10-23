@@ -1,4 +1,0 @@
-setuptools~=61.2.0
-moviepy~=1.0.3
-pytube~=12.1.0
-pyfiglet~=0.8.post1
