@@ -26,7 +26,6 @@ man command
 - fish
 - C Shell ( csh )
 
-<!-- ![Linux in a nutshell](./Resources/memes/linux_in_a_nutshell.jpg) -->
 <img src="./Resources/memes/linux_in_a_nutshell.jpg" alt="Linux Intro" width=540>
 
 ## File System Navigation
@@ -37,11 +36,9 @@ List items
 ls
 ```
 
-Hop between path/directories
+Optional tags
 
-```shell
-ls -
-```
+`-l` `-al`
 
 ## Print working directory
 
@@ -69,6 +66,12 @@ cd Downloads
 cd ..
 ```
 
+Hop between path/directories
+
+```shell
+cd -
+```
+
 ## Go home
 
 ```shell
@@ -93,6 +96,18 @@ touch filename.extension
 
 ```shell
 mkdir directory-name
+```
+
+## Multiple directories
+
+```shell
+mkdir directory1 directory2 directory3
+```
+
+## Nested directories
+
+```bash
+mkdir someDir/oneDir/anotherDir -p
 ```
 
 ## Show file contents
