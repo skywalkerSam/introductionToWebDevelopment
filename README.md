@@ -6,11 +6,13 @@ Oh, the things we wish to create...
 
 <img src="./Resources/memes/weDoTheseThingsBecause_.jpg" alt="Programmer's credo" width=700>
 
-Nothing on the history of this planet has ever been "*easy*", and that's just the way it is in this world... but,
+Nothing in the history of this planet has ever been *easy*, and that is just the way it is in this world... but,
 
 <img src="./Resources/memes/tryAgain.jpg" alt="We'll try again..." width=700>
 
-Shit happens, and life goes on...
+Shit happens, life goes on...
+
+<!-- 
 
 ## Anyway, here's a collection of memes for ya... Enjoy.)
 
@@ -214,8 +216,6 @@ Just one more time...😅
 
 In other words, use the right **tools** for the **job**, and **NOT** the right **job** for the **tools**...
 
-<!-- <img src="./Resources/memes/devinInAnutshell.png" alt="" width=550> -->
-
 ## **chatGPT** programmers in a nutshell.)
 
 <img src="./Resources/memes/linuxUser.jpg" alt="" width=700>
@@ -247,16 +247,6 @@ For money, let's fuckin' go... YOLO*
 <img src="./Resources/memes/theTrickToLife.jpg" alt="" width=450>
 
 it is what it is, just keep going...
-
-<!-- [IBM Full Stack Software Developer Professional](https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer) -->
-<!-- 
-### YouTube
-
-[Fireship](https://www.youtube.com/fireship)
-
-[freeCodeCamp.org](https://www.youtube.com/freecodecamp) -->
-
-<!-- ![Just read the documentation](./Resources/memes/justReadTheDocumentation_.jpg) -->
 
 ## Struggles of a developer.)
 
@@ -300,16 +290,9 @@ developer, developers, developers!
 
 <img src="./Resources/memes/programmersVSmathematiciansFR.jpg" alt="" width=550>
 
-<!-- 
-## Additional Sources (Legacy)
-
-[Introduction to Computer Science and Programming Specialization](https://www.coursera.org/specializations/introduction-computer-science-programming) -->
-
 ## Shower thoughts.)
 
 <img src="./Resources/memes/programProgram.jpg" alt="" width=600>
-
-<!-- <img src="./Resources/memes/showerThoughts101.jpg" alt="" width=600> -->
 
 <img src="./Resources/memes/evilThoughts.png" alt="" width=550>
 
