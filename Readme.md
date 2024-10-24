@@ -10,9 +10,8 @@ Nothing in the history of this planet has ever been *easy*, and that is just the
 
 <img src="./Resources/memes/tryAgain.jpg" alt="We'll try again..." width=700>
 
-Shit happens, life goes on...
-
 <!-- 
+Shit happens, life goes on...
 
 ## Anyway, here's a collection of memes for ya... Enjoy.)
 
