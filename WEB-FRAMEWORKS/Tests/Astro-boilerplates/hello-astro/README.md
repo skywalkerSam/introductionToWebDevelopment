@@ -1,8 +1,26 @@
 # Astro Starter Kit: Basics
 
+```shell
+pnpm create astro@latest
+```
+
 ```sh
 npm create astro@latest -- --template basics
 ```
+
+Add extras...
+
+```bash
+astro add react tailwindcss 
+```
+
+Install *astro* (*if* not already*)
+
+```bash
+npm i -g astro
+```
+
+And if you don't have *npm* installed, i have no words.)
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
