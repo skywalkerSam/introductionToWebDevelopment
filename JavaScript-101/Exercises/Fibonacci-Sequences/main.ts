@@ -2,7 +2,7 @@
  * https://learn.microsoft.com/en-us/training/modules/web-development-101-introduction-programming/3-programming-languages
  */
 
-export function fib(params: number): number {
+export function fibonacciSeq(params: number): number {
   params -= 1;  //matching the sequence requested
   let x: number = 0;
   let y: number = 1;
@@ -22,6 +22,6 @@ export function fib(params: number): number {
 
 // Learn more at https://docs.deno.com/runtime/manual/examples/module_metadata#concepts
 if (import.meta.main) {
-  // fib(5);
-  console.log(fib(19));
+  // fibonacciSeq(5);
+  console.log(fibonacciSeq(19));
 }

@@ -1,6 +1,6 @@
 import { assertEquals } from "@std/assert";
-import { fib } from "./main.ts";
+import { fibonacciSeq } from "./main.ts";
 
-Deno.test(function fibonacciSeq() {
-  assertEquals(fib(19), 4181);
+Deno.test(function fibonacciSequences() {
+  assertEquals(fibonacciSeq(19), 4181);
 });
