@@ -1,4 +1,4 @@
-# [Introduction to NEXT.js](https://nextjs.org/)
+# [NEXT.js](https://nextjs.org/)
 
 The react framework for the web.
 
