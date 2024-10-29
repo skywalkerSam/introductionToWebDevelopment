@@ -97,7 +97,7 @@ winget install dbeaver.dbeaver
 sudo apt install postgresql
 ```
 
-## *postgresql*
+## Start *postgresql*
 
 ```shell
 sudo systemctl start postgresql
