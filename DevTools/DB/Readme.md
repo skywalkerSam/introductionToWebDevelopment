@@ -201,7 +201,7 @@ INSERT INTO table_name(column_1, column_2, column_3) VALUES (value_1, value_2, v
 ```
 
 ```shell
-insert into users(name, age, birthday) values ('Sam', 32, '2002-12-31');
+insert into users(name, age, birthday) values ('Sam', 3000, '2049-12-31');
 ```
 
 ## Select from a *table*
@@ -322,7 +322,7 @@ The real power of Relational Databases.
 SELECT * FROM table_1 JOIN table_2 ON table_1.identifier = table_2.identifier;
 ```
 
-Here, Sam is a foreign key in login, and in users Sam is a primary key. (*name*)
+Here, *Sam* is a foreign key in *login* and in users, *Sam* is a primary key
 
 ```shell
 select * from users join login on users.name = login.name;
