@@ -38,9 +38,50 @@
 - riak
 - MongoDB, Document Oriented - (MongoDB Query Language)
 
+## [SQL Data Types](https://www.digitalocean.com/community/tutorials/sql-data-types)
+
+- Depending on different databases, some data type might not work in one while working flawlessly in another );
+- Data types often could be database specific!
+
+### Numeric
+
+- bit
+- tinyint
+- smallint
+- int
+- bigint
+- decimal
+- numeric
+- float
+- real
+
+### Date and Time
+
+- date
+- time
+- datetime
+- timestamp
+- year
+
+### Character and String
+
+- char
+- varchar
+- text
+
+### Binary (Not supported in MySQL)
+
+- binary
+- image
+
+### Miscellaneous
+
+- json
+- xml
+
 ## Getting started with *PostgreSQL* (`psql`)
 
-- w/ **WSL**
+- Windows w/ **WSL**
 - [DBeaver](https://dbeaver.io/download/) as *DBMS*
 <!-- - Or, just use [VS Code](https://code.visualstudio.com/) for everything... lol ;) -->
 
@@ -131,47 +172,6 @@ CREATE DATABASE test;
 ```
 
 Yes, there's a space before `clear`
-
-## [SQL Data Types](https://www.digitalocean.com/community/tutorials/sql-data-types)
-
-- Depending on different databases, some data type might not work in one while working flawlessly in another );
-- Data types often could be database specific!
-
-### Numeric
-
-- bit
-- tinyint
-- smallint
-- int
-- bigint
-- decimal
-- numeric
-- float
-- real
-
-### Date and Time
-
-- date
-- time
-- datetime
-- timestamp
-- year
-
-### Character and String
-
-- char
-- varchar
-- text
-
-### Binary (Not supported in MySQL)
-
-- binary
-- image
-
-### Miscellaneous
-
-- json
-- xml
 
 ## Create a *table*
 
@@ -342,9 +342,11 @@ DELETE FROM table_name WHERE column='Something';
 DROP TABLE table_name;
 ```
 
+<img src="./Resources/Memes/drop_database_prod.jpg" width=450>
+
 `Tip:` Don't play with *prod* environments!
 
-![*Intern after deleting the production database*](./Resources/Memes/drop_database_prod.jpg)
+<!-- ![*Intern after deleting the production database*](./Resources/Memes/drop_database_prod.jpg) -->
 
 ## Drop Database `!`
 
@@ -438,7 +440,8 @@ man psql
 
 Here's something...
 
-![How did they program a programming language to program a program to program programs?](./Resources/Memes/the_program_paradox.jpg)
+<!-- ![How did they program a programming language to program a program to program programs?](./Resources/Memes/the_program_paradox.jpg) -->
+
 <!-- 
 ## Project Specific Details: `face-detection-backend`
 
@@ -459,5 +462,7 @@ Here's something...
 - Using [knex](https://knexjs.org/), but [pg-promise](https://vitaly-t.github.io/pg-promise/) is good too.
 
 - Using [Pycharm](https://www.jetbrains.com/pycharm/) to write is [Markdown](https://www.markdownguide.org/) file for some reason... Use [ghostwriter](https://ghostwriter.kde.org/download/#windows) ;) -->
+
+<img src="./Resources/Memes/the_program_paradox.jpg" width=450>
 
 Until next time.)
